@@ -1,0 +1,224 @@
+/*Setter border-box for hele siden. Da er padding og border inkludert i width og height dette gir penere div'er!*/
+/*Fjerner noen standard settings:*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Gir mellomrom mellom ulike paragrafer*/
+p{
+    margin-bottom: 1rem;
+}
+
+/*Farge på bakgrunnen*/
+body{
+    background-color: white;
+}
+
+/*Footer med bilde og cutout text*/
+.footer{
+    overflow: hidden;
+    position: relative;
+    background-image: url(https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+/*Cutout text*/
+.footer-text{
+    background-color: white;
+    color: black;
+    font-size: 10vw; /*Skalerbar tekst*/
+    font-weight: bold;
+    margin: 0 auto; /*Tekstboks havner i midten*/
+    padding: 10px;
+    width: 50%;
+    text-align: center; /*Sentrerer teks*/
+    position: absolute; /*Setter posisjon*/
+    top: 50%; /*Tekst plassert i midten*/
+    left: 50%; /*Tekst plassert i midten*/
+    transform: translate(-50%, -50%); /*mer for å plassere tekst*/
+    mix-blend-mode: screen; /*Her lages cutout'en!*/
+}
+
+/*Sticky navbar*/
+.navbar{
+    overflow: hidden;
+    background-color: teal;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*Hvordan lenkene i navbaren ser ut*/
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-bottom: solid 2px transparent;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    /*width: 25%;*/ /*Lange knapper*/
+}
+
+/*Lenkene i navbaren endrer utseende når man holder musepekeren over dem*/
+.navbar a:hover{
+    background-color: rgb(1, 163, 163);
+    color: white;
+    border-bottom: solid 2px white;
+    transition: 0.4s;
+}
+
+.navbar a.active{
+    background-color: white;
+    color: black;
+}
+
+/*Hamburgerknapp, som ikke syns for stor skjerm*/ 
+.navbar .icon{
+    display: none;
+}
+
+.hamburger{
+    width: 35px;
+    height: 4px;
+    background-color: black;
+    margin-top: 5.3px;
+    transition: 0.4s;
+}
+
+/*Hamburgerknapp kan endre seg med javascript, når den klikkes på*/
+.changeButton .bar1{
+    -webkit-transition: rotate(-45deg) translate(-8px,6px); /*For Safari browser, tror jeg*/
+    transform: rotate(-45deg) translate(-8px,6px);
+}
+.changeButton .bar2{
+    opacity: 0;
+}
+.changeButton .bar3{
+    -webkit-transition: rotate(45deg) translate(-8px,-6px); /*For Safari browser, tror jeg*/
+    transform: rotate(45deg) translate(-8px,-6px);
+}
+
+
+/*zig-zag layout*/
+
+/*Hver row kan inneholde flere forskjellige kolonne-div'er, der den totale vidden skal bli 100%*/
+.row{
+    padding: 3rem;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Kan brukes som en ekstra klasse for rader som skal ha en bestemt farge*/
+.row-color{
+    background-color: rgba(211, 211, 211, 0.473);
+}
+
+/*Første row på hver side trenger padding på toppen, slik at navbaren ikke dekker over elementene*/
+.top{
+    padding-top: 6rem;
+}
+
+/*Her er en rekke kolonne-diver av ulik størrelse som kan brukes i kombinasjon med hverandre:*/
+.column-25{
+    float: left;
+    width: 25%;
+    padding: 1rem;
+}
+.column-33{
+    float: left;
+    width: 33.33333%;
+    padding: 1rem;
+}
+.column-50{
+    float: left;
+    width: 50%;
+    padding: 1rem;
+}
+.column-66{
+    float: left;
+    width: 66.66666%;
+    padding: 1rem;
+}
+.column-75{
+    float: left;
+    width: 75%;
+    padding: 1rem;
+}
+.column-100{
+    float: left;
+    width: 100%;
+    padding: 1rem;
+}
+
+
+/*En classe for feks. h1 tags. Setter font størrelse, som også skalerer med skjermstørrelsen*/
+.large-font{
+    /*font-size: 5rem;*/
+    font-size: 6vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+}
+
+.xlarge-font{
+    /*font-size: 7rem;*/
+    font-size: 8vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+}
+
+.large-p-font{
+    font-size: 36px;
+}
+
+.button{
+    border: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: teal;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+/*De store og små div'ene i zig-zag faller under hverandre*/
+@media screen and (max-width: 1000px){
+    .column-25,
+    .column-33,
+    .column-50,
+    .column-66,
+    .column-75,
+    .column-100{
+        width: 100%;
+        text-align: center;
+    }
+    img{
+        margin: auto;
+    }
+}
+
+/*Elementer på menyen frosvinner, og hamburgerknapp dukker opp*/
+/*not(:first-child) betyr at den skal beholde den første lenken i menyen, men at de andre skal forsvinne.*/
+@media screen and (max-width: 1000px){
+    .navbar a:not(:first-child){
+        display: none;}
+    .navbar a.icon{
+        float: right;
+        display: block;
+    }
+}
