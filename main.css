@@ -1,5 +1,10 @@
 /*Setter border-box for hele siden. Da er padding og border inkludert i width og height dette gir penere div'er!*/
 /*Fjerner noen standard settings:*/
+/* TODO: 
+    - :not(:target) overflow:hidden
+    - flytte X til ved siden av #Hamburger 
+
+*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -28,6 +33,7 @@ body{
     background-size: cover;
     height: 300px;
     width: 100%;
+    margin-top: 1500px; /* MIDLERTIDIG SLIK AT DEN IKKE OVERLAPPER NAVBAREN */ 
 }
 
 /*Cutout text*/
@@ -88,13 +94,123 @@ body{
     display: none;
 }
 
+/* 3 Hamburger striper*/
 .hamburger{
     width: 35px;
     height: 4px;
     background-color: black;
     margin-top: 5.3px;
+    /* transition: 0.4s; legges til av javascript */
+}
+
+/* Hamburger X*/
+.hamburgerX{
+    width: 35px;
+    height: 4px;
+    background-color: black;
+    margin-top: 5.3px;
+    display: none;
+    z-index: 10;
+    /* transition: 0.4s; legges til av javascript */
+}
+
+/* Hamburger-menyen */
+#Hamburger{
+    display: none;
+    position: fixed;
+    bottom: 0vw;
+    left: 50%;
+    height: 70%;
+    margin-top: -37.5%;
+    width: 42%;
+    margin-left: -21%;
+    z-index: 10;
+    text-align: center;
+    transition: 1s linear;
+}
+
+/* a-tagsene i Hamburger-menyen*/
+#Hamburger a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-bottom: solid 2px transparent;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+
+/* hr-tagsene i Hamburger-menyen*/
+.navHr{
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+/*Fjerner decoration fra a-tags */
+#Hamburger a:visited, #Hamburger a:link{
+    text-decoration: none;
+    color: black;
+}
+
+#Hamburger a.active {
+    background-color: white;
+    color: black;
+}
+
+#Hamburger a:hover {
+    background-color: rgb(1, 163, 163);
+    color: white;
+    border-bottom: solid 2px white;
     transition: 0.4s;
 }
+/*Bakgrunn når man er inne i hamburger-menyen */
+#tint{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 153, 0);
+    opacity: 0.65;
+    display: none;
+    z-index: 9;
+}
+/* viser hamburgermenyen og tinten */
+#HamburgerFull:target #Hamburger, #HamburgerFull:target #tint{
+    display: block;
+}
+
+/*Fjerner hamburgerknappen */
+#HamburgerFull:target .hamburger{
+    display: none;
+}
+
+/*Viser hamburger-X */
+#HamburgerFull:target .hamburgerX{
+    display: block;
+    z-index: 10;
+}
+
+#hamburgerX{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 61px !important;
+    width: 67px !important;
+    
+}
+.bar4{
+    -webkit-transition: rotate(-45deg) translate(-8px,6px); /*For Safari browser, tror jeg*/
+    transform: rotate(-45deg) translate(-3px,5px);
+}
+.bar5{
+    -webkit-transition: rotate(45deg) translate(-8px,-6px); /*For Safari browser, tror jeg*/
+    transform: rotate(45deg) translate(-3px,-5px);
+}
+
 
 /*Hamburgerknapp kan endre seg med javascript, når den klikkes på*/
 .changeButton .bar1{
