@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="team.css">
+    <link rel="icon" href="">
+    <script src="hamburger-icon.js"></script>
+</head>
+<body>
+    <!--En "fixed" navbar-->
+
+    <!-- Usynlig og vanlig navbar -->
+    <div id="HamburgerFull">
+        <div class="navbar"> <!-- Vanlig navbar -->
+            <a href="#Home" class="active">Home</a>
+            <a href="#News">News</a>
+            <a href="#Contact">Contact</a>
+            <a class="icon" onclick="myFunction(this)" href="#HamburgerFull">
+                <div class="hamburger bar1"></div>
+                <div class="hamburger bar2"></div>
+                <div class="hamburger bar3"></div>
+            </a>
+        </div>
+        <div id="Hamburger"> <!-- Usynlig vertikal navbar som kommer opp når hamburgerikonet er klikket -->
+            <a id="hamburgerX" href="#index.html">
+                <div class="hamburgerX bar4"></div>
+                <div class="hamburgerX bar5"></div>        
+            </a>
+            <hr class="navHr" role="navigation" aria-labelledby="mobile navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <hr class="navHr">
+        </div> 
+        <div id="tint">
+        </div>    
+	</div>
+
+    <!--https://www.w3schools.com/howto/howto_css_zig_zag_layout.asp -->
+
+    <!--row 1-->
+    <div class="row top">
+        <div class="column-100">
+            <h1 class="xlarge-font">Meet our Team!</h1>
+        </div> <!--column-100-->
+    </div> <!--row-->
+    
+
+    <!--row 2-->
+    <div class="row row-color team-card-row">
+        <div class="column-25">
+            <div class="team-card">
+                <img src="https://images.pexels.com/photos/145994/pexels-photo-145994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Red Panda"
+                tabindex="0">
+                <div class="team-text">
+                    <h3>Ruth Heidi Westby</h3>
+                    <p>
+                        Manager<br>
+                        westby@bingo.com<br>
+                        Work phone:<br>
+                        555-88-121<br>
+                    </p>
+                </div>
+            </div>
+        </div> <!--column-25-->
+
+        <div class="column-25">
+            <div class="team-card">
+                <img src="https://images.pexels.com/photos/147941/pexels-photo-147941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Red Panda"
+                tabindex="0">
+                <div class="team-text">
+                    <h3>Lise Mari Lorentzen</h3>
+                    <p>
+                        Marketing<br>
+                        lorentzen@bingo.com<br>
+                        Work phone: <br>
+                        555-88-122<br>
+                    </p>
+                </div>
+            </div>
+        </div> <!--column-25-->
+
+        <div class="column-25">
+            <div class="team-card">
+                <img src="https://images.pexels.com/photos/148182/pexels-photo-148182.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Red Panda"
+                tabindex="0">
+                <div class="team-text">
+                    <h3>Erling Mathias Staff</h3>
+                    <p>
+                        Tech Support <br>
+                        staff@bingo.com <br>
+                        Work phone:<br>
+                        555-88-123<br>
+                    </p>
+                </div>
+            </div>
+        </div> <!--column-25-->
+
+        <div class="column-25">
+            <div class="team-card">
+                <img src="https://images.pexels.com/photos/146290/pexels-photo-146290.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Red Panda"
+                tabindex="0">
+                <div class="team-text">
+                    <h3>Andreas W. Rinvoll</h3>
+                    <p>
+                        Consultant <br>
+                        rinvoll@bingo.com <br>
+                        Work phone:<br>
+                        555-88-124<br>
+                    </p>
+                </div>
+            </div>
+        </div> <!--column-25-->
+    </div> <!--row-->
+
+
+    <!--row 3-->
+    <div class="row">
+        <div class="column-33">
+            <h1 class="large-font">Hvem?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, repellat.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur eum recusandae, laboriosam porro quae, officiis quidem ducimus nostrum ratione officia qui eius natus. Dicta, corrupti illum. Ex, modi vero? Tenetur inventore rem eos ex ipsum et eum maxime quae illum.</p>
+            <button class="button">Dette er en test!</button>
+        </div> <!--column-33-->
+
+        <div class="column-33">
+            <h1 class="large-font">Hva?</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, consequuntur?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, sit enim esse molestiae, quas totam harum, maxime aliquam veritatis sapiente exercitationem dolores! Eius porro alias dolores cum, blanditiis et, a tenetur dolore rem saepe nemo labore esse distinctio? Quibusdam, laborum?</p>
+            <button class="button">Dette er en test!</button>
+        </div> <!--column-33-->
+
+        <div class="column-33">
+            <h1 class="large-font">Hvor?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, eius?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nisi nesciunt minus magnam similique praesentium blanditiis quos cumque provident accusamus aperiam, adipisci, necessitatibus unde commodi ullam autem ex voluptas saepe voluptatem repellendus et. Cumque quidem sunt quisquam iusto fugiat aut?</p>
+            <button class="button">Dette er en test!</button>
+        </div> <!--column-33-->
+    </div> <!--row-->
+
+    <div class="row row-color">
+        <div class="column-25">
+            <img src="https://images.pexels.com/photos/1830252/pexels-photo-1830252.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="335" height="auto" alt="">
+        </div> <!--column-25-->
+
+        <div class="column-50">
+            <h1 class="large-font">Mer tekst!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore quod veritatis natus molestias aperiam corrupti facilis impedit, in minus quae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, unde? Voluptas, non sunt aliquam ipsam natus explicabo minus perferendis tempora atque saepe dicta facere quo, inventore reiciendis laboriosam consequuntur nihil repellendus? Recusandae quia assumenda maxime molestias distinctio eligendi numquam ratione. Distinctio, tempora! Neque iusto, itaque rerum suscipit iste vero ipsa!</p>
+        </div> <!--column-50-->
+
+        <div class="column-25">
+            <img src="https://images.pexels.com/photos/1634842/pexels-photo-1634842.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="335" height="auto" alt="">
+        </div> <!--column-25-->
+    </div> <!--row-->
+
+    <div class="footer">
+        <div class="footer-text">FOOTER</div>
+    </div>
+</body>
+</html>

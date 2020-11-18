@@ -334,7 +334,9 @@ img {
     height: 100vh;
 } /* gjør første rad like høy som skjermen*/
 
-#fp-col-1 > h1,h2, p, button{
+
+/*Denne var skrevet litt feil, id tag må med for font i listen - Andreas*/
+#fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p, #fp-col-1 > button{
     text-align: center;
     letter-spacing: 5px;
 }
