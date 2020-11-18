@@ -363,8 +363,17 @@ img {
     color: rgba(0,0,0,0.85);
 }
 
+#fp-row-3  > div > div > p, #fp-row-4 > div > div > p{
+    line-height: 2;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    padding:10px 20px;
+
+}
+
 #fp-row-3, #fp-row-4{
-    height: 50vh;
+    height: 90vh;
+    padding: 1rem;
 }
 
 #fp-row-5>div>img{
