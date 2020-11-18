@@ -1,9 +1,11 @@
+/*Setter litt mindre padding på høyre og venstre side for denne raden, slik at kortene får bedre plass*/
 .team-card-row{
     padding: 1rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
+/*Hele kortet, som inneholder både bildet og tekst i egen div under*/
 .team-card{
     float: center;
 	display: grid;
@@ -14,7 +16,7 @@
     /*min-height: 425px;*/
 }
 
-
+/*Styling for å få runde bilder*/
 .team-card > img {
 	justify-self: center;
 	width: 250px;
@@ -25,6 +27,7 @@
 	object-fit: cover;
 }
 
+/*Styling for å få pen tekst under bildet*/
 .team-text{
     text-align: center;
     align-content: center;
@@ -37,6 +40,7 @@
 	justify-self: center;
 }
 
+/*Litt ekstra justering for h3 og p tags*/
 .team-text > h3{
     margin-bottom: 5px;
     text-decoration: underline;
@@ -49,6 +53,7 @@
     font-weight: bold;
 }
 
+/*Skalerer slik at en rad på fire blir til to rader med to team-card hver*/
 @media screen and (max-width: 1200px){
     .column-25{
         width: 50%;
@@ -56,6 +61,7 @@
     }
 }
 
+/*Skalerer slik to rader med to team-card hver blir til en kolonne med kort nedover*/
 @media screen and (max-width: 650px){
     .column-25{
         width: 100%;
