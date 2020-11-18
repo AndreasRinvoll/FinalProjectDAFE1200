@@ -385,10 +385,12 @@ img {
 
 #fp-row-3>.column-33, #fp-row-4>.column-33{
     float: left;
-    width: 28%;
+    width: 347px;
     padding: 1rem;
     margin: 2.5%;
     height: 100%;
+    margin: 2.5%;
+    height: 575px;
 }
 
 #fp-row-3 > div > div > img, #fp-row-4 > div > div > img{
@@ -401,9 +403,10 @@ img {
 
 
 #fp-row-5>div>img{
-    height: 80vh;
+    height: 500px;
     border-radius:20px;
     min-width: 100%;
+    min-height: 100%;
 }
 
 #fp-row-6{
@@ -426,7 +429,7 @@ img {
     margin: 10px 10% 20px 10%;
     width: 250px;
     height: 250px;
-    object-fit: cover
+    object-fit: cover;
     /* margin: topp, høyre, bunn, venstre*/
 }
 
