@@ -328,7 +328,7 @@ img {
 }
 
 
-/*CSS UNIKT FOR INDEX.HTML*/
+/*CSS FOR INDEX.HTML*/
 
 #fp-row-top{
     height: 100vh;
@@ -361,6 +361,7 @@ img {
     font-weight: normal;
     letter-spacing: 5px;
     color: rgba(0,0,0,0.85);
+    height: 1em;
 }
 
 #fp-row-3  > div > div > p, #fp-row-4 > div > div > p{
@@ -371,10 +372,34 @@ img {
 
 }
 
+
 #fp-row-3, #fp-row-4{
     height: 90vh;
     padding: 1rem;
 }
+#fp-row-3 > div , #fp-row-4 > div{
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 5%;
+    margin: 5px;
+}
+
+#fp-row-3>.column-33, #fp-row-4>.column-33{
+    float: left;
+    width: 28%;
+    padding: 1rem;
+    margin: 2.5%;
+    height: 100%;
+}
+
+#fp-row-3 > div > div > img, #fp-row-4 > div > div > img{
+    border-radius: 50%;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    
+}
+
 
 #fp-row-5>div>img{
     height: 80vh;
@@ -385,7 +410,7 @@ img {
     margin-top: 30%;
 }
 
-/*Slutt CSS UNIKT FOR INDEX.HTML*/
+/*Slutt CSS FOR INDEX.HTML*/
 
 /*De store og små div'ene i zig-zag faller under hverandre*/
 @media screen and (max-width: 1000px){
