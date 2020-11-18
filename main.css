@@ -283,6 +283,17 @@ body{
 
 
 /*En classe for feks. h1 tags. Setter font størrelse, som også skalerer med skjermstørrelsen*/
+
+.small-font{
+    /*font-size: ?rem;*/
+    font-size: 3vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+}
+
+.medium-font{
+    /*font-size: ?rem;*/
+    font-size: 5vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+}
+
 .large-font{
     /*font-size: 5rem;*/
     font-size: 6vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
@@ -295,6 +306,10 @@ body{
 
 .large-p-font{
     font-size: 36px;
+}
+
+.medium-p-font{
+    font-size: 20px;
 }
 
 .button{
@@ -311,6 +326,57 @@ img {
     height: auto;
     max-width: 100%;
 }
+
+
+/*CSS UNIKT FOR INDEX.HTML*/
+
+#fp-row-top{
+    height: 100vh;
+} /* gjør første rad like høy som skjermen*/
+
+#fp-col-1 > h1,h2, p, button{
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+#fp-col-1 > h1{
+    color: red;
+}
+
+
+#fp-col-1 > h2{
+    color: mediumseagreen;
+}
+
+#fp-col-1 > p{
+    margin-top: 10vh;
+    width: 33.3333%;
+
+    padding: 5px;
+    margin-left: 33.3333%
+}
+
+#fp-row-2 > div > h1{
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: rgba(0,0,0,0.85);
+}
+
+#fp-row-3, #fp-row-4{
+    height: 50vh;
+}
+
+#fp-row-5>div>img{
+    height: 80vh;
+    border-radius:20px;
+}
+
+#fp-bottom-text{
+    margin-top: 30%;
+}
+
+/*Slutt CSS UNIKT FOR INDEX.HTML*/
 
 /*De store og små div'ene i zig-zag faller under hverandre*/
 @media screen and (max-width: 1000px){
@@ -338,3 +404,17 @@ img {
         display: block;
     }
 }
+
+/*MEDIA UNIKT FOR INDEX.HTML*/
+@media screen and (max-width: 1150px){
+    #fp-row-5>div>img{
+        display: none;
+    }
+
+    #fp-row-5{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*Slutt MEDIA UNIKT FOR INDEX.HTML*/
