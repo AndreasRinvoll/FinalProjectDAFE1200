@@ -397,13 +397,13 @@ img {
     margin-left: 20%;
     margin-bottom: 10%;
     margin-top: 5%;
-    
 }
 
 
 #fp-row-5>div>img{
     height: 80vh;
     border-radius:20px;
+    min-width: 100%;
 }
 
 #fp-bottom-text{
