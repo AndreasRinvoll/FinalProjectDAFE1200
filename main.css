@@ -42,7 +42,6 @@ body{
     background-size: cover;
     height: 300px;
     width: 100%;
-    margin-top: 1500px; /* MIDLERTIDIG SLIK AT DEN IKKE OVERLAPPER NAVBAREN */ 
 }
 
 /*Cutout text*/
