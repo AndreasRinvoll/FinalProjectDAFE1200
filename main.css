@@ -458,37 +458,116 @@ img {
     background-image url(https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-size cover;
     border-top: solid 4px black;
+    background-color: white;
     height: 300px;
     width: 100%;
 
 }
-
 /*Cutout text*/
 
+
 #links-footer{
- color: white;
- background-color: black;
+ color: black;
  height: 100%;
- border-right: 5px solid black;
+ background-color: lightgrey;
+ padding: 0.2rem;
+ min-width: 200px;
+
+}
+
+.row-50 {
+  float: left;
+  width: 100%;
+  padding: 1rem;
+  }
+
+#links1 {
+  height: 35%;
+  border: 3px solid black;
+}
+
+#links1 p {
+  text-align: center;
+}
+
+#links2 {
+  height: 65%;
+}
+
+
+#links-footer h3 {
+ color: black;
+ text-align: center;
 }
 
 #links-footer a {
- color: white;
- margin-top: 20px;
+ color: black;
 }
 
 #links-footer a:active {
  color: orange;
 }
 
-#contact-footer {
-    height: 100%;
-    border-right: 5px solid black;
+.sources-links {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  padding-top: 20%;
+}
+
+.sources-links li {
+  padding-top 1rem;
+  padding-left: 1rem;
+  text-align: left;
 }
 
 #social-footer {
   height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: lightgrey;
+  padding: 0.5rem;
+   min-width: 200px;
 }
+
+#social{
+margin-top: 3rem;
+text-align: center;
+}
+
+#social a {
+  font-size: 6rem;
+  color: black;
+  padding: 5px;
+}
+
+#social-footer h3 {
+  text-align: center;
+}
+
+#facebook {
+  color #3b5998;
+}
+
+#twitter {
+  color #3b5998;
+}
+
+#instagram {
+  color #3b5998;
+}
+
+#contact-footer {
+  height: 100%;
+  border-style: double;
+  border-color: lightblue;
+  border-width: 7px;
+  background-color #9C9C9C;
+  background-color: teal;
+   min-width: 500px;
+}
+
 
 #contact-footer ol {
   margin-top: 4vh;
@@ -508,13 +587,14 @@ padding-left: 10px;
 #contact-footer h3{
     margin-top: 2vh;
     background-color: white;
-    color: green;
+    color: white;
     font-size: 4vw; /*Skalerbar tekst*/
     font-weight: bold;
     width: 60%;
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
+    background: inherit;
     }
     margin: 0 auto; /*Tekstboks havner i midten*/
     padding: 10px;
@@ -525,6 +605,7 @@ padding-left: 10px;
     left: 50%; /*Tekst plassert i midten*/
     transform: translate(-50%, -50%); /*mer for å plassere tekst*/
     mix-blend-mode: screen; /*Her lages cutout'en!*/
+
 
 /*De store og små div'ene i zig-zag faller under hverandre*/
 @media screen and (max-width: 1000px){
