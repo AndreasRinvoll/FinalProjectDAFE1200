@@ -375,7 +375,12 @@ img {
     font-weight: normal;
     letter-spacing: 5px;
     color: rgba(0,0,0,0.85);
-    height: 1em;
+    height: 0.5em;
+}
+
+#callToAction{
+    margin-top: 50px;
+    color: mediumseagreen;
 }
 
 #fp-row-3  > div > div > p, #fp-row-4 > div > div > p{
