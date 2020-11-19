@@ -491,6 +491,9 @@ img {
     img{
         margin: auto;
     }
+    .full-height{
+        height: initial;
+    }
 }
 
 /*Elementer på menyen frosvinner, og hamburgerknapp dukker opp*/
