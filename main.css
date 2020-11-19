@@ -481,10 +481,53 @@ img {
 
 /* USING APP CSS */
 
-#usingApp-quick-access{
-    width: 100vw;
-    color: red;
+#usingApp-row-top{
+    text-align: center;
 }
+
+#usingApp-row-top > div >  h1{
+    margin-bottom: 60px;
+    color: mediumseagreen;
+    letter-spacing: 5px;
+}
+
+#usingApp-row-top > div >  p{
+    letter-spacing: 5px;
+    text-align: left;
+    margin-left: 10%;
+    line-height: 40px;
+}
+
+#usingApp-row-4{
+    height: 50px;
+    padding-bottom: 100px;
+}
+
+#usingApp-row-4 > div > h1{
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: rgba(0,0,0,0.85);
+    height: 1em;
+}
+
+.tutorialColumn > div {
+    border: 3px solid mediumseagreen;
+    padding: 20px;
+    height: 400px;
+
+}
+
+.tutorialColumn > div > h1{
+    margin-bottom: 15px;
+}
+
+#fp-row-2 > div > button > h1{
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+
 
 /*END USING APP CSS */
 
