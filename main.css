@@ -519,24 +519,31 @@ img {
     border-top: solid 4px black;
     background-color: white;
     height: 300px;
-    width: 100vw;
+    width: 100%;
     display: block;
     box-sizing: border-box;
-
+    background-color: grey;
 }
 
+.mainContent {
+  display: flex;
+}
 
-/*Cutout text*/
+.footer h3 {
+  text-transform: uppercase;
+}
+
 #links-footer{
  color: black;
  height: 100%;
  background-color: lightgrey;
  padding: 0.2rem;
- min-width: 200px;
-
+ display: inline-block;
+ vertical-align: middle;
+ flex-basis: 25%;
 }
 
-.row-50 {
+.row {
   float: left;
   width: 100%;
   padding: 1rem;
@@ -552,7 +559,7 @@ img {
 }
 
 #links2 {
-  height: 65%;
+  height: 40%;
 }
 
 
@@ -584,27 +591,41 @@ img {
 }
 
 #social-footer {
-  height: 100%;
   display: inline-block;
   vertical-align: middle;
   background-color: lightgrey;
-  padding: 0.5rem;
-   min-width: 200px;
+  padding: 1rem;
+  flex-basis: 25%;
 }
 
 #social{
 margin-top: 3rem;
+height: 50%;
+bottom: 0 auto;
+padding-top: 5.9rem;
 text-align: center;
 }
 
 #social a {
-  font-size: 6rem;
+  font-size: 4rem;
   color: black;
-  padding: 5px;
+  text-align: center;
+}
+
+#social a span{
+  height: 3.8rem;
+  width: 3.8rem;
+  background: yellow;
+  border-radius: 8px;
+}
+
+#social a span:hover{
+background: red;
 }
 
 #social-footer h3 {
   text-align: center;
+  font-size: 2rem;
 }
 
 #facebook {
@@ -621,13 +642,15 @@ text-align: center;
 
 #contact-footer {
   height: 100%;
-  border-style: double;
-  border-color: lightblue;
+  border-style double;
+  border-color lightblue;
   border-width: 7px;
   background-color #9C9C9C;
-  background-color: teal;
-  background-color lightgrey;
-   min-width: 200px;
+  background-color teal;
+  background-color: lightgrey;
+  flex-basis: 50%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 
