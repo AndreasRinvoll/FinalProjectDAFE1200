@@ -341,8 +341,9 @@ img {
 
 /*CSS FOR INDEX.HTML*/
 
+/*Trenger ikke denne når vi bruker klassen "full-height" - Andreas*/
 #fp-row-top{
-    height: 100vh;
+    /*height: 100vh;*/
 } /* gjør første rad like høy som skjermen*/
 
 
