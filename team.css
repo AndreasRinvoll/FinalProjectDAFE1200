@@ -53,9 +53,14 @@
     font-weight: bold;
 }
 
+/*Gir bildet i den øverste raden litt mer luft på toppen*/
+#toprow-img{
+    padding-top: 2rem;
+}
+
 /*Skalerer slik at en rad på fire blir til to rader med to team-card hver*/
 @media screen and (max-width: 1200px){
-    .column-25{
+    .card-column{
         width: 50%;
         text-align: center;
     }
@@ -63,7 +68,7 @@
 
 /*Skalerer slik to rader med to team-card hver blir til en kolonne med kort nedover*/
 @media screen and (max-width: 650px){
-    .column-25{
+    .card-column{
         width: 100%;
         text-align: center;
     }
