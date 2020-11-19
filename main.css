@@ -460,7 +460,9 @@ img {
     border-top: solid 4px black;
     background-color: white;
     height: 300px;
-    width: 100%;
+    width: 100vw;
+    display: block;
+    box-sizing: border-box;
 
 }
 /*Cutout text*/
@@ -565,7 +567,8 @@ text-align: center;
   border-width: 7px;
   background-color #9C9C9C;
   background-color: teal;
-   min-width: 500px;
+  background-color lightgrey;
+   min-width: 200px;
 }
 
 
@@ -620,6 +623,9 @@ padding-left: 10px;
     }
     img{
         margin: auto;
+    }
+    .footer {
+
     }
 }
 
