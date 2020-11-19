@@ -386,7 +386,9 @@ img {
 
 }
 
-
+#fp-row-3  > div > div > h2, #fp-row-4 > div > div > h2{
+    text-align: center;
+}
 #fp-row-3, #fp-row-4{
     height: 90vh;
     padding: 1rem;
@@ -476,6 +478,15 @@ img {
 }
 
 /*Slutt CSS FOR INDEX.HTML*/
+
+/* USING APP CSS */
+
+#usingApp-quick-access{
+    width: 100vw;
+    color: red;
+}
+
+/*END USING APP CSS */
 
 /*De store og små div'ene i zig-zag faller under hverandre*/
 @media screen and (max-width: 1000px){
