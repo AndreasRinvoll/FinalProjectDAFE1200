@@ -571,67 +571,6 @@ img {
 
 /*END USING APP CSS */
 
-/*De store og små div'ene i zig-zag faller under hverandre*/
-@media screen and (max-width: 1000px){
-    .column-25,
-    .column-33,
-    .column-50,
-    .column-66,
-    .column-75,
-    .column-100{
-        width: 100%;
-        text-align: center;
-    }
-    img{
-        margin: auto;
-    }
-    .full-height{
-        height: initial;
-    }
-    .column-border{
-        border-right: none;
-    }
-    #links-footer {
-      border-top: 5px solid black;
-      border-top-style: double;
-    }
-}
-/* media tag for linje over siste element i footer*/
-@media screen and (max-width: 1152px){
-  #links-footer {
-    border-top: 5px solid black;
-    border-top-style: double;
-  }
-}
-/* media tag for at elementene i footer skal stable seg*/
-@media screen and (max-width: 815px) {
-
-.mainContent {
-    max-width: 600px;
-    height:fit-content;
-}
-#contact-footer {
-  width: 100%;
-}
-#social-footer {
-  width: 100%;
-  border-top: 5px solid black;
-  border-top-style: double;
-}
-#links-footer {
-  width: 100%;
-  border-top: 5px solid black;
-  border-top-style: double;
-}
-#links-footer ol{
-  text-align: center;
-}
-
-.footer {
-  height: fit-content;
-}
-}
-
 /*Footer*/
 .footer{
     overflow:visible;
@@ -761,22 +700,73 @@ padding: 0 2px;
 background-color: cyan;
 }
 
-.row-40 {
-  padding: 1rem;
-  height: 40%;
-  width: 100%;
-}
-
-.row-60 {
-  padding: 1rem;
-  height: 60%;
-  width: 100%;
-}
-
 #social {
   margin-top: 0rem;
 }
+ /*slutt på footer*/
 
+ /*begynnelse media tags*/
+
+/*De store og små div'ene i zig-zag faller under hverandre*/
+@media screen and (max-width: 1000px){
+    .column-25,
+    .column-33,
+    .column-50,
+    .column-66,
+    .column-75,
+    .column-100{
+        width: 100%;
+        text-align: center;
+    }
+    img{
+        margin: auto;
+    }
+    .full-height{
+        height: initial;
+    }
+    .column-border{
+        border-right: none;
+    }
+    #links-footer {
+      border-top: 5px solid black;
+      border-top-style: double;
+    }
+}
+/* media tag for linje over siste element i footer*/
+@media screen and (max-width: 1152px){
+  #links-footer {
+    border-top: 5px solid black;
+    border-top-style: double;
+  }
+}
+/* media tag for at elementene i footer skal stable seg*/
+@media screen and (max-width: 815px) {
+
+.mainContent {
+    max-width: 600px;
+    height:fit-content;
+}
+#contact-footer {
+  width: 100%;
+}
+#social-footer {
+  width: 100%;
+  border-top: 5px solid black;
+  border-top-style: double;
+}
+#links-footer {
+  width: 100%;
+  border-top: 5px solid black;
+  border-top-style: double;
+}
+#links-footer ol{
+  text-align: center;
+}
+
+.footer {
+  height: fit-content;
+}
+}
 
 /*Elementer på menyen frosvinner, og hamburgerknapp dukker opp*/
 /*not(:first-child) betyr at den skal beholde den første lenken i menyen, men at de andre skal forsvinne.*/
