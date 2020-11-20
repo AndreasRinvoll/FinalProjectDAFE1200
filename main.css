@@ -575,6 +575,8 @@ img {
 @media screen and (max-width: 1000px){
     .column-25,
     .column-33,
+    .column-30,
+    .column-40,
     .column-50,
     .column-66,
     .column-75,
@@ -625,21 +627,34 @@ img {
   height: 300px;
 }
 
+.mainContent h3 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
 #contact-footer {
 border-top: 2px solid black;
 }
 
-#contact-footer h3 {
-
+#contact-footer ol {
+margin-top: 2vh;
+padding-top: 25px;
+text-align: left;
 }
 
-#contact-footer ol {
-
+#contact-footer li {
+padding-left: 2.8rem;
 }
 
 #links-footer {
-
+border-top: 2px solid black;
   }
+
+.links {
+  padding-top: 33%;
+}
 
 .links h3 {
   text-align: center;
@@ -652,33 +667,46 @@ border-top: 2px solid black;
 
 #social-footer {
 border: 2px solid black;
+padding: 0rem;
 }
 
 #links1, #links2 {
   text-align: center;
 }
 
-h3 {
-  font-size: 2rem;
+#social {
+  margin: 20px 0 0 0;
 }
 
-#social {
-
+#social a{
+color: black;
+padding: 0 2px;
 }
 
 #social a span{
   padding: 10px;
   font-size: 70px;
+  background: darkgrey;
+  border-radius: 8px;
+  height: 70px;
+  width: 80px;
+  line-height: 50px;
+}
+
+#links2 #social a span:hover{
+background-color: cyan;
 }
 
 .row-40 {
   padding: 1rem;
   height: 40%;
+  width: 100%;
 }
 
 .row-60 {
   padding: 1rem;
   height: 60%;
+  width: 100%;
 }
 
 #social {
