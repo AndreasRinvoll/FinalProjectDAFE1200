@@ -634,6 +634,7 @@ flex-wrap: wrap;
 #contact-footer ol {
 padding-top: 4rem;
 text-align: left;
+font-size: 1.3rem;
 }
 
 #contact-footer li {
@@ -643,7 +644,7 @@ text-align: left;
 
 #contact-footer .fas {
   font-size: 30px;
-  padding-right: 7%;
+  padding-right: 5%;
 }
 
 #links-footer {
