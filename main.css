@@ -596,14 +596,14 @@ img {
       border-top-style: double;
     }
 }
-
-@media screen and (max-width: 1215px){
+/* media tag for linje over siste element i footer*/
+@media screen and (max-width: 1152px){
   #links-footer {
     border-top: 5px solid black;
     border-top-style: double;
   }
 }
-
+/* media tag for at elementene i footer skal stable seg*/
 @media screen and (max-width: 815px) {
 
 .mainContent {
@@ -686,7 +686,6 @@ flex-wrap: wrap;
 .footer #contact-footer{
   display: inline-block;
   vertical-align: top;
-  flex: 0 2 25em;
 }
 
 #contact-footer {
@@ -694,13 +693,18 @@ flex-wrap: wrap;
 }
 
 #contact-footer ol {
-margin-top: 3.2rem;
-padding-top: 25px;
+padding-top: 4rem;
 text-align: left;
 }
 
 #contact-footer li {
-padding-left: 2.8rem;
+padding-left: 0.7rem;
+text-align: left;
+}
+
+#contact-footer .fas {
+  font-size: 30px;
+  padding-right: 7%;
 }
 
 #links-footer {
