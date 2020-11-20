@@ -306,8 +306,12 @@ body{
 }
 
 .large-font{
-    /*font-size: 5rem;*/
-    font-size: 6vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+    /*font-size: 6rem;*/ /*Ca det samme som 6vw, for full skjerm*/
+    /*font-size: 6vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+
+    font-size: max(6vw, 3rem); /*Dette kan være en veldig god løsning, her er fonten skalerbar fra 6vw og ned til 50px. Da blir ikke teksten for liten!*/
+
+    /*Dette er visst en form for "Clamping" og kan ha dårlig støtte på eldre browsers. Det kan derfor være tryggere å bruke meda tags, ihvertfall som backup!*/
 }
 
 .xlarge-font{
@@ -332,10 +336,20 @@ body{
     background-color: teal;
 }
 
+.large-button{
+    padding: 2rem;
+    font-size: larger;
+}
+
 img {
     display: block;
     height: auto;
     max-width: 100%;
+}
+
+/*Gir en linje på høyre hånd slik at kolonner som står tett blir lettere å skille fra hverandre*/
+.column-border{
+    border-right: solid 0.3rem black;
 }
 
 
@@ -553,6 +567,9 @@ img {
     .full-height{
         height: initial;
     }
+    .column-border{
+        border-right: none;
+    }
 }
 
 /*Elementer på menyen frosvinner, og hamburgerknapp dukker opp*/
@@ -563,6 +580,16 @@ img {
     .navbar a.icon{
         float: right;
         display: block;
+    }
+}
+
+/*Litt mindre padding på rows, i mobiltelefonmodus*/
+@media screen and (max-width: 400px){
+    .row{
+        padding: 1rem;
+    }
+    .top{
+        padding-top: 6rem;
     }
 }
 
