@@ -591,26 +591,56 @@ img {
     .column-border{
         border-right: none;
     }
-    .footer {
-
+    #links-footer {
+      border-top: 5px solid black;
+      border-top-style: double;
     }
 }
 
+@media screen and (max-width: 1215px){
+  #links-footer {
+    border-top: 5px solid black;
+    border-top-style: double;
+  }
+}
 
-@media (max-width: 880px) {
+@media screen and (max-width: 815px) {
 
+.mainContent {
+    max-width: 600px;
+    height:fit-content;
+}
+#contact-footer {
+  width: 100%;
+}
+#social-footer {
+  width: 100%;
+  border-top: 5px solid black;
+  border-top-style: double;
+}
+#links-footer {
+  width: 100%;
+  border-top: 5px solid black;
+  border-top-style: double;
+}
+#links-footer ol{
+  text-align: center;
+}
 
-
+.footer {
+  height: fit-content;
+}
 }
 
 /*Footer*/
 .footer{
-    overflow: hidden;
+    overflow:visible;
     background-image url(https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-size cover;
     background-color: lightgrey;
     box-sizing: border-box;
-    height: 300px;
+    position: absolute;
+    height 300px;
     width: 100%;
 }
 
@@ -635,6 +665,14 @@ img {
   height: 300px;
 }
 
+.mainContent {
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
 .mainContent h3 {
   text-transform: uppercase;
   font-size: 3rem;
@@ -647,14 +685,15 @@ img {
 .footer #contact-footer{
   display: inline-block;
   vertical-align: top;
+  flex: 0 2 25em;
 }
 
 #contact-footer {
-border-top: 2px solid black;
+  flex: 0 2 25em;
 }
 
 #contact-footer ol {
-margin-top: 2vh;
+margin-top: 3.2rem;
 padding-top: 25px;
 text-align: left;
 }
@@ -664,11 +703,11 @@ padding-left: 2.8rem;
 }
 
 #links-footer {
-border-top: 2px solid black;
+flex: 1 2 20em;
   }
 
-.links {
-  padding-top: 33%;
+.sources-links li {
+  text-align: center;
 }
 
 .links h3 {
@@ -681,12 +720,15 @@ border-top: 2px solid black;
 }
 
 #social-footer {
-border: 2px solid black;
-padding: 0rem;
+flex: 1 2 20em;
 }
 
 #links1, #links2 {
   text-align: center;
+}
+
+#links1 {
+  padding-bottom: 10%;
 }
 
 #social {
