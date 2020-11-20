@@ -324,7 +324,15 @@ body{
 }
 
 .medium-p-font{
-    font-size: 20px;
+    font-size: 30px;
+}
+
+#colortext{
+    color: mediumseagreen;
+}
+
+#boldtext {
+    font-weight: bold;
 }
 
 .button{
@@ -389,7 +397,8 @@ img {
     font-weight: normal;
     letter-spacing: 5px;
     color: rgba(0,0,0,0.85);
-    height: 0.5em;
+    height: 0.8em;
+    margin-bottom: 30px;
 }
 
 #callToAction{
@@ -436,6 +445,13 @@ img {
     margin-top: 5%;
 }
 
+#fp-row-pitch > div > p{
+    line-height: 1.5;
+}
+
+#fp-row-pitch-2{
+    border-top: solid 100px white;
+}
 
 #fp-row-5>div>img{
     height: 500px;
@@ -501,20 +517,30 @@ img {
 /* USING APP CSS */
 
 #usingApp-row-top{
-    text-align: center;
+    text-align: left;
 }
 
 #usingApp-row-top > div >  h1{
-    margin-bottom: 60px;
+    margin-top: 5%;
+    margin-bottom: 30px;
     color: mediumseagreen;
     letter-spacing: 5px;
-}
+} 
 
 #usingApp-row-top > div >  p{
     letter-spacing: 5px;
     text-align: left;
-    margin-left: 10%;
     line-height: 40px;
+}
+
+
+#usingApp-row-top > div >  img{
+    border-radius: 1%;
+    width: 80%;
+}
+
+#usingApp-quickAccess{
+    border: solid mediumseagreen 2px;
 }
 
 #usingApp-row-4{
@@ -547,6 +573,13 @@ img {
     letter-spacing: 5px;
 }
 
+#img-row{
+    padding: 0;
+}
+
+#img-row > .column-100{
+    padding: 0;
+}
 
 /*END USING APP CSS */
 
@@ -606,3 +639,15 @@ img {
 }
 
 /*Slutt MEDIA UNIKT FOR INDEX.HTML*/
+
+/*MEDIA UNIKT FOR USINGAPP.HTML*/
+@media screen and (max-width: 1000px){
+   #usingApp-row-top > div >  img{
+    display: none;
+}
+    }
+}
+
+
+
+/*Slutt MEDIA UNIKT FOR USINGAPP.HTML*/
