@@ -582,8 +582,9 @@ img {
 .footer{
     overflow: hidden;
     position: relative;
-    background-image: url(https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-    background-size: cover;
+    background-image url(https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size cover;
+    background-color: lightgrey;
     height: 300px;
     width: 100%;
 }
@@ -603,6 +604,18 @@ img {
     left: 50%; /*Tekst plassert i midten*/
     transform: translate(-50%, -50%); /*mer for å plassere tekst*/
     mix-blend-mode: screen; /*Her lages cutout'en!*/
+}
+
+#contact-footer {
+
+}
+
+#links-footer {
+
+  }
+
+#social-footer {
+
 }
 
 /*Elementer på menyen frosvinner, og hamburgerknapp dukker opp*/
