@@ -575,8 +575,6 @@ img {
 @media screen and (max-width: 1000px){
     .column-25,
     .column-33,
-    .column-30,
-    .column-40,
     .column-50,
     .column-66,
     .column-75,
@@ -593,15 +591,25 @@ img {
     .column-border{
         border-right: none;
     }
+    .footer {
+
+    }
+}
+
+
+@media (max-width: 880px) {
+
+
+
 }
 
 /*Footer*/
 .footer{
     overflow: hidden;
-    position: relative;
     background-image url(https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-size cover;
     background-color: lightgrey;
+    box-sizing: border-box;
     height: 300px;
     width: 100%;
 }
@@ -632,6 +640,13 @@ img {
   font-size: 3rem;
   margin-top: 1rem;
   text-align: center;
+}
+
+.footer #social-footer,
+.footer #links-footer,
+.footer #contact-footer{
+  display: inline-block;
+  vertical-align: top;
 }
 
 #contact-footer {
