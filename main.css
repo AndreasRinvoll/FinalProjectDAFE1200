@@ -30,6 +30,10 @@ html, body{
     background-image: url(joe-whitebrick.jpg);
     background-size: cover;
 }
+/* text field in full height, forsiden ligger på fp-row-top*/
+.full-height-text {
+  background-color: lightgrey;
+}
 
 /*Farge på bakgrunnen*/
 body{
@@ -355,7 +359,7 @@ img {
 
 /*Trenger ikke denne når vi bruker klassen "full-height" - Andreas*/
 #fp-row-top{
-  background-image: url(joe-whitebrick.jpg);
+  background-image: url(brick-michael.jpg);
   background-size: cover;
     /*height: 100vh;*/
 } /* gjør første rad like høy som skjermen*/
