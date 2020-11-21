@@ -677,6 +677,7 @@ flex: 1 2 20em;
 #social-footer {
   flex: 1 2 20em;
   border-left: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
 }
 
 #links1, #links2 {
