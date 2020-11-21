@@ -353,6 +353,8 @@ img {
 
 /*Trenger ikke denne når vi bruker klassen "full-height" - Andreas*/
 #fp-row-top{
+  background-image: url(final project/wood-keith.jpg);
+  background-size: cover;
     /*height: 100vh;*/
 } /* gjør første rad like høy som skjermen*/
 
