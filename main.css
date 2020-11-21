@@ -384,8 +384,8 @@ img {
     font-weight: normal;
     letter-spacing: 5px;
     color: rgba(0,0,0,0.85);
-    height: 0.8em;
-    margin-bottom: 30px;
+    height: 0.2em;
+
 }
 
 #callToAction{
@@ -393,7 +393,16 @@ img {
     color: mediumseagreen;
 }
 
-#fp-row-3  > div > div > p, #fp-row-4 > div > div > p{
+#fp-row-3{
+    padding-bottom: 0;
+}
+
+#fp-row-4{
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+#fp-row-3  > div > div > div > p, #fp-row-4 > div > div > div > p{
     line-height: 2;
     letter-spacing: 2px;
     margin-top: 10px;
@@ -401,35 +410,22 @@ img {
 
 }
 
-#fp-row-3  > div > div > h2, #fp-row-4 > div > div > h2{
+#fp-row-3  > div > div> div > h2, #fp-row-4 > div> div > div > h2{
     text-align: center;
 }
-#fp-row-3, #fp-row-4{
-    height: 90vh;
-    padding: 1rem;
-}
-#fp-row-3 > div , #fp-row-4 > div{
+
+#fp-row-3 > div> div  , #fp-row-4 > div> div{
     background-color: rgba(255,255,255,0.8);
     border-radius: 5%;
-    margin: 5px;
-}
-
-#fp-row-3>.column-33, #fp-row-4>.column-33{
-    float: left;
-    width: 347px;
     padding: 1rem;
-    margin: 2.5%;
-    height: 100%;
-    margin: 2.5%;
-    height: 575px;
 }
 
-#fp-row-3 > div > div > img, #fp-row-4 > div > div > img{
+
+#fp-row-3 > div> div > div > img, #fp-row-4 > div> div > div > img{
     border-radius: 50%;
-    width: 60%;
-    margin-left: 20%;
-    margin-bottom: 10%;
-    margin-top: 5%;
+    width: 250px;
+    margin: 25px auto 25px auto;
+
 }
 
 #fp-row-pitch > div > p{
@@ -561,6 +557,10 @@ img {
 
 #img-row{
     padding: 0;
+}
+
+#fp-pitch-title{
+    padding-bottom: 70px;
 }
 
 #img-row > .column-100{
@@ -796,7 +796,9 @@ background-color: cyan;
         height: 600px;
     } /* gjør at intervju-divene er like lange i fullskjerm*/
 
-
+    #fp-row-3 > div> div  , #fp-row-4 > div> div{
+        min-height: 550px;
+    }
 }
 
 
@@ -819,6 +821,14 @@ background-color: cyan;
    #usingApp-row-top > div >  img{
     display: none;
 }
+    }
+
+  
+
+@media screen and (min-width: 1000px){
+
+    #fp-row-3 > div> div  , #fp-row-4 > div> div{
+        height: 620px;
     }
 }
 
