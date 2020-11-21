@@ -428,7 +428,7 @@ img {
     border: 1px solid black;
 
     min-width: 250px;
-  
+
     height: 250px;
     object-fit: cover;
 
@@ -672,7 +672,9 @@ flex: 1 2 20em;
 }
 
 #social-footer {
-flex: 1 2 20em;
+  flex: 1 2 20em;
+  border-right: 2px solid darkgrey;
+  border-left: 2px solid darkgrey;
 }
 
 #links1, #links2 {
@@ -680,8 +682,12 @@ flex: 1 2 20em;
 }
 
 #links1 {
-  padding-bottom: 10%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  padding: 0.4rem;
 }
+
+
 
 #social {
   margin: 20px 0 0 0;
@@ -744,6 +750,10 @@ background-color: cyan;
     border-top: 5px solid black;
     border-top-style: double;
   }
+  #social-footer {
+    border-right: 0px;
+    border-left: 2px solid darkgrey;
+  }
 }
 /* media tag for at elementene i footer skal stable seg*/
 @media screen and (max-width: 815px) {
@@ -759,6 +769,7 @@ background-color: cyan;
   width: 100%;
   border-top: 5px solid black;
   border-top-style: double;
+  border-left: 0px;
 }
 #links-footer {
   width: 100%;
@@ -798,7 +809,7 @@ background-color: cyan;
 /*MEDIA UNIKT FOR INDEX.HTML*/
 
 @media screen and (min-width: 1000px){
-    
+
     #fp-row-6 > div > div{
         height: 600px;
     } /* gjør at intervju-divene er like lange i fullskjerm*/
@@ -830,7 +841,7 @@ background-color: cyan;
 }
     }
 
-  
+
 
 @media screen and (min-width: 1000px){
 
