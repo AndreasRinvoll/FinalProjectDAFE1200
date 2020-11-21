@@ -543,12 +543,20 @@ img {
 .tutorialColumn > div {
     border: 3px solid mediumseagreen;
     padding: 20px;
-    height: 400px;
 
 }
 
-.tutorialColumn > div > h1{
+.tutorialColumn > div > div> h1{
     margin-bottom: 15px;
+}
+.tutorialColumn > div > div > div{
+    height: 50px;
+}
+.tutorialColumn > div > div > div > a > img {
+    width: 50px;
+    margin: 0 10px;
+    float: right;
+
 }
 
 #fp-row-2 > div > button > h1{
@@ -841,6 +849,9 @@ background-color: cyan;
 
     #fp-row-3 > div> div  , #fp-row-4 > div> div{
         height: 620px;
+    }
+    .tutorialColumn > div {
+    min-height: 420px;
     }
 }
 
