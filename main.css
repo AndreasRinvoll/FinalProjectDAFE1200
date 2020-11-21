@@ -522,7 +522,8 @@ img {
 }
 
 #usingApp-quickAccess{
-    border: solid mediumseagreen 2px;
+    border-top: solid mediumseagreen 2px;
+     border-bottom: solid mediumseagreen 2px;
 }
 
 #usingApp-row-4{
