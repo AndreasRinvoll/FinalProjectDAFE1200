@@ -27,6 +27,8 @@ html, body{
 /*Gi første rad denne klassen, i tillegg til de andre klassene den skal ha*/
 .full-height{
     height: 100%;
+    background-image: url(joe-whitebrick.jpg);
+    background-size: cover;
 }
 
 /*Farge på bakgrunnen*/
@@ -353,10 +355,14 @@ img {
 
 /*Trenger ikke denne når vi bruker klassen "full-height" - Andreas*/
 #fp-row-top{
-  background-image: url(final project/wood-keith.jpg);
+  background-image: url(joe-whitebrick.jpg);
   background-size: cover;
     /*height: 100vh;*/
 } /* gjør første rad like høy som skjermen*/
+
+#fp-col-1 {
+  background-color: lightgrey;
+}
 
 
 #fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p, #fp-col-1 > button{
