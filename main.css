@@ -619,8 +619,8 @@ img {
 
 /* editing text sizing on mission*/
 
-#MissionP1 {
-  font-size: 1.5rem;
+.missionP {
+  font-size:1.5rem;
 }
 
 /*Footer*/
