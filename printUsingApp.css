@@ -370,7 +370,7 @@ img {
 
 
 #fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p, #fp-col-1 > button{
-    text-align: center;
+    text-align: left;
     letter-spacing: 5px;
 }
 
@@ -387,7 +387,6 @@ img {
 }
 
 #fp-col-1 > p{
-    margin-top: 10vh;
     width: 33.3333%;
     margin-left: 33.3333%;
     padding: 5px;

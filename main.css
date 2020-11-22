@@ -359,38 +359,43 @@ img {
 /*CSS FOR INDEX.HTML*/
 
 #fp-row-top{
-   /* background-image: url("test.jpg");
+   background-image: url("kjeks4.jpg");
 
   height: 100%;
   background-position: center; 
   background-repeat: no-repeat; 
-  background-size: cover; */
+  background-size: cover; 
  }
 
 
 #fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p, #fp-col-1 > button{
-    text-align: center;
+    text-align: left;
     letter-spacing: 5px;
+    width: 75%;
 }
 
 #fp-col-1 > h1{
     color: black;
+    background-color: rgba(255,255,255, 0.0);
+   
+    border-radius: 1%;
 }
 
 
 #fp-col-1 > h2{
     color: mediumseagreen;
-    text-align: center;
-    width: 70%;
-    margin-left: 15%;
+    text-align: left;
+    background-color: rgba(255,255,255, 0.0);
+   
+    
 }
 
 #fp-col-1 > p{
-    margin-top: 10vh;
-    width: 33.3333%;
-    margin-left: 33.3333%;
+    margin-top: 2vh;
+    
+    background-color: rgba(255,255,255, 0.0);
     padding: 5px;
-   text-align: center;
+   text-align: left;
 
 }
 
