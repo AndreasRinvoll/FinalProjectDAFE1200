@@ -351,10 +351,14 @@ img {
 
 /*CSS FOR INDEX.HTML*/
 
-/*Trenger ikke denne når vi bruker klassen "full-height" - Andreas*/
 #fp-row-top{
-    /*height: 100vh;*/
-} /* gjør første rad like høy som skjermen*/
+   /* background-image: url("test.jpg");
+
+  height: 100%;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; */
+ }
 
 
 #fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p, #fp-col-1 > button{
@@ -363,20 +367,24 @@ img {
 }
 
 #fp-col-1 > h1{
-    color: red;
+    color: black;
 }
 
 
 #fp-col-1 > h2{
     color: mediumseagreen;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
 }
 
 #fp-col-1 > p{
     margin-top: 10vh;
     width: 33.3333%;
-
+    margin-left: 33.3333%;
     padding: 5px;
-    margin-left: 33.3333%
+   text-align: center;
+
 }
 
 #fp-row-2 > div > h1{
