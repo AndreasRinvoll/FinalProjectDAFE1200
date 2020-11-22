@@ -32,7 +32,7 @@ html, body{
 }
 /* text field in full height, forsiden ligger på fp-row-top*/
 .full-height-text {
-  background-color: lightgrey;
+  background-color: #EEEDED;
 }
 
 /*Farge på bakgrunnen*/
@@ -612,6 +612,12 @@ img {
 }
 
 /*END USING APP CSS */
+
+/* editing text sizing on mission*/
+
+#MissionP1 {
+  font-size: 1.5rem;
+}
 
 /*Footer*/
 .footer{
