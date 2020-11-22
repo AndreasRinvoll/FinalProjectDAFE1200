@@ -1,4 +1,5 @@
-/*Setter border-box for hele siden. Da er padding og border inkludert i width og height dette gir penere div'er!*/
+@media print{
+	/*Setter border-box for hele siden. Da er padding og border inkludert i width og height dette gir penere div'er!*/
 /*Fjerner noen standard settings:*/
 /* TODO:
     - :not(:target) overflow:hidden
@@ -828,33 +829,7 @@ background-color: cyan;
     }
 }
 
-/*MEDIA UNIKT FOR INDEX.HTML*/
 
-@media screen and (min-width: 1000px){
-
-    #fp-row-6 > div > div{
-        min-height: 670px;
-    } /* gjør at intervju-divene er like lange i fullskjerm*/
-
-    #fp-row-3 > div> div  , #fp-row-4 > div> div{
-        min-height: 550px;
-    }
-}
-
-
-
-@media screen and (max-width: 1150px){
-    #fp-row-5>div>img{
-        display: none;
-    }
-
-    #fp-row-5{
-        width: 100%;
-        text-align: center;
-    }
-}
-
-/*Slutt MEDIA UNIKT FOR INDEX.HTML*/
 
 /*MEDIA UNIKT FOR USINGAPP.HTML*/
 @media screen and (max-width: 1000px){
@@ -878,3 +853,5 @@ background-color: cyan;
 
 
 /*Slutt MEDIA UNIKT FOR USINGAPP.HTML*/
+
+}
