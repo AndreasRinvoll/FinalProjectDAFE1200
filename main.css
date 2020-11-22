@@ -636,12 +636,12 @@ img {
 /*END USING APP CSS */
 
 /* editing text sizing on mission*/
-
 .missionP {
   font-size:1.5rem;
 }
 
-/*Footer*/
+
+/*Footer  CSS*/
 .footer{
     overflow:visible;
     background-image url(https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
@@ -653,28 +653,13 @@ img {
     width: 100%;
 }
 
-/*Cutout text*/
-.footer-text{
-    background-color: white;
-    color: black;
-    font-size: 10vw; /*Skalerbar tekst*/
-    font-weight: bold;
-    margin: 0 auto; /*Tekstboks havner i midten*/
-    padding: 10px;
-    width: 50%;
-    text-align: center; /*Sentrerer teks*/
-    position: absolute; /*Setter posisjon*/
-    top: 50%; /*Tekst plassert i midten*/
-    left: 50%; /*Tekst plassert i midten*/
-    transform: translate(-50%, -50%); /*mer for å plassere tekst*/
-    mix-blend-mode: screen; /*Her lages cutout'en!*/
-}
-
+/*setting min height for responsiveness*/
 .footerCol {
   min-height: 250px;
   margin: 1rem;
 }
 
+/*making a flexbox*/
 .mainContent {
 margin: auto;
 display: flex;
@@ -697,6 +682,7 @@ flex-wrap: wrap;
   vertical-align: top;
 }
 
+/*CONTACT  CSS*/
 #contact-footer {
   flex: 0 2 25em;
 }
@@ -717,6 +703,55 @@ text-align: left;
   padding-right: 5%;
 }
 
+/*SOCIAL  CSS*/
+#social-footer {
+  flex: 1 2 20em;
+  border-left: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+}
+
+/*TWO ROWS*/
+#links1, #links2 {
+  text-align: center;
+}
+
+#links1 {
+  padding-bottom: 5%;
+  padding-top: 5%;
+  padding: 0.4rem;
+}
+
+/*SOCIAL ICONS*/
+#social {
+  margin: 20px 0 0 0;
+}
+
+#social a{
+color: black;
+padding: 0 2px;
+}
+
+/*hover-responsive bakgrunn*/
+#social a span{
+  padding: 10px;
+  font-size: 70px;
+  background: darkgrey;
+  border-radius: 8px;
+  height: 70px;
+  width: 80px;
+  line-height: 50px;
+}
+
+#links2 #social a span:hover{
+background-color: cyan;
+}
+
+#social {
+  margin-top: 0rem;
+}
+
+/*LINKS  CSS*/
+
 #links-footer {
 flex: 1 2 20em;
   }
@@ -736,51 +771,8 @@ flex: 1 2 20em;
   padding-bottom: 1.5rem;
 }
 
-#social-footer {
-  flex: 1 2 20em;
-  border-left: 2px solid darkgrey;
-  border-right: 2px solid darkgrey;
-}
-
-#links1, #links2 {
-  text-align: center;
-}
-
-#links1 {
-  padding-bottom: 5%;
-  padding-top: 5%;
-  padding: 0.4rem;
-}
-
-
-
-#social {
-  margin: 20px 0 0 0;
-}
-
-#social a{
-color: black;
-padding: 0 2px;
-}
-
-#social a span{
-  padding: 10px;
-  font-size: 70px;
-  background: darkgrey;
-  border-radius: 8px;
-  height: 70px;
-  width: 80px;
-  line-height: 50px;
-}
-
-#links2 #social a span:hover{
-background-color: cyan;
-}
-
-#social {
-  margin-top: 0rem;
-}
  /*slutt på footer*/
+
 
  /*begynnelse media tags*/
 
