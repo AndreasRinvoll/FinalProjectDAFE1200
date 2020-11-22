@@ -27,6 +27,12 @@ html, body{
 /*Gi første rad denne klassen, i tillegg til de andre klassene den skal ha*/
 .full-height{
     height: 100%;
+    background-image: url(joe-whitebrick.jpg);
+    background-size: cover;
+}
+/* text field in full height, forsiden ligger på fp-row-top*/
+.full-height-text {
+  background-color: lightgrey;
 }
 
 /*Farge på bakgrunnen*/
@@ -362,10 +368,14 @@ img {
    background-image: url("kjeks4.jpg");
 
   height: 100%;
-  background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
  }
+
+#fp-col-1 {
+
+}
 
 
 #fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p, #fp-col-1 > button{
@@ -377,7 +387,7 @@ img {
 #fp-col-1 > h1{
     color: black;
     background-color: rgba(255,255,255, 0.0);
-   
+
     border-radius: 1%;
 }
 
@@ -386,13 +396,13 @@ img {
     color: mediumseagreen;
     text-align: left;
     background-color: rgba(255,255,255, 0.0);
-   
-    
+
+
 }
 
 #fp-col-1 > p{
     margin-top: 2vh;
-    
+
     background-color: rgba(255,255,255, 0.0);
     padding: 5px;
    text-align: left;
