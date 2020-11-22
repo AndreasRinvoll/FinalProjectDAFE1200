@@ -543,8 +543,14 @@ img {
 }
 
 #usingApp-quickAccess{
+    padding: 0;
+}
+
+#usingApp-quickAccess > div{
+    padding: 50px 20px 50px 20px;
     border-top: solid mediumseagreen 2px;
-     border-bottom: solid mediumseagreen 2px;
+    border-bottom: solid mediumseagreen 2px;
+    text-align: center;
 }
 
 #usingApp-row-4{
@@ -599,6 +605,14 @@ img {
 
 #img-row > .column-100{
     padding: 0;
+}
+
+
+#download > div > button{
+    width: 80%;
+    letter-spacing: 2px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /*END USING APP CSS */
