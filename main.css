@@ -315,10 +315,17 @@ body{
 
 .large-p-font{
     font-size: 36px;
+    line-height: 1.5;
 }
 
 .medium-p-font{
     font-size: 25px;
+    line-height: 1.5;
+}
+
+.small-p-font{
+    font-size: 19px;
+    line-height: 1.5;
 }
 
 #colortext{
@@ -357,12 +364,14 @@ img {
 
 /*CSS FOR INDEX.HTML*/
 
-/*Trenger ikke denne når vi bruker klassen "full-height" - Andreas*/
 #fp-row-top{
-  background-image: url(brick-michael.jpg);
+   background-image: url("kjeks4.jpg");
+
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-    /*height: 100vh;*/
-} /* gjør første rad like høy som skjermen*/
+ }
 
 #fp-col-1 {
   background-color: lightgrey;
@@ -370,25 +379,34 @@ img {
 
 
 #fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p, #fp-col-1 > button{
-    text-align: center;
+    text-align: left;
     letter-spacing: 5px;
+    width: 75%;
 }
 
 #fp-col-1 > h1{
-    color: red;
+    color: black;
+    background-color: rgba(255,255,255, 0.0);
+
+    border-radius: 1%;
 }
 
 
 #fp-col-1 > h2{
     color: mediumseagreen;
+    text-align: left;
+    background-color: rgba(255,255,255, 0.0);
+
+
 }
 
 #fp-col-1 > p{
-    margin-top: 10vh;
-    width: 33.3333%;
+    margin-top: 2vh;
 
+    background-color: rgba(255,255,255, 0.0);
     padding: 5px;
-    margin-left: 33.3333%
+   text-align: left;
+
 }
 
 #fp-row-2 > div > h1{
@@ -552,15 +570,27 @@ img {
     height: 1em;
 }
 
+.tutorialColumn{
+    min-width: 260px; /*slik at de ikke overflower dersom man printer pdf-versjon av siden */
+}
+
 .tutorialColumn > div {
     border: 3px solid mediumseagreen;
     padding: 20px;
-    height: 400px;
 
 }
 
-.tutorialColumn > div > h1{
+.tutorialColumn > div > div> h1{
     margin-bottom: 15px;
+}
+.tutorialColumn > div > div > div{
+    height: 50px;
+}
+.tutorialColumn > div > div > div > a > img {
+    width: 50px;
+    margin: 0 10px;
+    float: right;
+
 }
 
 #fp-row-2 > div > button > h1{
@@ -818,7 +848,7 @@ background-color: cyan;
 @media screen and (min-width: 1000px){
 
     #fp-row-6 > div > div{
-        height: 600px;
+        min-height: 670px;
     } /* gjør at intervju-divene er like lange i fullskjerm*/
 
     #fp-row-3 > div> div  , #fp-row-4 > div> div{
@@ -853,7 +883,10 @@ background-color: cyan;
 @media screen and (min-width: 1000px){
 
     #fp-row-3 > div> div  , #fp-row-4 > div> div{
-        height: 620px;
+        min-height: 700px;
+    }
+    .tutorialColumn > div {
+    min-height: 470px;
     }
 }
 

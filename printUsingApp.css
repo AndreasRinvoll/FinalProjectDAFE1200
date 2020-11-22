@@ -1,0 +1,856 @@
+@media print{
+	/*Setter border-box for hele siden. Da er padding og border inkludert i width og height dette gir penere div'er!*/
+/*Fjerner noen standard settings:*/
+/* TODO:
+    - :not(:target) overflow:hidden
+    - flytte X til ved siden av #Hamburger
+
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Gir mellomrom mellom ulike paragrafer*/
+p{
+    margin-bottom: 1rem;
+}
+
+/*Full størrelse på første rad:*/
+html, body{
+    height: 100%;
+}
+/*Gi første rad denne klassen, i tillegg til de andre klassene den skal ha*/
+.full-height{
+    height: 100%;
+}
+
+/*Farge på bakgrunnen*/
+body{
+    background-color: white;
+}
+
+/*Sticky navbar*/
+.navbar{
+    overflow: hidden;
+    background-color: teal;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*Hvordan lenkene i navbaren ser ut*/
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    /*border: solid 1px white;*/
+    background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 0.3rem;
+    margin: 0.5rem;
+    /*width: 25%;*/ /*Lange knapper*/
+}
+
+/*Lenkene i navbaren endrer utseende når man holder musepekeren over dem*/
+.navbar a:hover{
+    background-color: rgb(1, 163, 163);
+    color: white;
+    /*border-bottom: solid 2px white;*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+    transition: 0.4s;
+}
+
+.navbar a.active{
+    background-color: white;
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+}
+
+/*Hamburgerknapp, som ikke syns for stor skjerm*/
+.navbar .icon{
+    display: none;
+}
+
+/* 3 Hamburger striper*/
+.hamburger{
+    width: 35px;
+    height: 4px;
+    background-color: black;
+    margin-top: 5.3px;
+    /* transition: 0.4s; legges til av javascript */
+}
+
+/* Hamburger X*/
+.hamburgerX{
+    width: 35px;
+    height: 4px;
+    background-color: black;
+    margin-top: 5.3px;
+    display: none;
+    z-index: 10;
+    /* transition: 0.4s; legges til av javascript */
+}
+
+/* Hamburger-menyen */
+#Hamburger{
+    display: none;
+    position: fixed;
+    bottom: 0vw;
+    left: 50%;
+    height: 70%;
+    margin-top: -37.5%;
+    width: 42%;
+    margin-left: -21%;
+    z-index: 10;
+    text-align: center;
+    transition: 1s linear;
+}
+
+/* a-tagsene i Hamburger-menyen*/
+#Hamburger a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-bottom: solid 2px transparent;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+
+/* hr-tagsene i Hamburger-menyen*/
+.navHr{
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+/*Fjerner decoration fra a-tags */
+#Hamburger a:visited, #Hamburger a:link{
+    text-decoration: none;
+    color: black;
+}
+
+#Hamburger a.active {
+    background-color: white;
+    color: black;
+}
+
+#Hamburger a:hover {
+    background-color: rgb(1, 163, 163);
+    color: white;
+    border-bottom: solid 2px white;
+    transition: 0.4s;
+}
+/*Bakgrunn når man er inne i hamburger-menyen */
+#tint{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 153, 0);
+    opacity: 0.65;
+    display: none;
+    z-index: 9;
+}
+/* viser hamburgermenyen og tinten */
+#HamburgerFull:target #Hamburger, #HamburgerFull:target #tint{
+    display: block;
+}
+
+/*Fjerner hamburgerknappen */
+#HamburgerFull:target .hamburger{
+    display: none;
+}
+
+/*Viser hamburger-X */
+#HamburgerFull:target .hamburgerX{
+    display: block;
+    z-index: 10;
+}
+
+#hamburgerX{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 61px !important;
+    width: 67px !important;
+
+}
+.bar4{
+    -webkit-transition: rotate(-45deg) translate(-8px,6px); /*For Safari browser, tror jeg*/
+    transform: rotate(-45deg) translate(-3px,5px);
+}
+.bar5{
+    -webkit-transition: rotate(45deg) translate(-8px,-6px); /*For Safari browser, tror jeg*/
+    transform: rotate(45deg) translate(-3px,-5px);
+}
+
+
+/*Hamburgerknapp kan endre seg med javascript, når den klikkes på*/
+.changeButton .bar1{
+    -webkit-transition: rotate(-45deg) translate(-8px,6px); /*For Safari browser, tror jeg*/
+    transform: rotate(-45deg) translate(-8px,6px);
+}
+.changeButton .bar2{
+    opacity: 0;
+}
+.changeButton .bar3{
+    -webkit-transition: rotate(45deg) translate(-8px,-6px); /*For Safari browser, tror jeg*/
+    transform: rotate(45deg) translate(-8px,-6px);
+}
+
+
+/*zig-zag layout*/
+
+/*Hver row kan inneholde flere forskjellige kolonne-div'er, der den totale vidden skal bli 100%*/
+.row{
+    padding: 3rem;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Kan brukes som en ekstra klasse for rader som skal ha en bestemt farge*/
+.row-color{
+    background-color: rgba(211, 211, 211, 0.473);
+}
+
+/*Første row på hver side trenger padding på toppen, slik at navbaren ikke dekker over elementene*/
+.top{
+    padding-top: 6rem;
+}
+
+/*Her er en rekke kolonne-diver av ulik størrelse som kan brukes i kombinasjon med hverandre:*/
+.column-20{
+    float: left;
+    width: 25%;
+    padding: 1rem;
+}
+.column-25{
+    float: left;
+    width: 25%;
+    padding: 1rem;
+}
+.column-30{
+    float: left;
+    width: 30%;
+    padding: 1rem;
+}
+.column-33{
+    float: left;
+    width: 33.33333%;
+    padding: 1rem;
+}
+.column-40{
+    float: left;
+    width: 40%;
+    padding: 1rem;
+}
+.column-50{
+    float: left;
+    width: 50%;
+    padding: 1rem;
+}
+.column-66{
+    float: left;
+    width: 66.66666%;
+    padding: 1rem;
+}
+.column-75{
+    float: left;
+    width: 75%;
+    padding: 1rem;
+}
+.column-100{
+    float: left;
+    width: 100%;
+    padding: 1rem;
+}
+
+
+/*En classe for feks. h1 tags. Setter font størrelse, som også skalerer med skjermstørrelsen*/
+
+.small-font{
+    /*font-size: ?rem;*/
+    font-size: 3vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+}
+
+.medium-font{
+    /*font-size: ?rem;*/
+    font-size: 5vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+}
+
+.large-font{
+    /*font-size: 6rem;*/ /*Ca det samme som 6vw, for full skjerm*/
+    /*font-size: 6vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+
+    font-size: max(6vw, 3rem); /*Dette kan være en veldig god løsning, her er fonten skalerbar fra 6vw og ned til 50px. Da blir ikke teksten for liten!*/
+
+    /*Dette er visst en form for "Clamping" og kan ha dårlig støtte på eldre browsers. Det kan derfor være tryggere å bruke meda tags, ihvertfall som backup!*/
+}
+
+.xlarge-font{
+    /*font-size: 7rem;*/
+    font-size: 8vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+}
+
+.large-p-font{
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.medium-p-font{
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.small-p-font{
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+#colortext{
+    color: mediumseagreen;
+}
+
+#boldtext {
+    font-weight: bold;
+}
+
+.button{
+    border: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: teal;
+}
+
+.large-button{
+    padding: 2rem;
+    font-size: larger;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+/*Gir en linje på høyre hånd slik at kolonner som står tett blir lettere å skille fra hverandre*/
+.column-border{
+    border-right: solid 0.3rem black;
+}
+
+
+/*CSS FOR INDEX.HTML*/
+
+#fp-row-top{
+   /* background-image: url("test.jpg");
+
+  height: 100%;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; */
+ }
+
+
+#fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p, #fp-col-1 > button{
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+#fp-col-1 > h1{
+    color: black;
+}
+
+
+#fp-col-1 > h2{
+    color: mediumseagreen;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#fp-col-1 > p{
+    width: 33.3333%;
+    margin-left: 33.3333%;
+    padding: 5px;
+   text-align: center;
+
+}
+
+#fp-row-2 > div > h1{
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: rgba(0,0,0,0.85);
+    height: 0.2em;
+
+}
+
+#callToAction{
+    margin-top: 50px;
+    color: mediumseagreen;
+}
+
+#fp-row-3{
+    padding-bottom: 0;
+}
+
+#fp-row-4{
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+#fp-row-3  > div > div > div > p, #fp-row-4 > div > div > div > p{
+    line-height: 2;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    padding:10px 20px;
+
+}
+
+#fp-row-3  > div > div> div > h2, #fp-row-4 > div> div > div > h2{
+    text-align: center;
+}
+
+#fp-row-3 > div> div  , #fp-row-4 > div> div{
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 5%;
+    padding: 1rem;
+}
+
+
+#fp-row-3 > div> div > div > img, #fp-row-4 > div> div > div > img{
+    height: 300px;
+    width: auto;
+    margin: 25px auto 25px auto;
+
+
+}
+
+#fp-row-pitch > div > p{
+    line-height: 1.5;
+}
+
+#fp-row-pitch-2{
+    border-top: solid 100px white;
+}
+
+#fp-row-5>div>img{
+    height: 500px;
+    border-radius:20px;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#fp-row-6{
+    padding: 50px 0;
+}
+
+#fp-row-6 > div > div{
+    border: 3px solid mediumseagreen;
+    border-radius: 2%;
+    padding: 1rem;
+    margin: 2.5%;
+}
+
+
+#fp-row-6 > div > div > div > img{
+    border-radius: 50%;
+    min-width: 250px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px auto 20px auto;
+    /* margin: topp, høyre, bunn, venstre*/
+}
+
+#fp-row-6 > div > div > div > h2{
+    margin-bottom: 15px;
+    background-color: white;
+    text-align: center;
+    /* margin: topp, høyre, bunn, venstre*/
+}
+
+#fp-row-6 > div > div > div > p{
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#fp-headline-3{
+    height: 20vh;
+}
+
+#fp-headline-3 >div >h1{
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: rgba(0,0,0,0.85);
+    height: 1em;
+}
+
+#fp-bottom-text{
+    margin-top: 30%;
+}
+
+/*Slutt CSS FOR INDEX.HTML*/
+
+/* USING APP CSS */
+
+#usingApp-row-top{
+    text-align: left;
+}
+
+#usingApp-row-top > div >  h1{
+    margin-top: 5%;
+    margin-bottom: 30px;
+    color: mediumseagreen;
+    letter-spacing: 5px;
+}
+
+#usingApp-row-top > div >  p{
+    letter-spacing: 5px;
+    text-align: left;
+    line-height: 40px;
+}
+
+
+#usingApp-row-top > div >  img{
+    border-radius: 1%;
+    width: 80%;
+}
+
+#usingApp-quickAccess{
+    border-top: solid mediumseagreen 2px;
+     border-bottom: solid mediumseagreen 2px;
+}
+
+#usingApp-row-4{
+    height: 50px;
+    padding-bottom: 100px;
+}
+
+#usingApp-row-4 > div > h1{
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: rgba(0,0,0,0.85);
+    height: 1em;
+}
+
+.tutorialColumn{
+    min-width: 260px; /*slik at de ikke overflower dersom man printer pdf-versjon av siden */
+}
+
+.tutorialColumn > div {
+    border: 3px solid mediumseagreen;
+    padding: 20px;
+
+}
+
+.tutorialColumn > div > div> h1{
+    margin-bottom: 15px;
+}
+.tutorialColumn > div > div > div{
+    height: 50px;
+}
+.tutorialColumn > div > div > div > a > img {
+    width: 50px;
+    margin: 0 10px;
+    float: right;
+
+}
+
+#fp-row-2 > div > button > h1{
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+
+#img-row{
+    padding: 0;
+}
+
+#fp-pitch-title{
+    padding-bottom: 70px;
+}
+
+#img-row > .column-100{
+    padding: 0;
+}
+
+/*END USING APP CSS */
+
+/*Footer*/
+.footer{
+    overflow:visible;
+    background-image url(https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size cover;
+    background-color: lightgrey;
+    box-sizing: border-box;
+    position: absolute;
+    height 300px;
+    width: 100%;
+}
+
+/*Cutout text*/
+.footer-text{
+    background-color: white;
+    color: black;
+    font-size: 10vw; /*Skalerbar tekst*/
+    font-weight: bold;
+    margin: 0 auto; /*Tekstboks havner i midten*/
+    padding: 10px;
+    width: 50%;
+    text-align: center; /*Sentrerer teks*/
+    position: absolute; /*Setter posisjon*/
+    top: 50%; /*Tekst plassert i midten*/
+    left: 50%; /*Tekst plassert i midten*/
+    transform: translate(-50%, -50%); /*mer for å plassere tekst*/
+    mix-blend-mode: screen; /*Her lages cutout'en!*/
+}
+
+.footerCol {
+  min-height: 250px;
+  margin: 1rem;
+}
+
+.mainContent {
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.mainContent h3 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.footer #social-footer,
+.footer #links-footer,
+.footer #contact-footer{
+  display: inline-block;
+  vertical-align: top;
+}
+
+#contact-footer {
+  flex: 0 2 25em;
+}
+
+#contact-footer ol {
+padding-top: 4rem;
+text-align: left;
+font-size: 1.3rem;
+}
+
+#contact-footer li {
+padding-left: 0.7rem;
+text-align: left;
+}
+
+#contact-footer .fas {
+  font-size: 30px;
+  padding-right: 5%;
+}
+
+#links-footer {
+flex: 1 2 20em;
+  }
+
+.sources-links li {
+  text-align: center;
+}
+
+.links h3 {
+  text-align: center;
+
+}
+
+.sources-links {
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+#social-footer {
+  flex: 1 2 20em;
+  border-left: 2px solid darkgrey;
+  border-right: 2px solid darkgrey;
+}
+
+#links1, #links2 {
+  text-align: center;
+}
+
+#links1 {
+  padding-bottom: 5%;
+  padding-top: 5%;
+  padding: 0.4rem;
+}
+
+
+
+#social {
+  margin: 20px 0 0 0;
+}
+
+#social a{
+color: black;
+padding: 0 2px;
+}
+
+#social a span{
+  padding: 10px;
+  font-size: 70px;
+  background: darkgrey;
+  border-radius: 8px;
+  height: 70px;
+  width: 80px;
+  line-height: 50px;
+}
+
+#links2 #social a span:hover{
+background-color: cyan;
+}
+
+#social {
+  margin-top: 0rem;
+}
+ /*slutt på footer*/
+
+ /*begynnelse media tags*/
+
+/*De store og små div'ene i zig-zag faller under hverandre*/
+@media screen and (max-width: 1000px){
+    .column-25,
+    .column-33,
+    .column-50,
+    .column-66,
+    .column-75,
+    .column-100{
+        width: 100%;
+        text-align: center;
+    }
+    img{
+        margin: auto;
+    }
+    .full-height{
+        height: initial;
+    }
+    .column-border{
+        border-right: none;
+    }
+    #links-footer {
+      border-top: 5px solid black;
+      border-top-style: double;
+    }
+}
+/* media tag for linje over siste element i footer*/
+@media screen and (max-width: 1152px){
+  #links-footer {
+    border-top: 5px solid black;
+    border-top-style: double;
+  }
+  #social-footer {
+    border-right: 0px;
+    border-left: 2px solid darkgrey;
+  }
+}
+/* media tag for at elementene i footer skal stable seg*/
+@media screen and (max-width: 815px) {
+
+.mainContent {
+    max-width: 600px;
+    height:fit-content;
+}
+#contact-footer {
+  width: 100%;
+}
+#social-footer {
+  width: 100%;
+  border-top: 5px solid black;
+  border-top-style: double;
+  border-left: 0px;
+}
+#links-footer {
+  width: 100%;
+  border-top: 5px solid black;
+  border-top-style: double;
+}
+#links-footer ol{
+  text-align: center;
+}
+
+.footer {
+  height: fit-content;
+}
+}
+
+/*Elementer på menyen frosvinner, og hamburgerknapp dukker opp*/
+/*not(:first-child) betyr at den skal beholde den første lenken i menyen, men at de andre skal forsvinne.*/
+@media screen and (max-width: 1000px){
+    .navbar a:not(:first-child){
+        display: none;}
+    .navbar a.icon{
+        float: right;
+        display: block;
+    }
+}
+
+/*Litt mindre padding på rows, i mobiltelefonmodus*/
+@media screen and (max-width: 400px){
+    .row{
+        padding: 1rem;
+    }
+    .top{
+        padding-top: 6rem;
+    }
+}
+
+
+
+/*MEDIA UNIKT FOR USINGAPP.HTML*/
+@media screen and (max-width: 1000px){
+   #usingApp-row-top > div >  img{
+    display: none;
+}
+    }
+
+
+
+@media screen and (min-width: 1000px){
+
+    #fp-row-3 > div> div  , #fp-row-4 > div> div{
+        min-height: 700px;
+    }
+    .tutorialColumn > div {
+    min-height: 470px;
+    }
+}
+
+
+
+/*Slutt MEDIA UNIKT FOR USINGAPP.HTML*/
+
+}
