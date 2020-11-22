@@ -309,10 +309,17 @@ body{
 
 .large-p-font{
     font-size: 36px;
+    line-height: 1.5;
 }
 
 .medium-p-font{
     font-size: 25px;
+    line-height: 1.5;
+}
+
+.small-p-font{
+    font-size: 19px;
+    line-height: 1.5;
 }
 
 #colortext{
@@ -822,7 +829,7 @@ background-color: cyan;
 @media screen and (min-width: 1000px){
 
     #fp-row-6 > div > div{
-        height: 600px;
+        min-height: 670px;
     } /* gjør at intervju-divene er like lange i fullskjerm*/
 
     #fp-row-3 > div> div  , #fp-row-4 > div> div{
@@ -857,10 +864,10 @@ background-color: cyan;
 @media screen and (min-width: 1000px){
 
     #fp-row-3 > div> div  , #fp-row-4 > div> div{
-        height: 620px;
+        min-height: 700px;
     }
     .tutorialColumn > div {
-    min-height: 420px;
+    min-height: 470px;
     }
 }
 
