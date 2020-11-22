@@ -234,6 +234,10 @@ body{
     background-color: rgba(211, 211, 211, 0.473);
 }
 
+.row-color2 {
+  background-color: #FAE9CF;
+}
+
 /*Første row på hver side trenger padding på toppen, slik at navbaren ikke dekker over elementene*/
 .top{
     padding-top: 6rem;
