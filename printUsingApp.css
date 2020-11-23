@@ -181,6 +181,10 @@ img {
 
 /* USING APP CSS */
 
+.pagebreak{
+    page-break-after: always; 
+}
+
 #fp-row-2 > div > h1{
    padding-bottom: 0;
    padding-top: 0;
@@ -221,6 +225,7 @@ img {
 
 #fp-row-3 > .column-33, #fp-row-4 > .column-33{
     width: 100%;
+    page-break-inside: avoid; 
 }
 
 #fp-row-3 > .column-33 > div > div > img, #fp-row-4 > .column-33 > div > div > img{
@@ -228,8 +233,7 @@ img {
 }
 
 #usingApp-row-4{
-    height: 50px;
-    padding-bottom: 100px;
+page-break-after: avoid;
 }
 
 #usingApp-row-4 > div > h1{
@@ -237,11 +241,11 @@ img {
     font-weight: normal;
     letter-spacing: 5px;
     color: rgba(0,0,0,0.85);
-    height: 1em;
 }
 
 .tutorialColumn{
     width: 100%; /*slik at de ikke overflower dersom man printer pdf-versjon av siden */
+    page-break-inside: auto;
 }
 
 .tutorialColumn > div > div> p, .tutorialColumn > div> p{
@@ -260,6 +264,11 @@ img {
 .tutorialColumn > div > div > div{
     height: 50px;
 }
+
+.tutorialColumn > div > div {
+    page-break-inside: avoid;
+}
+
 .tutorialColumn > div > div > div > a > img {
     width: 50px;
     margin: 0 10px;
@@ -268,7 +277,6 @@ img {
 }
 
 #download{
-    margin-top: 1000px;
     display: none;
 }
 
