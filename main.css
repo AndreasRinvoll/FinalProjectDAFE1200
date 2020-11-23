@@ -531,23 +531,23 @@ img {
 
 #usingApp-row-top{
     text-align: left;
-}
 
-#usingApp-row-top > div >  h1{
-    margin-top: 5%;
-    margin-bottom: 30px;
-    color: mediumseagreen;
-    letter-spacing: 5px;
-}
-
-#usingApp-row-top > div >  p{
-    letter-spacing: 5px;
-    text-align: left;
-    line-height: 40px;
 }
 
 
-#usingApp-row-top > div >  img{
+
+#usingApp-row-top > .background-top{
+    background-image: url("gettingstarted.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+#usingApp-row-top > div >div>  img{
+    display: none;
     border-radius: 1%;
     width: 80%;
 }
@@ -901,6 +901,11 @@ background-color: cyan;
     }
     .tutorialColumn > div {
     min-height: 470px;
+    }
+
+
+    #usingApp-row-top > div >div>  p{
+        width: 70%;
     }
 }
 
