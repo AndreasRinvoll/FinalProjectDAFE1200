@@ -43,7 +43,8 @@ body{
 /*Sticky navbar*/
 .navbar{
     overflow: hidden;
-    background-color: darkgrey;
+    background-color: #FAE9CF;
+    background-color #ECD811;
     position: fixed;
     top: 0;
     width: 100%;
@@ -58,17 +59,21 @@ body{
     padding: 1rem;
     font-size: 1.5rem;
     /*border: solid 1px white;*/
-    background-color: rgba(255, 255, 255, 0.199);
-    background-color: darkgrey;
+    background-color rgba(255, 255, 255, 0.199);
+    background-color: #ECD811;
     border-radius: 0.3rem;
     margin: 0.5rem;
+    border: 2px solid black;
     /*width: 25%;*/ /*Lange knapper*/
+    /* #FFEA12 */
 }
 
 /*Lenkene i navbaren endrer utseende når man holder musepekeren over dem*/
 .navbar a:hover{
-    background-color: rgb(1, 163, 163);
-    color: white;
+    background-color rgb(1, 163, 163);
+    background-color: #FFEA12;
+    color: black;
+    border: 2px solid red;
     /*border-bottom: solid 2px white;*/
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
     transition: 0.4s;
@@ -76,6 +81,7 @@ body{
 
 .navbar a.active{
     background-color: white;
+    border: 2px solid red;
     color: black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
 }
@@ -646,7 +652,8 @@ img {
     overflow:visible;
     background-image url(https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-size cover;
-    background-color: lightgrey;
+    background-color lightgrey;
+    background-color: #ECD811;
     box-sizing: border-box;
     position: absolute;
     height 300px;
@@ -743,7 +750,7 @@ padding: 0 2px;
 }
 
 #links2 #social a span:hover{
-background-color: cyan;
+background-color: red;
 }
 
 #social {
@@ -758,6 +765,10 @@ flex: 1 2 20em;
 
 .sources-links li {
   text-align: center;
+}
+
+.sources-links li a:hover {
+  color: red;
 }
 
 .links h3 {
