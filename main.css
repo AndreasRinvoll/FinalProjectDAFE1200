@@ -48,6 +48,7 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
+    border-bottom: 2px solid black;
 }
 
 /*Hvordan lenkene i navbaren ser ut*/
@@ -653,11 +654,13 @@ img {
     background-image url(https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-size cover;
     background-color lightgrey;
-    background-color: #ECD811;
+    background-color: #FAE9CF;
+    background-color #ECD811;
     box-sizing: border-box;
     position: absolute;
     height 300px;
     width: 100%;
+    border-top: 2px solid black;
 }
 
 /*setting min height for responsiveness*/
