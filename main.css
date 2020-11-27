@@ -27,12 +27,9 @@ html, body{
 /*Gi første rad denne klassen, i tillegg til de andre klassene den skal ha*/
 .full-height{
     height: 100%;
+    min-height: 640px;
     background-image: url(joe-whitebrick.jpg);
     background-size: cover;
-}
-/* text field in full height, forsiden ligger på fp-row-top*/
-.full-height-text {
-  background-color: #EEEDED;
 }
 
 /*Farge på bakgrunnen*/
@@ -309,18 +306,24 @@ body{
     /*font-size: 6rem;*/ /*Ca det samme som 6vw, for full skjerm*/
     /*font-size: 6vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
 
-   /* font-size: max(6vw, 3rem); /*Dette kan være en veldig god løsning, her er fonten skalerbar fra 6vw og ned til 50px. Da blir ikke teksten for liten!*/
+   /* font-size: max(5vw, 3rem); /*Dette kan være en veldig god løsning, her er fonten skalerbar fra 6vw og ned til 50px. Da blir ikke teksten for liten!*/
 
    font-size: 60pt;
+
+ /*Dette kan være en veldig god løsning, her er fonten skalerbar fra 6vw og ned til 50px. Da blir ikke teksten for liten!*/
+
 
     /*Dette er visst en form for "Clamping" og kan ha dårlig støtte på eldre browsers. Det kan derfor være tryggere å bruke meda tags, ihvertfall som backup!*/
 }
 
 .xlarge-font{
     /*font-size: 7rem;*/
+
    /* font-size: 8vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
 
    font-size: 60pt;
+
+  /*  font-size: max(7vw, 3.5rem); /*Den store teksten krymper når skjermstørrelsen krymper!*/
 
 }
 
@@ -376,16 +379,17 @@ img {
 /*CSS FOR INDEX.HTML*/
 
 
-#fp-row-top{
+/*#fp-row-top{
   background-image: url("kjeks4.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- }
+ }*/
 
 .background-top {
-  background-color: #EEEDED;
+  /*background-color: #EEEDED;*/
+  background-color: #ffffff;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -795,6 +799,7 @@ flex: 1 2 20em;
     }
     .full-height{
         height: initial;
+        min-height: initial;
     }
     .column-border{
         border-right: none;
