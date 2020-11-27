@@ -28,8 +28,9 @@ html, body{
 .full-height{
     height: 100%;
     min-height: 640px;
-    background-image: url(joe-whitebrick.jpg);
-    background-size: cover;
+    background-image: linear-gradient(white, rgba(211, 211, 211, 0.473));
+    /*background-image: url(joe-whitebrick.jpg);
+    background-size: cover;*/
 }
 
 /*Farge på bakgrunnen*/
@@ -291,10 +292,23 @@ body{
 
 /*En classe for feks. h1 tags. Setter font størrelse, som også skalerer med skjermstørrelsen*/
 
+.center{
+    text-align: center;
+}
+
+.white{
+    background-color: white;
+}
+
+.text-colour{
+    color: teal;
+}
+
 .small-font{
     /*font-size: ?rem;*/
    /* font-size: 3vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
     font-size: 32pt;
+    line-height: 1.5;
 }
 
 .medium-font{
@@ -375,6 +389,12 @@ img {
     border-right: solid 0.3rem black;
 }
 
+.ourApp-img{
+    border-radius: 50%;
+    border: solid 0.3rem mediumseagreen;
+    width: 500px;
+}
+
 
 /*CSS FOR INDEX.HTML*/
 
@@ -387,14 +407,14 @@ img {
   background-size: cover;
  }*/
 
-.background-top {
-  /*background-color: #EEEDED;*/
+/*.background-top {
+  background-color: #EEEDED;
   background-color: #ffffff;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+}*/
 
 #fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p, #fp-col-1 > button{
     text-align: left;
@@ -645,6 +665,7 @@ img {
 /* editing text sizing on mission*/
 .missionP {
   font-size:1.5rem;
+  line-height: 1.5;
 }
 
 
@@ -813,6 +834,18 @@ flex: 1 2 20em;
     } /* gjemmer forsidebildet når divene legger seg under hverandre */
 }
 
+/*Skalering for vide, men smale skjermer. Teksten blir litt mindre*/
+@media screen and (max-height: 720px){
+    .xlarge-font{
+        font-size: 4rem;
+    }
+    .large-font{
+        font-size: 3rem;
+    }
+    .medium-font{
+        font-size: 3rem;
+    }
+}
 
 /* media tag for linje over siste element i footer*/
 @media screen and (max-width: 1152px){
@@ -881,11 +914,15 @@ flex: 1 2 20em;
 @media screen and (min-width: 1000px){
 
     #fp-row-6 > div > div{
-        min-height: 670px;
+        min-height: 690px;
     } /* gjør at intervju-divene er like lange i fullskjerm*/
 
     #fp-row-3 > div> div  , #fp-row-4 > div> div{
-        min-height: 550px;
+        min-height: 700px;
+    }
+
+     .tutorialColumn > div {
+    min-height: 500px;
     }
 }
 
@@ -915,20 +952,6 @@ fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p{
     display: none;
 }
     }
-
-
-
-@media screen and (min-width: 1000px){
-
-    #fp-row-3 > div> div  , #fp-row-4 > div> div{
-        min-height: 700px;
-    }
-    .tutorialColumn > div {
-    min-height: 470px;
-    }
-}
-
-
 
 /*Slutt MEDIA UNIKT FOR USINGAPP.HTML*/
 
