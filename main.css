@@ -42,7 +42,7 @@ body{
 .navbar{
     overflow: hidden;
     background-color #FAE9CF;
-    background-color: #ECD811;
+    background-color: #ebd058;
     background-image url(joe-whitebrick.jpg);
     background-size cover;
     position: fixed;
@@ -60,8 +60,8 @@ body{
     padding: 1rem;
     font-size: 1.5rem;
     /*border: solid 1px white;*/
-    background-color rgba(255, 255, 255, 0.199);
-    background-color: #ECD811;
+    background-color: none;
+    background-color #ECD811;
     border-radius: 0.3rem;
     margin: 0.5rem;
     border 2px solid black;
