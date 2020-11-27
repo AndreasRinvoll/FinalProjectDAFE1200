@@ -291,10 +291,23 @@ body{
 
 /*En classe for feks. h1 tags. Setter font størrelse, som også skalerer med skjermstørrelsen*/
 
+.center{
+    text-align: center;
+}
+
+.white{
+    background-color: white;
+}
+
+.text-colour{
+    color: teal;
+}
+
 .small-font{
     /*font-size: ?rem;*/
    /* font-size: 3vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
     font-size: 32pt;
+    line-height: 1.5;
 }
 
 .medium-font{
@@ -645,6 +658,7 @@ img {
 /* editing text sizing on mission*/
 .missionP {
   font-size:1.5rem;
+  line-height: 1.5;
 }
 
 
