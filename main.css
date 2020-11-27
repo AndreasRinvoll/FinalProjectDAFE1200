@@ -881,11 +881,15 @@ flex: 1 2 20em;
 @media screen and (min-width: 1000px){
 
     #fp-row-6 > div > div{
-        min-height: 670px;
+        min-height: 690px;
     } /* gjør at intervju-divene er like lange i fullskjerm*/
 
     #fp-row-3 > div> div  , #fp-row-4 > div> div{
-        min-height: 550px;
+        min-height: 700px;
+    }
+
+     .tutorialColumn > div {
+    min-height: 500px;
     }
 }
 
@@ -915,20 +919,6 @@ fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p{
     display: none;
 }
     }
-
-
-
-@media screen and (min-width: 1000px){
-
-    #fp-row-3 > div> div  , #fp-row-4 > div> div{
-        min-height: 700px;
-    }
-    .tutorialColumn > div {
-    min-height: 470px;
-    }
-}
-
-
 
 /*Slutt MEDIA UNIKT FOR USINGAPP.HTML*/
 
