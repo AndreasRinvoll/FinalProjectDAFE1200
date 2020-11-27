@@ -55,7 +55,7 @@
 
 /*Gir bildet i den øverste raden litt mer luft på toppen*/
 #toprow-img{
-    padding-top: 2rem;
+    /*padding-top: 2rem;*/
 }
 
 /*Skalerer slik at en rad på fire blir til to rader med to team-card hver*/
