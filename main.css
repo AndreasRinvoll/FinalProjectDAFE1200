@@ -296,26 +296,32 @@ body{
 
 .small-font{
     /*font-size: ?rem;*/
-    font-size: 3vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+   /* font-size: 3vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+    font-size: 32pt;
 }
 
 .medium-font{
     /*font-size: ?rem;*/
-    font-size: 5vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+    font-size: 45pt; /*Den store teksten krymper når skjermstørrelsen krymper!*/
 }
 
 .large-font{
     /*font-size: 6rem;*/ /*Ca det samme som 6vw, for full skjerm*/
     /*font-size: 6vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
 
-    font-size: max(6vw, 3rem); /*Dette kan være en veldig god løsning, her er fonten skalerbar fra 6vw og ned til 50px. Da blir ikke teksten for liten!*/
+   /* font-size: max(6vw, 3rem); /*Dette kan være en veldig god løsning, her er fonten skalerbar fra 6vw og ned til 50px. Da blir ikke teksten for liten!*/
+
+   font-size: 60pt;
 
     /*Dette er visst en form for "Clamping" og kan ha dårlig støtte på eldre browsers. Det kan derfor være tryggere å bruke meda tags, ihvertfall som backup!*/
 }
 
 .xlarge-font{
     /*font-size: 7rem;*/
-    font-size: 8vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+   /* font-size: 8vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+
+   font-size: 60pt;
+
 }
 
 .large-p-font{
@@ -797,7 +803,12 @@ flex: 1 2 20em;
       border-top: 5px solid black;
       border-top-style: double;
     }
+     .row-1-img{
+        display: none;
+    } /* gjemmer forsidebildet når divene legger seg under hverandre */
 }
+
+
 /* media tag for linje over siste element i footer*/
 @media screen and (max-width: 1152px){
   #links-footer {
@@ -884,6 +895,11 @@ flex: 1 2 20em;
         width: 100%;
         text-align: center;
     }
+
+
+fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p{
+    width: 100%;
+
 }
 
 /*Slutt MEDIA UNIKT FOR INDEX.HTML*/
@@ -910,3 +926,170 @@ flex: 1 2 20em;
 
 
 /*Slutt MEDIA UNIKT FOR USINGAPP.HTML*/
+
+
+/* FONTSKALERING */
+
+@media screen and (max-width: 1160px){
+
+    .small-font{
+       font-size: 25pt;
+    }
+    
+    .medium-font{
+        font-size: 35pt; 
+    }
+    
+    .large-font{
+    
+       font-size: 50pt;
+
+    }
+
+    .xlarge-font{
+     
+       font-size: 50pt;
+    
+    }
+    
+    .large-p-font{
+        font-size: 25px;
+        line-height: 1.5;
+    }
+    
+    .medium-p-font{
+        font-size: 25px;
+        line-height: 1.5;
+    }
+    
+    .small-p-font{
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+}
+
+
+@media screen and (max-width: 950px){
+
+    .medium-font{
+        font-size: 30pt; 
+    }
+    
+}
+@media screen and (max-width: 650px){
+
+    .small-font{
+       font-size: 25pt;
+    }
+    
+    .medium-font{
+        font-size: 25pt; 
+    }
+    
+    .large-font{
+    
+       font-size: 45pt;
+
+    }
+
+    .xlarge-font{
+     
+       font-size: 50pt;
+    
+    }
+    
+    .large-p-font{
+        font-size: 25px;
+        line-height: 1.5;
+    }
+    
+    .medium-p-font{
+        font-size: 25px;
+        line-height: 1.5;
+    }
+    
+    .small-p-font{
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+}
+
+@media screen and (max-width: 350px){
+
+    .small-font{
+       font-size: 20pt;
+    }
+    
+    .medium-font{
+        font-size:  20pt; 
+    }
+    
+    .large-font{
+    
+       font-size: 40pt;
+
+    }
+
+    .xlarge-font{
+     
+       font-size: 40pt;
+    
+    }
+    
+    .large-p-font{
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    
+    .medium-p-font{
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    
+    .small-p-font{
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+}
+
+@media screen and (max-width: 300px){
+
+    .small-font{
+       font-size: 20pt;
+    }
+    
+    .medium-font{
+        font-size:  15pt; 
+    }
+    
+    .large-font{
+    
+       font-size: 19px;
+
+    }
+
+    .xlarge-font{
+     
+       font-size: 30pt;
+    
+    }
+    
+    .large-p-font{
+        font-size: 19px;
+        line-height: 1.5;
+    }
+    
+    .medium-p-font{
+        font-size: 19px;
+        line-height: 1.5;
+    }
+    
+    .small-p-font{
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+}
