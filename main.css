@@ -668,6 +668,15 @@ img {
   line-height: 1.5;
 }
 
+/* for volunteers CSS*/
+#outerDiv {
+    background-color: beige;   
+}
+
+#textVolunteers {
+    
+}
+
 
 /*Footer  CSS*/
 .footer{
