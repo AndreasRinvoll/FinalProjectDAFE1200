@@ -43,8 +43,10 @@ body{
 /*Sticky navbar*/
 .navbar{
     overflow: hidden;
-    background-color: #FAE9CF;
-    background-color #ECD811;
+    background-color #FAE9CF;
+    background-color: #ECD811;
+    background-image url(joe-whitebrick.jpg);
+    background-size cover;
     position: fixed;
     top: 0;
     width: 100%;
@@ -64,7 +66,7 @@ body{
     background-color: #ECD811;
     border-radius: 0.3rem;
     margin: 0.5rem;
-    border: 2px solid black;
+    border 2px solid black;
     /*width: 25%;*/ /*Lange knapper*/
     /* #FFEA12 */
 }
@@ -81,7 +83,7 @@ body{
 }
 
 .navbar a.active{
-    background-color: white;
+    background-color: #FFFEEC;
     border: 2px solid red;
     color: black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
@@ -655,7 +657,6 @@ img {
     background-size cover;
     background-color lightgrey;
     background-color: #FAE9CF;
-    background-color #ECD811;
     box-sizing: border-box;
     position: absolute;
     height 300px;
