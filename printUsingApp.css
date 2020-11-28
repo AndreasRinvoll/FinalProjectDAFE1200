@@ -34,7 +34,9 @@ html, body{
 body{
     background-color: white;
 }
-
+.scrollDown{
+    display: none;
+}
 
 /*zig-zag layout*/
 
