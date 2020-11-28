@@ -452,6 +452,16 @@ img {
     max-width: 100%;
 }
 
+#logo {
+    max-width: 15%;
+    height: auto;
+    float: right;
+    display: inline-block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 3rem;
+}
+
 /*Gir en linje på høyre hånd slik at kolonner som står tett blir lettere å skille fra hverandre*/
 .column-border{
     border-right: solid 0.3rem  #10100F;
