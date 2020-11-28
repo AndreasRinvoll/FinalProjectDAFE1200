@@ -884,12 +884,34 @@ img {
     }
 
 
-fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p{
-    width: 100%;
+    fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p{
+       width: 100%;
+
+    }
 
 }
 
+@media screen and (max-width: 350px){
+    
+    #fp-row-6 > div > div > div > img{
+        min-width: 200px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    
+    #fp-row-6 > div > div > div > img{
+        min-width: 150px;
+        width: 150px;
+        height: 150px;
+    }
+}
 /*Slutt MEDIA UNIKT FOR INDEX.HTML*/
+
+
+
 
 /*MEDIA UNIKT FOR USINGAPP.HTML*/
 @media screen and (max-width: 1000px){
