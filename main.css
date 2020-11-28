@@ -919,7 +919,13 @@ img {
 }
 /*Slutt MEDIA UNIKT FOR INDEX.HTML*/
 
+/*SOURCES CSS*/
 
+.sources-image{
+    width: 150px;
+}
+
+/*SOURCES CSS SLUTT*/
 
 
 /*MEDIA UNIKT FOR USINGAPP.HTML*/
