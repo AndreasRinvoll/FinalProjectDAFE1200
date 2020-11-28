@@ -474,7 +474,7 @@ img {
 
 
 #fp-row-top{
-  background-image: url("kjeks4.jpg");
+  background-color: #fffff9;
   height: 100%;
   background-position: right;
   background-repeat: no-repeat;
@@ -836,7 +836,6 @@ img {
         width: 100%;
         text-align: center;
     }
-
     img{
         margin: auto;
     }
@@ -850,6 +849,22 @@ img {
      .row-1-img{
         display: none;
     } /* gjemmer forsidebildet når divene legger seg under hverandre */
+    #row-1-image-FP {
+        display: block;
+    }
+    #col-33-FP {
+        width: 33%;
+    }
+    #fp-col-1 {
+        width: 66%;
+    }
+    #fp-col-1 h2 {
+        display:none;
+    }
+    #fp-col-1 p {
+        display:none;
+    }
+
 }
 
 /*Skalering for vide, men smale skjermer. Teksten blir litt mindre*/
@@ -863,6 +878,7 @@ img {
     .medium-font{
         font-size: 3rem;
     }
+    
 }
 
 /*Elementer på menyen frosvinner, og hamburgerknapp dukker opp*/
@@ -924,6 +940,19 @@ img {
 
     }
 
+}
+
+@media screen and (max-width: 700px){
+#col-33-FP {
+    width: 100%;
+    display: block;
+}
+#fp-col-1 {
+    display: none;
+}
+#row-1-img-FP {
+    
+}
 }
 
 @media screen and (max-width: 350px){
