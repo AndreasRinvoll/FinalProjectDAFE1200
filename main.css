@@ -38,7 +38,7 @@ html, body{
 
 /*Farge på bakgrunnen*/
 body{
-    #FFFFF9;
+   background-color: #FFFFF9;
 }
 
 /*Sticky navbar*/
@@ -51,7 +51,7 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid  #10100F;
     z-index: 3;
 }
 
@@ -60,7 +60,7 @@ body{
 .navbar a{
     float: left;
     display: block;
-    color: black;
+    color:  #10100F;
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
@@ -69,7 +69,7 @@ body{
     background-color: #ECD811;
     border-radius: 0.2rem;
     margin: 0.5rem;
-    border: 2px solid black;
+    border: 2px solid  #10100F;
     /*width: 25%;*/ /*Lange knapper*/
     /* #FFEA12 */
 }
@@ -78,7 +78,7 @@ body{
 .navbar a:hover{
     background-color rgb(1, 163, 163);
     background-color: #FFEA12;
-    color: black;
+    color:  #10100F;
     border: 2px solid red;
     /*border-bottom: solid 2px white;*/
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
@@ -88,7 +88,7 @@ body{
 .navbar a.active{
     background-color: #FFFFF9;
     border: 2px solid red;
-    color: black;
+    color:  #10100F;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
 }
 
@@ -101,7 +101,7 @@ body{
 .hamburger{
     width: 35px;
     height: 4px;
-    background-color: black;
+    background-color:  #10100F;
     margin-top: 5.3px;
     /* transition: 0.4s; legges til av javascript */
 }
@@ -110,7 +110,7 @@ body{
 .hamburgerX{
     width: 35px;
     height: 4px;
-    background-color: black;
+    background-color:  #10100F;
     margin-top: 5.3px;
     display: none;
     z-index: 10;
@@ -135,7 +135,7 @@ body{
 /* a-tagsene i Hamburger-menyen*/
 #Hamburger a{
     display: block;
-    #FFFFF9;
+    color: #FFFFF9;
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
@@ -147,23 +147,23 @@ body{
 /* hr-tagsene i Hamburger-menyen*/
 .navHr{
     height: 2px;
-    background-color: black;
+    background-color:  #10100F;
     border: none;
 }
 /*Fjerner decoration fra a-tags */
 #Hamburger a:visited, #Hamburger a:link{
     text-decoration: none;
-    color: black;
+    color:  #10100F;
 }
 
 #Hamburger a.active {
-    #FFFFF9;
-    color: black;
+    background-color: #FFFFF9;
+    color:  #10100F;
 }
 
 #Hamburger a:hover {
     background-color: rgb(1, 163, 163);
-    #FFFFF9;
+    color: #FFFFF9;
     border-bottom: solid 2px #FFFFF9;
     transition: 0.4s;
 }
@@ -246,7 +246,7 @@ body{
 }
 
 .scrollText{
-    color: black;
+    color:  #10100F;
     text-decoration: none;
     font-family: Verdana;
 }
@@ -277,7 +277,7 @@ body{
 }
 
 .scrollTextUp{
-    color: black;
+    color:  #10100F;
     text-decoration: none;
     font-family: Verdana;
 }
@@ -371,7 +371,7 @@ body{
 }
 
 .white{
-    #FFFFF9;
+    background-color: #FFFFF9;
 }
 
 .light-font{
@@ -429,7 +429,7 @@ body{
 
 .button{
     border: none;
-    #FFFFF9;
+    color: #FFFFF9;
     padding: 1rem;
     font-size: 1rem;
     cursor: pointer;
@@ -449,30 +449,29 @@ img {
 
 /*Gir en linje på høyre hånd slik at kolonner som står tett blir lettere å skille fra hverandre*/
 .column-border{
-    border-right: solid 0.3rem black;
+    border-right: solid 0.3rem  #10100F;
 }
 
-.ourApp-img{
+/* .ourApp-img{
     border-radius: 50%;
     border: solid 0.3rem mediumseagreen;
     width: 500px;
-}
+} */
 
 
 /*CSS FOR INDEX.HTML*/
 
 
-/*#fp-row-top{
+#fp-row-top{
   background-image: url("kjeks4.jpg");
   height: 100%;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
- }*/
+ }
 
 .background-top {
-  background-color: #EEEDED;
-  background-color: #ffffff;
+  background-color: #fffff9;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -486,7 +485,7 @@ img {
 }
 
 #fp-col-1 > h1{
-    color: black;
+    color:  #10100F;
     background-color: rgba(255,255,255, 0.0);
 
     border-radius: 1%;
@@ -599,7 +598,7 @@ img {
 
 #fp-row-6 > div > div > div > h2{
     margin-bottom: 15px;
-    #FFFFF9;
+    background-color: #FFFFF9;
     text-align: center;
     /* margin: topp, høyre, bunn, venstre*/
 }
@@ -749,7 +748,7 @@ img {
 }
 
 #socialmedia a{
-    color: black;
+    color:  #10100F;
     /*padding: 0 2px;*/
 }
     
@@ -838,7 +837,7 @@ img {
         border-right: none;
     }
     #links-footer {
-      border-top: 5px solid black;
+      border-top: 5px solid  #10100F;
       border-top-style: double;
     }
      .row-1-img{
