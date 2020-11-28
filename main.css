@@ -52,6 +52,7 @@ body{
 }
 
 /*Hvordan lenkene i navbaren ser ut*/
+/*Sources lenken i footeren får samme stiling!*/
 .navbar a{
     float: left;
     display: block;
@@ -741,150 +742,82 @@ img {
 }
 
 
-/*Footer  CSS*/
-.footer{
-    overflow:visible;
-    background-image url(https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-    background-size cover;
-    background-color: lightgrey;
-    box-sizing: border-box;
-    position: absolute;
-    height 300px;
-    width: 100%;
+/*New footer*/
+/*------------------------------------------*/
+#footer{
+    padding: 0rem;
+    padding-top: 1rem;
 }
 
-/*setting min height for responsiveness*/
-.footerCol {
-  min-height: 250px;
-  margin: 1rem;
+/*Social media buttons/links*/
+.column-mediabuttons{
+    float: left;
+    width: 33.33333%;
+    padding: 0;
+    padding-top: 1rem;
 }
 
-/*making a flexbox*/
-.mainContent {
-margin: auto;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
+#socialmedia a{
+    color: black;
+    /*padding: 0 2px;*/
 }
-
-.mainContent h3 {
-  text-transform: uppercase;
-  font-size: 3rem;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.footer #social-footer,
-.footer #links-footer,
-.footer #contact-footer{
-  display: inline-block;
-  vertical-align: top;
-}
-
-
-/*SOURCES CSS*/
-
-.sources-image{
-    width: 150px;
-    padding: 10px;
-}
-
-/*END SOURCES CSS*/
-
-/*CONTACT  CSS*/
-#contact-footer {
-  flex: 0 2 25em;
-}
-
-#contact-footer ol {
-padding-top: 4rem;
-text-align: left;
-font-size: 1.3rem;
-}
-
-#contact-footer li {
-padding-left: 0.7rem;
-text-align: left;
-}
-
-#contact-footer .fas {
-  font-size: 30px;
-  padding-right: 5%;
-}
-
-/*SOCIAL  CSS*/
-#social-footer {
-  flex: 1 2 20em;
-  border-left: 2px solid darkgrey;
-  border-right: 2px solid darkgrey;
-}
-
-/*TWO ROWS*/
-#links1, #links2 {
-  text-align: center;
-}
-
-#links1 {
-  padding-bottom: 5%;
-  padding-top: 5%;
-  padding: 0.4rem;
-}
-
-/*SOCIAL ICONS*/
-#social {
-  margin: 20px 0 0 0;
-}
-
-#social a{
-color: black;
-padding: 0 2px;
-}
-
+    
 /*hover-responsive bakgrunn*/
-#social a span{
-  padding: 10px;
-  font-size: 70px;
-  background: darkgrey;
-  border-radius: 8px;
-  height: 70px;
-  width: 80px;
-  line-height: 50px;
+#socialmedia a span{
+    padding: 0.6rem;
+    font-size: 4.35rem;
+    background: lightgray;
+    border-radius: 0.5rem;
+    height: 4.3rem;
+    width: 5rem;
+    line-height: 50px;
 }
 
-#links2 #social a span:hover{
-background-color: cyan;
+#socialmedia a span:hover{
+    background-color: rgba(60, 179, 114, 0.712);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+    transition: 0.4s;
 }
 
-#social {
-  margin-top: 0rem;
+/*Sources knappen arver styling fra lenkene/knappene i navbaren, men får noen unike egenskaper for å ligge pent*/
+/*Starter med å tilbakestille noen stilinger på selve navbaren:*/
+.sources{
+    overflow: initial;
+    background-color: initial;
+    position: initial;
+    top: initial;
+    z-index: initial;
+}
+/*Gir deretter litt ekstra stiling til selve lenken*/
+.sources a{
+    float: initial;
+    width: 80%;
+    margin: auto;
+    margin-top: 1.2rem;
 }
 
-/*LINKS  CSS*/
-
-#links-footer {
-flex: 1 2 20em;
-  }
-
-.sources-links li {
-  text-align: center;
+#contact-information > ul > li{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
 }
-
-.links h3 {
-  text-align: center;
-
-}
-
-.sources-links {
-  text-align: left;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
-}
-
- /*slutt på footer*/
-
+/*-------------------------------------------------------*/
 
  /*begynnelse media tags*/
+
+ @media screen and (max-width: 1300px){
+     #contact-information,
+     #socialmedia{
+         width: 50%;
+     }
+     .sources{
+         width: 100%;
+         padding-bottom: 2rem;
+
+     }
+     .sources > a{
+         width: 50%;
+     }
+ } 
 
 /*De store og små div'ene i zig-zag faller under hverandre*/
 @media screen and (max-width: 1000px){
@@ -893,10 +826,13 @@ flex: 1 2 20em;
     .column-50,
     .column-66,
     .column-75,
-    .column-100{
+    .column-100,
+    #contact-information,
+    #socialmedia{
         width: 100%;
         text-align: center;
     }
+
     img{
         margin: auto;
     }
@@ -927,47 +863,6 @@ flex: 1 2 20em;
     .medium-font{
         font-size: 3rem;
     }
-}
-
-/* media tag for linje over siste element i footer*/
-@media screen and (max-width: 1152px){
-  #links-footer {
-    border-top: 5px solid black;
-    border-top-style: double;
-  }
-  #social-footer {
-    border-right: 0px;
-    border-left: 2px solid darkgrey;
-  }
-}
-/* media tag for at elementene i footer skal stable seg*/
-@media screen and (max-width: 815px) {
-
-.mainContent {
-    max-width: 600px;
-    height:fit-content;
-}
-#contact-footer {
-  width: 100%;
-}
-#social-footer {
-  width: 100%;
-  border-top: 5px solid black;
-  border-top-style: double;
-  border-left: 0px;
-}
-#links-footer {
-  width: 100%;
-  border-top: 5px solid black;
-  border-top-style: double;
-}
-#links-footer ol{
-  text-align: center;
-}
-
-.footer {
-  height: fit-content;
-}
 }
 
 /*Elementer på menyen frosvinner, og hamburgerknapp dukker opp*/
