@@ -38,7 +38,7 @@ html, body{
 
 /*Farge på bakgrunnen*/
 body{
-    background-color: white;
+    #FFFFF9;
 }
 
 /*Sticky navbar*/
@@ -86,7 +86,7 @@ body{
 }
 
 .navbar a.active{
-    background-color: #FFFEEC;
+    background-color: #FFFFF9;
     border: 2px solid red;
     color: black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
@@ -135,7 +135,7 @@ body{
 /* a-tagsene i Hamburger-menyen*/
 #Hamburger a{
     display: block;
-    color: white;
+    #FFFFF9;
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
@@ -157,14 +157,14 @@ body{
 }
 
 #Hamburger a.active {
-    background-color: white;
+    #FFFFF9;
     color: black;
 }
 
 #Hamburger a:hover {
     background-color: rgb(1, 163, 163);
-    color: white;
-    border-bottom: solid 2px white;
+    #FFFFF9;
+    border-bottom: solid 2px #FFFFF9;
     transition: 0.4s;
 }
 /*Bakgrunn når man er inne i hamburger-menyen */
@@ -371,7 +371,7 @@ body{
 }
 
 .white{
-    background-color: white;
+    #FFFFF9;
 }
 
 .light-font{
@@ -429,7 +429,7 @@ body{
 
 .button{
     border: none;
-    color: white;
+    #FFFFF9;
     padding: 1rem;
     font-size: 1rem;
     cursor: pointer;
@@ -565,7 +565,7 @@ img {
 }
 
 #fp-row-pitch-2{
-    border-top: solid 100px white;
+    border-top: solid 100px #FFFFF9;
 }
 
 #fp-row-5>div>img{
@@ -599,7 +599,7 @@ img {
 
 #fp-row-6 > div > div > div > h2{
     margin-bottom: 15px;
-    background-color: white;
+    #FFFFF9;
     text-align: center;
     /* margin: topp, høyre, bunn, venstre*/
 }
@@ -766,6 +766,7 @@ img {
 
 #socialmedia a span:hover{
     background-color: rgba(60, 179, 114, 0.712);
+    background-color:  #ECD811;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
     transition: 0.4s;
 }
@@ -774,7 +775,9 @@ img {
 /*Starter med å tilbakestille noen stilinger på selve navbaren:*/
 .sources{
     overflow: initial;
-    background-color: initial;
+    border-bottom: none;
+    background-image: none;
+    background-color:#FFFFF9;
     position: initial;
     top: initial;
     z-index: initial;
