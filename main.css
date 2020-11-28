@@ -64,8 +64,6 @@ body{
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
-    /*border: solid 1px white;*/
-    background-color none;
     background-color: #ECD811;
     border-radius: 0.2rem;
     margin: 0.5rem;
@@ -121,7 +119,7 @@ body{
 #Hamburger{
     display: none;
     position: fixed;
-    bottom: 0vw;
+    bottom: 3rem;
     left: 50%;
     height: 70%;
     margin-top: -37.5%;
@@ -142,6 +140,8 @@ body{
     border-bottom: solid 2px transparent;
     border-radius: 1rem;
     margin: 0.5rem;
+    background-color: #ECD811;
+    border: 2px solid #10100F;
 }
 
 /* hr-tagsene i Hamburger-menyen*/
@@ -162,9 +162,11 @@ body{
 }
 
 #Hamburger a:hover {
-    background-color: rgb(1, 163, 163);
-    color: #FFFFF9;
-    border-bottom: solid 2px #FFFFF9;
+    background-color: #FFEA12;
+    color:#10100F;
+    border: solid 2px red;
+    transition: 0.4s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
     transition: 0.4s;
 }
 /*Bakgrunn når man er inne i hamburger-menyen */
@@ -177,9 +179,12 @@ body{
     height: 100%;
     width: 100%;
     background-color: rgb(255, 153, 0);
-    opacity: 0.65;
+    background-color: #fffff9;
+    opacity: 0.95;
     display: none;
     z-index: 9;
+    background-image: url(joe-whitebrick.jpg);
+    background-size: cover;
 }
 /* viser hamburgermenyen og tinten */
 #HamburgerFull:target #Hamburger, #HamburgerFull:target #tint{
