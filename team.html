@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="team.css">
     <link rel="icon" href="">
     <script src="hamburger-icon.js"></script>
+    <script src="littjs.js"></script>
+
 </head>
 <body>
     <!--En "fixed" navbar-->
@@ -23,14 +25,14 @@
 
             <a href="team.html" class="active">The Team</a>
             <a href="sources.html">Sources</a>
-            <a class="icon" onclick="myFunction(this)" href="#HamburgerFull">
+            <a class="icon" onclick="overflowx()" href="#HamburgerFull">
                 <div class="hamburger bar1"></div>
                 <div class="hamburger bar2"></div>
                 <div class="hamburger bar3"></div>
             </a>
         </div>
         <div id="Hamburger"> <!-- Usynlig vertikal navbar som kommer opp når hamburgerikonet er klikket -->
-            <a id="hamburgerX" href="#index.html">
+            <a id="hamburgerX" href="#" onclick="overflowx()">
                 <div class="hamburgerX bar4"></div>
                 <div class="hamburgerX bar5"></div>
             </a>
@@ -50,7 +52,7 @@
     <!--https://www.w3schools.com/howto/howto_css_zig_zag_layout.asp -->
 
     <!--row 1-->
-    <div class="row top full-height">
+    <div class="row top full-height" id="scrollTop">
       <div class="background-top">
         <div class="column-66">
             <h1 class="xlarge-font">Team Kløpper</h1><br>
@@ -60,6 +62,7 @@
         <div class="column-33">
 
             <img id="toprow-img" class ="row-1-img" src="https://images.pexels.com/photos/1559825/pexels-photo-1559825.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="500" alt="">
+            <div class="wholeScroll" id="scrollTo"><a href="#scrollTo"><span class="scrollText">SCROLL DOWN</span><br><br><div class="scrollDown" href="#fp-row-2"></div></a></div>
 
         </div>
       </div>
@@ -166,6 +169,10 @@
         <div class="column-25">
             <img src="https://images.pexels.com/photos/1680381/pexels-photo-1680381.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="500" height="auto" alt="">
         </div> <!--column-25-->
+        <div class="column-100">
+            <div class="wholeScrollUp"><a href="#scrollTop"><span class="scrollTextUp">SCROLL UP</span><br><br><div class="scrollUp" href="#scrollTop"></div></a></div>
+        </div> <!--column-100-->    
+
     </div> <!--row-->
 
     <footer class="footer">

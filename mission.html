@@ -8,48 +8,49 @@
     <script src="https://kit.fontawesome.com/221e020579.js" crossorigin="anonymous"> </script>
     <link rel="icon" href="">
     <script src="hamburger-icon.js"></script>
+    <script src="littjs.js"></script>
+
 </head>
 <body>
     <!--En "fixed" navbar-->
 
     <!-- Usynlig og vanlig navbar -->
-     <div id="HamburgerFull">
-        <div class="navbar"> <!-- Vanlig navbar -->
-            <a href="index.html" class="active">Home</a>
-            <a href="usingtheapp.html">Getting Started</a>
-            <a href="volunteers.html">For volunteers</a>
-            <a href="mission.html" class="active">Mission</a>
-
-            <a href="team.html">The Team</a>
-            <a href="sources.html">Sources</a>
-            <a class="icon" onclick="myFunction(this)" href="#HamburgerFull">
+    <div id="HamburgerFull">
+      <div class="navbar"> <!-- Vanlig navbar -->
+          <a href="index.html" class="active">Home</a>
+          <a href="usingtheapp.html">Getting Started</a>
+          <a href="volunteers.html">For volunteers</a>
+          <a href="mission.html">Mission</a>
+          <a href="team.html">The Team</a>
+          <a href="sources.html">Sources</a>
+            <a class="icon" onclick="overflowx()" href="#HamburgerFull">
                 <div class="hamburger bar1"></div>
                 <div class="hamburger bar2"></div>
                 <div class="hamburger bar3"></div>
             </a>
         </div>
         <div id="Hamburger"> <!-- Usynlig vertikal navbar som kommer opp når hamburgerikonet er klikket -->
-            <a id="hamburgerX" href="#index.html">
-                <div class="hamburgerX bar4"></div>
-                <div class="hamburgerX bar5"></div>
-            </a>
-            <hr class="navHr" role="navigation" aria-labelledby="mobile navigation">
-            <a href="index.html" class="active">Home</a>
-            <a href="usingtheapp.html">Getting Started</a>
-            <a href="volunteers.html">For volunteers</a>
-            <a href="mission.html">Mission</a>
-            <a href="team.html">The Team</a>
-            <a href="sources.html">Sources</a>
-            <hr class="navHr">
-        </div>
-        <div id="tint">
-        </div>
-    </div>
+            <a id="hamburgerX" href="#" onclick="overflowx()">
+              <div class="hamburgerX bar4"></div>
+              <div class="hamburgerX bar5"></div>
+          </a>
+          <hr class="navHr" role="navigation" aria-labelledby="mobile navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="usingtheapp.html">Getting Started</a>
+          <a href="volunteers.html">For volunteers</a>
+          <a href="mission.html">Mission</a>
+          <a href="team.html">The Team</a>
+          <a href="sources.html">Sources</a>
+          <hr class="navHr">
+      </div>
+      <div id="tint">
+      </div>
+  </div>
 
     <!--https://www.w3schools.com/howto/howto_css_zig_zag_layout.asp -->
 
     <!--row 1-->
-    <div class="row top full-height">
+    <div class="row top full-height" id="scrollTop">
       <div class="background-top">
         <div class="column-66">
             <h1>Our mission:</h1> <br>
@@ -63,6 +64,7 @@
         <div class="column-33">
 
         <img class ="row-1-img" src="https://images.pexels.com/photos/3845456/pexels-photo-3845456.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="300" height="auto" alt="">
+        <div class="wholeScroll" id="scrollTo"><a href="#scrollTo"><span class="scrollText">SCROLL DOWN</span><br><br><div class="scrollDown" href="#fp-row-2"></div></a></div>
 
         </div> <!--column-33-->
       </div>
@@ -76,7 +78,7 @@
         </div> <!--column-33-->
 
         <div class="column-66">
-            <h1 class="large-font">Our inspiration</h1>
+            <h1 class="large-font" id="">Our inspiration</h1>
             <!-- husk at det bare skal være en h1 tag på hver side
             <h2 class="large-p-font">Our inspiration</h2> <br> -->
             <p class="missionP"> The United Nations sustainability goal 3 has been our inspiration and focus for this project. It has a goal to “ensure healthy lives and promote well-being for all at all ages”.(4).
@@ -164,6 +166,10 @@
                     <p class="missionP ">Two of the solutions suggested by the WHO World Report on Ageing to tackle loneliness among older adults is to create opportunities for meaningful social roles and relationships, and to improve access to information and communications technologies (8). <span class ="white">We have proposed a solution that is a mix of these two - to create a social platform for older adults, that is specifically designed to be user friendly for everyone, regardless of age.</span>
                     </p>
                 </div> <!--column-100-->
+                <div class="column-100">
+                  <div class="wholeScrollUp"><a href="#scrollTop"><span class="scrollTextUp">SCROLL UP</span><br><br><div class="scrollUp" href="#scrollTop"></div></a></div>
+              </div> <!--column-100-->    
+      
             </div> <!--row-->
 
 <!--- footer --->

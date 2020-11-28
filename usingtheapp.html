@@ -9,6 +9,8 @@
     <script src="https://kit.fontawesome.com/221e020579.js" crossorigin="anonymous"> </script>
     <link rel="icon" href="">
     <script src=""></script>
+    <script src="littjs.js"></script>
+
 </head>
 <body>
     <!--En "fixed" navbar-->
@@ -23,15 +25,15 @@
 
             <a href="team.html">The Team</a>
             <a href="sources.html">Sources</a>
-            <a class="icon" onclick="myFunction(this)" href="#HamburgerFull">
-                <div class="hamburger bar1"></div>
-                <div class="hamburger bar2"></div>
-                <div class="hamburger bar3"></div>
-            </a>
-        </div>
-        <div id="Hamburger"> <!-- Usynlig vertikal navbar som kommer opp når hamburgerikonet er klikket -->
-            <a id="hamburgerX" href="#index.html">
-                <div class="hamburgerX bar4"></div>
+            <a class="icon" onclick="overflowx()" href="#HamburgerFull">
+              <div class="hamburger bar1"></div>
+              <div class="hamburger bar2"></div>
+              <div class="hamburger bar3"></div>
+          </a>
+      </div>
+      <div id="Hamburger"> <!-- Usynlig vertikal navbar som kommer opp når hamburgerikonet er klikket -->
+          <a id="hamburgerX" href="#" onclick="overflowx()">
+              <div class="hamburgerX bar4"></div>
                 <div class="hamburgerX bar5"></div>
             </a>
             <hr class="navHr" role="navigation" aria-labelledby="mobile navigation">
@@ -56,6 +58,7 @@
         </div> <!--column-66-->
         <div class="column-33">
           <img class ="row-1-img"src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" width="310" height="auto" alt="">
+          <div class="wholeScroll" id="scrollTo"><a href="#scrollTo"><span class="scrollText">SCROLL DOWN</span><br><br><div class="scrollDown" href="#fp-row-2"></div></a></div>
 
         </div> <!--column-33-->
       </div>
@@ -185,6 +188,10 @@
 
             <button  class="button" onClick="window.print()"><h1 class="medium-font">Press to print the user guide</h1></button>
             </div> <!--column-100-->
+            <div class="column-100">
+              <div class="wholeScrollUp"><a href="#usingApp-row-top"><span class="scrollTextUp">SCROLL UP</span><br><br><div class="scrollUp" href="#usingApp-row-top"></div></a></div>
+          </div> <!--column-100-->    
+  
     </div> <!--row-->
 
     <footer class="footer">
