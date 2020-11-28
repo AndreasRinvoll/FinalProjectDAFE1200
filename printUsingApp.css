@@ -34,7 +34,12 @@ html, body{
 body{
     background-color: white;
 }
-
+.scrollDown{
+    display: none;
+}
+.wholeScroll{
+    display: none;
+}
 
 /*zig-zag layout*/
 
