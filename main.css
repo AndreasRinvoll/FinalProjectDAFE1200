@@ -480,7 +480,7 @@ img {
 #fp-row-top{
   background-image: url("kjeks4.jpg");
   height: 100%;
-  background-position: left;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
  }
