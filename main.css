@@ -378,54 +378,35 @@ body{
 }
 
 .small-font{
-    /*font-size: ?rem;*/
-   /* font-size: 3vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
-    font-size: 32pt;
+    font-size: 2rem;
     line-height: 1.5;
 }
 
 .medium-font{
-    /*font-size: ?rem;*/
-    font-size: 45pt; /*Den store teksten krymper når skjermstørrelsen krymper!*/
+    font-size: 3.5rem; 
 }
 
 .large-font{
-    /*font-size: 6rem;*/ /*Ca det samme som 6vw, for full skjerm*/
-    /*font-size: 6vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
-
-   /* font-size: max(5vw, 3rem); /*Dette kan være en veldig god løsning, her er fonten skalerbar fra 6vw og ned til 50px. Da blir ikke teksten for liten!*/
-
-   font-size: 60pt;
-
- /*Dette kan være en veldig god løsning, her er fonten skalerbar fra 6vw og ned til 50px. Da blir ikke teksten for liten!*/
-
-
-    /*Dette er visst en form for "Clamping" og kan ha dårlig støtte på eldre browsers. Det kan derfor være tryggere å bruke meda tags, ihvertfall som backup!*/
+ 
+   font-size: 6rem;
 }
 
 .xlarge-font{
-    /*font-size: 7rem;*/
-
-   /* font-size: 8vw; /*Den store teksten krymper når skjermstørrelsen krymper!*/
-
-   font-size: 60pt;
-
-  /*  font-size: max(7vw, 3.5rem); /*Den store teksten krymper når skjermstørrelsen krymper!*/
-
+   font-size: 6rem;
 }
 
 .large-p-font{
-    font-size: 36px;
+    font-size: 2rem;
     line-height: 1.5;
 }
 
 .medium-p-font{
-    font-size: 25px;
+    font-size: 1.5rem;
     line-height: 1.5;
 }
 
 .small-p-font{
-    font-size: 19px;
+    font-size: 1.2rem;
     line-height: 1.5;
 }
 
@@ -471,23 +452,6 @@ img {
 
 /*CSS FOR INDEX.HTML*/
 
-
-/*#fp-row-top{
-  background-image: url("kjeks4.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
- }*/
-
-/*.background-top {
-  background-color: #EEEDED;
-  background-color: #ffffff;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
 
 #fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p, #fp-col-1 > button{
     text-align: left;
@@ -855,10 +819,10 @@ img {
 /*Skalering for vide, men smale skjermer. Teksten blir litt mindre*/
 @media screen and (max-height: 720px){
     .xlarge-font{
-        font-size: 4rem;
+        font-size: 6rem;
     }
     .large-font{
-        font-size: 3rem;
+        font-size: 6rem;
     }
     .medium-font{
         font-size: 3rem;
@@ -938,168 +902,110 @@ fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p{
 
 /* FONTSKALERING */
 
-@media screen and (max-width: 1160px){
+@media screen and (max-width: 800px){
 
+       
     .small-font{
-       font-size: 25pt;
+        font-size: 2rem;
     }
     
     .medium-font{
-        font-size: 35pt; 
+        font-size: 2.5rem; 
     }
     
     .large-font{
-    
-       font-size: 50pt;
-
-    }
-
-    .xlarge-font{
      
-       font-size: 50pt;
+       font-size: 4rem;
+    }
     
+    .xlarge-font{
+       font-size: 4rem;
     }
     
     .large-p-font{
-        font-size: 25px;
-        line-height: 1.5;
+        font-size: 1.5rem;
     }
     
     .medium-p-font{
-        font-size: 25px;
-        line-height: 1.5;
+        font-size: 1.5rem;
     }
     
     .small-p-font{
-        font-size: 19px;
-        line-height: 1.5;
-    }
-
-}
-
-
-@media screen and (max-width: 950px){
-
-    .medium-font{
-        font-size: 30pt; 
-    }
+        font-size: 1.2rem;
     
-}
+    }
+
+
 @media screen and (max-width: 650px){
 
+          
     .small-font{
-       font-size: 25pt;
+        font-size: 1.5rem;
     }
     
     .medium-font{
-        font-size: 25pt; 
+        font-size: 2rem; 
     }
     
     .large-font{
-    
-       font-size: 45pt;
-
-    }
-
-    .xlarge-font{
      
-       font-size: 50pt;
+       font-size: 2rem;
+    }
     
+    .xlarge-font{
+       font-size: 4rem;
     }
     
     .large-p-font{
-        font-size: 25px;
-        line-height: 1.5;
+        font-size: 1.5rem;
     }
     
     .medium-p-font{
-        font-size: 25px;
-        line-height: 1.5;
+        font-size: 1.4rem;
     }
     
     .small-p-font{
-        font-size: 19px;
-        line-height: 1.5;
+        font-size: 1.2rem;
+    
     }
 
 }
 
 @media screen and (max-width: 350px){
 
+         
     .small-font{
-       font-size: 20pt;
+        font-size: 1.4rem;
     }
     
     .medium-font{
-        font-size:  20pt; 
+        font-size: 1.4rem; 
     }
     
     .large-font{
-    
-       font-size: 40pt;
-
-    }
-
-    .xlarge-font{
      
-       font-size: 40pt;
+       font-size: 2rem;
+    }
     
+    .xlarge-font{
+       font-size: 3rem;
     }
     
     .large-p-font{
-        font-size: 20px;
-        line-height: 1.5;
+        font-size: 1.4rem;
     }
     
     .medium-p-font{
-        font-size: 20px;
-        line-height: 1.5;
+        font-size: 1.2rem;
     }
     
     .small-p-font{
-        font-size: 19px;
-        line-height: 1.5;
+        font-size: 1.2rem;
+    
     }
 
 }
 
-@media screen and (max-width: 300px){
-
-    .small-font{
-       font-size: 20pt;
-    }
-    
-    .medium-font{
-        font-size:  15pt; 
-    }
-    
-    .large-font{
-    
-       font-size: 19px;
-
-    }
-
-    .xlarge-font{
-     
-       font-size: 30pt;
-    
-    }
-    
-    .large-p-font{
-        font-size: 19px;
-        line-height: 1.5;
-    }
-    
-    .medium-p-font{
-        font-size: 19px;
-        line-height: 1.5;
-    }
-    
-    .small-p-font{
-        font-size: 19px;
-        line-height: 1.5;
-    }
-}
 /* Nav-overlay fix for landskapsmodus */
 @media screen and (max-height: 610px){
     #Hamburger a{
