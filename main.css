@@ -383,7 +383,9 @@ body{
 }
 
 .text-colour{
-    color: teal;
+    color #bdaf1e;
+    color rgb(212, 47, 25);
+    color: rgb(39, 19, 221);
 }
 
 .small-font{
@@ -419,8 +421,9 @@ body{
     line-height: 1.5;
 }
 
-#colortext{
-    color: mediumseagreen;
+.colortext{
+    color: rgb(39, 19, 221);
+    color rgb(228, 10, 10);
 }
 
 #boldtext {
@@ -429,11 +432,13 @@ body{
 
 .button{
     border: none;
-    color: #FFFFF9;
+    color: #10100F;
     padding: 1rem;
     font-size: 1rem;
     cursor: pointer;
-    background-color: teal;
+    background-color: #ECD811;
+    border: 2px solid black;
+    border-radius: 0.2rem;
 }
 
 .large-button{
@@ -493,7 +498,7 @@ img {
 
 
 #fp-col-1 > h2{
-    color: mediumseagreen;
+    color:  rgb(39, 19, 221);
     text-align: left;
     background-color: rgba(255,255,255, 0.0);
 
@@ -520,7 +525,7 @@ img {
 
 #callToAction{
     margin-top: 50px;
-    color: mediumseagreen;
+    color:  rgb(39, 19, 221);
 }
 
 #fp-row-3{
@@ -579,7 +584,7 @@ img {
 }
 
 #fp-row-6 > div > div{
-    border: 3px solid mediumseagreen;
+    border: 3px solid  rgb(39, 19, 221);
     border-radius: 2%;
     padding: 1rem;
     margin: 2.5%;
@@ -633,7 +638,7 @@ img {
 #usingApp-row-top > div >  h1{
     margin-top: 5%;
     margin-bottom: 30px;
-    color: mediumseagreen;
+    color:  rgb(39, 19, 221);
     letter-spacing: 5px;
 }
 
@@ -655,8 +660,8 @@ img {
 
 #usingApp-quickAccess > div{
     padding: 50px 20px 50px 20px;
-    border-top: solid mediumseagreen 2px;
-    border-bottom: solid mediumseagreen 2px;
+    border-top: solid rgb(39, 19, 221) 2px;
+    border-bottom: solid  rgb(39, 19, 221) 2px;
     text-align: center;
 }
 
@@ -678,7 +683,7 @@ img {
 }
 
 .tutorialColumn > div {
-    border: 3px solid mediumseagreen;
+    border: 3px solid  rgb(39, 19, 221);
     padding: 20px;
 
 }
