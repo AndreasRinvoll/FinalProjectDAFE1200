@@ -1002,6 +1002,15 @@ fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p{
 }
     }
 
+@media screen and (max-width: 1000px){
+    #fp-row-6 > div > div > div > img{
+         
+         width: 250px;
+         
+    }
+}
+    /* margin: topp, høyre, bunn, venstre*/
+
 /*Slutt MEDIA UNIKT FOR USINGAPP.HTML*/
 
 
