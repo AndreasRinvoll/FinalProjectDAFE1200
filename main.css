@@ -919,12 +919,49 @@ img {
     }
 
 
-fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p{
-    width: 100%;
+    fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p{
+       width: 100%;
+
+    }
 
 }
 
+@media screen and (max-width: 350px){
+    
+    #fp-row-6 > div > div > div > img{
+        min-width: 200px;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    
+    #fp-row-6 > div > div > div > img{
+        min-width: 150px;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 250px){
+    
+    #fp-row-6 > div > div > div > img{
+        min-width: 100px;
+        width: 100px;
+        height: 100px;
+    }
+}
 /*Slutt MEDIA UNIKT FOR INDEX.HTML*/
+
+/*SOURCES CSS*/
+
+.sources-image{
+    width: 150px;
+}
+
+/*SOURCES CSS SLUTT*/
+
 
 /*MEDIA UNIKT FOR USINGAPP.HTML*/
 @media screen and (max-width: 1000px){
@@ -1007,7 +1044,43 @@ fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p{
 
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 400px){
+
+         
+    .small-font{
+        font-size: 1.4rem;
+    }
+    
+    .medium-font{
+        font-size: 1.6rem; 
+    }
+    
+    .large-font{
+     
+       font-size: 2rem;
+    }
+    
+    .xlarge-font{
+       font-size: 3rem;
+    }
+    
+    .large-p-font{
+        font-size: 1.4rem;
+    }
+    
+    .medium-p-font{
+        font-size: 1.2rem;
+    }
+    
+    .small-p-font{
+        font-size: 1.2rem;
+    
+    }
+
+}
+
+
+@media screen and (max-width: 275px){
 
          
     .small-font{
@@ -1041,6 +1114,7 @@ fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p{
     }
 
 }
+
 
 /* Nav-overlay fix for landskapsmodus */
 @media screen and (max-height: 610px){
