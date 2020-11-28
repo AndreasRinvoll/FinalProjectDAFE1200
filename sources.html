@@ -8,6 +8,8 @@
     <script src="https://kit.fontawesome.com/221e020579.js" crossorigin="anonymous"> </script>
     <link rel="icon" href="">
     <script src=""></script>
+    <script src="littjs.js"></script>
+
 </head>
 <body>
     <!--En "fixed" navbar-->
@@ -17,26 +19,24 @@
         <div class="navbar"> <!-- Vanlig navbar -->
             <a href="index.html" class="active">Home</a>
             <a href="usingtheapp.html">Getting Started</a>
-            <a href="volunteers.html">For volunteers</a>
             <a href="mission.html">Mission</a>
-            
+
             <a href="team.html">The Team</a>
             <a href="sources.html" class="active">Sources</a>
-            <a class="icon" onclick="myFunction(this)" href="#HamburgerFull">
+            <a class="icon" onclick="overflowx()" href="#HamburgerFull">
                 <div class="hamburger bar1"></div>
                 <div class="hamburger bar2"></div>
                 <div class="hamburger bar3"></div>
             </a>
         </div>
         <div id="Hamburger"> <!-- Usynlig vertikal navbar som kommer opp når hamburgerikonet er klikket -->
-            <a id="hamburgerX" href="#index.html">
+            <a id="hamburgerX" href="#" onclick="overflowx()">
                 <div class="hamburgerX bar4"></div>
                 <div class="hamburgerX bar5"></div>
             </a>
             <hr class="navHr" role="navigation" aria-labelledby="mobile navigation">
             <a href="index.html" class="active">Home</a>
             <a href="usingtheapp.html">Getting Started</a>
-            <a href="volunteers.html">For volunteers</a>
             <a href="mission.html">Mission</a>
             <a href="team.html">The Team</a>
             <a href="sources.html">Sources</a>
@@ -46,141 +46,187 @@
         </div>
     </div>
 
+
     <!--row 1-->
-    <div class="row top full-height" id="usingApp-row-top">
+    <div class="row top full-height" id="scrollTop">
         <div class="column-66" id="usingApp-col-1">
-            <h1 class="large-font" >Getting started with Kløpper</h1>
-             <p class="large-p-font">- Because at Kløpper we are with you every step of the way.</p>
+            <h1 class="large-font" >Our Sources</h1>
+             <p class="large-p-font">Below is a list of <a href="#literary-sources">literary sources</a>, <a href="#technical-sources">technical sources</a> and <a href="#image-sources">image sources</a>  that have been used in the making of this webpage.</p>
         </div> <!--column-66-->
         <div class="column-33">
-          <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" width="335" height="auto" alt="">
+          <img src="sources-img.jpg"class ="row-1-img"  width="335" height="auto" alt="a picture showing a coach placed in front of book shelves in a library">
+          <div class="wholeScroll" id="scrollTo"><a href="#scrollTo"><span class="scrollText">SCROLL DOWN</span><br><br><div class="scrollDown" href="#fp-row-2"></div></a></div>
+
         </div> <!--column-33-->
     </div> <!--row-->
 
- <div class="row" id ="usingApp-quickAccess">
+ <div class="row" id ="literary-sources">
         <div class="column-100">
-                <p class="large-p-font">
+                <h3 class="large-p-font light-font">Literary sources</h3>
+               
+                <p class="small-p-font">
+                  <br>
+                    <span class="large-p-font" id="source-1">1</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
 
-                    Quick access: <br><br> | 
+                    <span class="large-p-font" id="source-1">2</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
 
-                    <a href="#fp-row-2">How the app works </a>| 
+                    <span class="large-p-font" id="source-1">1</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
 
-                    <a href="#usingApp-row-4">How to download the app </a> | 
+                    <span class="large-p-font" id="source-1">2</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="large-p-font" id="source-1">1</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
 
-                    <a href="#download">Printable user guide |</a> </p>
+                    <span class="large-p-font" id="source-1">2</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="large-p-font" id="source-1">1</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="large-p-font" id="source-1">2</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="large-p-font" id="source-1">1</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="large-p-font" id="source-1">2</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="large-p-font" id="source-1">1</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="large-p-font" id="source-1">2</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="large-p-font" id="source-1">1</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="large-p-font" id="source-1">2</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="large-p-font" id="source-1">1</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="large-p-font" id="source-1">2</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="large-p-font" id="source-1">1</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="large-p-font" id="source-1">2</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="large-p-font" id="source-1">1</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="large-p-font" id="source-1">2</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="large-p-font" id="source-1">1</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="large-p-font" id="source-1">2</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="large-p-font" id="source-1">1</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="large-p-font" id="source-1">2</span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+
+                     </p>
+
+                     <div class="wholeScrollUp"><a href="#scrollTop"><span class="scrollTextUp">SCROLL UP</span><br><br><div class="scrollUp" href="#scrollTop"></div></a></div>
+
 
         </div> <!--column-100-->
     </div> <!--row-->
 
-    <div class="row row-color" id="fp-row-2">
-        <div class="column-100">
-            <h1 class="medium-font">How the Kløpper app works</h1>
+    <div class="row row-color" id="technical-sources">
+        <div class="column-100"> <h3 class="large-p-font light-font">Technical sources </h3>
+                <p class="small-p-font">
+                  <br>
+                    <span class="medium-p-font" id="source-1">- Nav bar.<br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="medium-p-font" id="source-1">- Zig-zag layout. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="medium-p-font" id="source-1">- Nav bar.<br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="medium-p-font" id="source-1">- Zig-zag layout. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="medium-p-font" id="source-1">- Nav bar.<br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="medium-p-font" id="source-1">- Zig-zag layout. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="medium-p-font" id="source-1">- Nav bar.<br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="medium-p-font" id="source-1">- Zig-zag layout. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="medium-p-font" id="source-1">- Nav bar.<br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="medium-p-font" id="source-1">- Zig-zag layout. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="medium-p-font" id="source-1">- Nav bar.<br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="medium-p-font" id="source-1">- Zig-zag layout. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="medium-p-font" id="source-1">- Nav bar.<br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="medium-p-font" id="source-1">- Zig-zag layout. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="medium-p-font" id="source-1">- Nav bar.<br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="medium-p-font" id="source-1">- Zig-zag layout. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="medium-p-font" id="source-1">- Nav bar.<br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="medium-p-font" id="source-1">Zig-zag layout. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+                    <span class="medium-p-font" id="source-1">Nav bar.<br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+
+                    <span class="medium-p-font" id="source-1">- Zig-zag layout. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br>
+                    
+
+                     </p>
+
+                     <div class="wholeScrollUp"><a href="#scrollTop"><span class="scrollTextUp">SCROLL UP</span><br><br><div class="scrollUp" href="#scrollTop"></div></a></div>
+
         </div> <!--column-100-->
     </div> <!--row-->
 
+   <div class="row" id="image-sources">
+        <div class="column-100"> <h3 class="large-p-font light-font">Image sources </h3>
+                <p class="small-p-font">
 
+                    <br>
+                    <span class="medium-p-font" id="source-1"><img src="sources-img.jpg" class="sources-image" alt="">Library. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://unsplash.com/photos/t7zYZzO_CX0</a>  <br><br><br>
 
-    <!--row 3-->
-    <div class="row row-color" id="fp-row-3">
-       <div class="column-33">
-            <div>
-            <div><img src="download-phone.png"></div>
-            <div><h2>1. Download the app</h2>
-                <p>For more information on how to download the app please <a href="#usingApp-row-4">see the step-by-step instructions</a> below.</p></div>
-            </div>    
-        </div> <!--column-33-->
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
+                    
+                    <span class="medium-p-font" id="source-1"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" class="sources-image" alt="">Friends embracing in scenic landscape. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Retrieved from: <a href="">https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80 </a>  <br><br><br>
 
-        <div class="column-33">
-            <div>
-            <div><img src="sign-up-phone.png"></div>
-            <div><h2>2. Sign up for an account</h2>
-             <p>After downloading the app, you will be guided through step-by-step instructions on how to make a profile.</p></div>
-         </div>
-        </div> <!--column-33-->
+                    <span class="medium-p-font" id="source-1"><img src="having-lunch.jpg" class="sources-image" alt="">Two white-haired adults sitting together on a bench by the ocean. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="https://unsplash.com/photos/yRmmm3t1oX8">https://unsplash.com/photos/yRmmm3t1oX8 </a>  <br><br><br>
 
-        <div class="column-33">
-            <div>
-            <div><img src="games-phone.png"></div>
-            <div><h2>3. Choose between your favourite games</h2>
-            <p>Let the fun begin! Choose between a myriad of your favourite games and activities, make new friends, and have fun!</p></div>
-            </div>
-        </div> <!--column-33-->
-    </div> <!--row-->
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
+                    
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
+                    
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
 
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
+                    
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
+                    
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
 
-     <!--row 4-->
-    <div class="row row-color" id="fp-row-4">
-        <div class="column-33">
-            <div>
-            <div><img src="calendar-phone.png"></div>
-            <div><h2>4. Stay up to date</h2> <p>Stay up do date with our in-app event calendar. Here you can sign up for events and set reminders, so that you never have to miss a day.</p></div>
-        </div>
-        </div> <!--column-33-->
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
+                    
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
+                    
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
 
-        <div class="column-33">
-            <div>
-           <div><img src="friends-phone.png"></div>
-           <div> <h2>5.Stay in touch with friends</h2> <p>Add friends to your friend list in order to stay in touch. Gather the gang for regular hang-outs!</p></div>
-       </div>
-        </div> <!--column-33-->
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
+                    
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
+                    
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
 
-        <div class="column-33">
-            <div>
-            <div><img src="prizes-phone.png"></div>
-            <div><h2>6.Earn points and prizes</h2><p>Use your bingo-mojo to build an impressive prize collection. Show it off to your friends!</p></div>
-        </div>
-        </div> <!--column-33-->
-    </div> <!--row-->
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
+                    
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
+                    
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
 
-    </div> <!--row-->
-    <div class="row row-color" id="usingApp-row-3">
-       <div class="column-100">
-            <h1 class="medium-font"></h1>
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
+                    
+                    <span class="medium-p-font" id="source-1"><img src="one_friend.jpg" class="sources-image" alt="">Woman and child hugging. <br></span> Nasjonalt kunnskapssenter for helsetjenesten. (2015). Slik oppsummerer vi forskning. Håndbok for Nasjonalt kunnskapssenter for helsetjenesten (4. utg). Downloaded from: <a href="">https://www.fhi.no/globalassets/dokumenterfiler/tema/brukererfaring/2015_handbok_slik_oppsummerer_vi_forskning.pdf  </a>  <br><br><br>
+                    
+                    
+                     </p>
+
+                     <div class="wholeScrollUp"><a href="#scrollTop"><span class="scrollTextUp">SCROLL UP</span><br><br><div class="scrollUp" href="#scrollTop"></div></a></div>
         </div> <!--column-100-->
-    </div> <!--row-->
-
-    <div class="row" id="usingApp-row-4">
-        <div class="column-100">
-            <h1 class="medium-font">Downloading  the Kløpper app</h1>
-        </div> <!--column-100-->
-    </div> <!--row-->
-
-
-    <!--row 3-->
-    <div class="row">
-        <div class="column-33 tutorialColumn">
-           <div>
-            <div>
-               <h1 class="large-font" style="color:mediumseagreen">Step 1.</h1>
-            <p class="large-p-font">Visit the App store on your smartphone or tablet.</p>
-                <div>
-                <a href="https://www.apple.com/app-store/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/App_Store_%28iOS%29.svg/300px-App_Store_%28iOS%29.svg.png" width="50px"></a>
-                <a href="https://play.google.com/store?utm_source=emea_Med&utm_medium=hasem&utm_content=30Mar15&utm_campaign=Evergreen&pcampaignid=MKT-EG-emea-no-1001280-Med-hasem-py-Evergreen-30Mar15-1%7cONSEM_kwid_43700006832527552&gclid=Cj0KCQiAkuP9BRCkARIsAKGLE8WygleVkw6Ng_Kov-nBrQxiXVPAvWhvoozfhaYKYBMIwTfUraUyXiAaAvQkEALw_wcB&gclsrc=aw.ds"><img src="https://i.pinimg.com/originals/79/26/82/792682cb7c7de3291ba12461485c1c8b.png" width="50px"></a></div>
-            
-</div>
-        </div>
-        </div> <!--column-33-->
-
-        <div class="column-33 tutorialColumn">
-             <div>
-                <h1 class="large-font" style="color:mediumseagreen">Step 2.</h1>
-            <p class="large-p-font">Find us by entering "Kløpper" in the search field.</p>
-            </div>
-        </div> <!--column-33-->
-
-        <div class="column-33 tutorialColumn">
-             <div>
-                <h1 class="large-font" style="color:mediumseagreen">Step 3.</h1>
-            <p class="large-p-font">Press Download and Open. <br><br>The Kløpper app will guide you through the rest. </p>
-            </div>
-        </div> <!--column-33-->
-    </div> <!--row-->
-
-    <div class="row row-color"id="download" >
-           <div class="column-100">
-
-            <button  class="button" ><h1 class="medium-font">Press to download the pdf instructions</h1></button>
-            </div> <!--column-100-->
     </div> <!--row-->
 
     <footer class="footer">

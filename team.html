@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="team.css">
     <link rel="icon" href="">
     <script src="hamburger-icon.js"></script>
+    <script src="littjs.js"></script>
+
 </head>
 <body>
     <!--En "fixed" navbar-->
@@ -18,26 +20,24 @@
         <div class="navbar"> <!-- Vanlig navbar -->
             <a href="index.html" class="active">Home</a>
             <a href="usingtheapp.html">Getting Started</a>
-            <a href="volunteers.html">For volunteers</a>
             <a href="mission.html">Mission</a>
 
             <a href="team.html" class="active">The Team</a>
             <a href="sources.html">Sources</a>
-            <a class="icon" onclick="myFunction(this)" href="#HamburgerFull">
+            <a class="icon" onclick="overflowx()" href="#HamburgerFull">
                 <div class="hamburger bar1"></div>
                 <div class="hamburger bar2"></div>
                 <div class="hamburger bar3"></div>
             </a>
         </div>
         <div id="Hamburger"> <!-- Usynlig vertikal navbar som kommer opp når hamburgerikonet er klikket -->
-            <a id="hamburgerX" href="#index.html">
+            <a id="hamburgerX" href="#" onclick="overflowx()">
                 <div class="hamburgerX bar4"></div>
                 <div class="hamburgerX bar5"></div>
             </a>
             <hr class="navHr" role="navigation" aria-labelledby="mobile navigation">
             <a href="index.html" class="active">Home</a>
             <a href="usingtheapp.html">Getting Started</a>
-            <a href="volunteers.html">For volunteers</a>
             <a href="mission.html">Mission</a>
             <a href="team.html">The Team</a>
             <a href="sources.html">Sources</a>
@@ -50,7 +50,7 @@
     <!--https://www.w3schools.com/howto/howto_css_zig_zag_layout.asp -->
 
     <!--row 1-->
-    <div class="row top full-height">
+    <div class="row top full-height" id="scrollTop">
       <div class="background-top">
         <div class="column-66">
             <h1 class="xlarge-font">Team Kløpper</h1><br>
@@ -60,6 +60,7 @@
         <div class="column-33">
 
             <img id="toprow-img" class ="row-1-img" src="https://images.pexels.com/photos/1559825/pexels-photo-1559825.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="500" alt="">
+            <div class="wholeScroll" id="scrollTo"><a href="#scrollTo"><span class="scrollText">SCROLL DOWN</span><br><br><div class="scrollDown" href="#fp-row-2"></div></a></div>
 
         </div>
       </div>
@@ -144,7 +145,7 @@
         <div class="column-33 column-border">
             <h2 class="medium-font">Location</h1>
             <p class="small-p-font">We are located in beautiful Oslo</p>
-            <p class="small-p-font">Come visit us during weekdays at OsloMet - Oslo Metropolitian University. See our contact information in the footer below.</p>
+            <p class="small-p-font">Come visit us during weekdays at OsloMet - Oslo Metropolitian University. See our contact information below.</p>
         </div> <!--column-33-->
 
         <div class="column-33">
@@ -152,22 +153,25 @@
         </div> <!--column-33-->
     </div> <!--row-->
 
-    <div class="row row-color">
-        <div class="column-25">
-            <img src="https://images.pexels.com/photos/1559846/pexels-photo-1559846.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="500" height="auto" alt="">
-        </div> <!--column-25-->
+    <!--row 3--><!--
+    <div class="row row-color2">
+        <div class="column-66 ">
+            <h3 class="medium-font">Get in touch with us!</h3><br><br>
+            <p class="medium-p-font">
+                    <span class="bold">Address:</span> Pilestredet 35, 0167 Oslo <br>
+                    <span class="bold">Telephone:</span> +47 9884 9828 <br>
+                    <span class="bold">E-mail:</span> s198965@oslomet.no <br>
+                    <span class="bold">In hours: </span>9am-5pm monday-friday <br><br>
+            </p>
+        </div>
 
-        <div class="column-50">
-            <h1 class="large-font">Norway</h1>
-            <p class="medium-p-font">Some information and facts about Norway. Read more about Norway "HERE".</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, unde? Voluptas, non sunt aliquam ipsam natus explicabo minus perferendis tempora atque saepe dicta facere quo, inventore reiciendis laboriosam consequuntur nihil repellendus? Recusandae quia assumenda maxime molestias distinctio eligendi numquam ratione. Distinctio, tempora! Neque iusto, itaque rerum suscipit iste vero ipsa!</p>
-        </div> <!--column-50-->
+        <div class="column-33 ">
+            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" alt="">
+        </div>
+    </div> row-->
 
-        <div class="column-25">
-            <img src="https://images.pexels.com/photos/1680381/pexels-photo-1680381.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="500" height="auto" alt="">
-        </div> <!--column-25-->
-    </div> <!--row-->
-
+ 
+ 
     <footer class="footer">
           <div class="mainContent">
             <div class="footerCol" id="contact-footer">
