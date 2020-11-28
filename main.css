@@ -711,6 +711,7 @@ img {
 #footer{
     padding: 0rem;
     padding-top: 1rem;
+    border-top: solid 0.2rem darkgray;
 }
 
 /*Social media buttons/links*/
