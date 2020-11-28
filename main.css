@@ -284,7 +284,9 @@ body{
 
 
 
-
+.row-1-img, .row-1-img-FP{
+   vertical-align: top;
+}
 
 
 
@@ -399,11 +401,11 @@ body{
 
 .large-font{
  
-   font-size: 6rem;
+   font-size: 5rem;
 }
 
 .xlarge-font{
-   font-size: 6rem;
+   font-size: 5rem;
 }
 
 .large-p-font{
@@ -442,8 +444,9 @@ body{
 }
 
 .large-button{
-    padding: 2rem;
-    font-size: larger;
+    margin-top: 50px;
+    padding: 1rem;
+    font-size: inherit;
 }
 
 img {
@@ -870,10 +873,10 @@ img {
 /*Skalering for vide, men smale skjermer. Teksten blir litt mindre*/
 @media screen and (max-height: 720px){
     .xlarge-font{
-        font-size: 6rem;
+        font-size: 5rem;
     }
     .large-font{
-        font-size: 6rem;
+        font-size: 5rem;
     }
     .medium-font{
         font-size: 3rem;
