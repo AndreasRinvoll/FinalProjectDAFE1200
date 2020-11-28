@@ -37,6 +37,9 @@ body{
 .scrollDown{
     display: none;
 }
+.wholeScroll{
+    display: none;
+}
 
 /*zig-zag layout*/
 
