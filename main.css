@@ -452,14 +452,10 @@ img {
     max-width: 100%;
 }
 
-#logo {
-    max-width: 15%;
+#logoTop {
     height: auto;
-    float: right;
-    display: inline-block;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-right: 3rem;
+    align-self: center;
+    max-width: 25%;
 }
 
 /*Gir en linje på høyre hånd slik at kolonner som står tett blir lettere å skille fra hverandre*/
