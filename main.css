@@ -754,6 +754,10 @@ flex-wrap: wrap;
     padding: 10px;
 }
 
+#literary-sources > div > p, #technical-sources > div > p, #image-sources > div > p{
+      word-wrap: break-word; /* For å få linker til å skalere */
+}
+
 /*END SOURCES CSS*/
 
 /*CONTACT  CSS*/
