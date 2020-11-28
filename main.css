@@ -368,6 +368,10 @@ body{
     font-weight: lighter;
 }
 
+.bold{
+    font-weight: bolder;
+}
+
 .text-colour{
     color: teal;
 }
