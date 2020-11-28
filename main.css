@@ -364,6 +364,10 @@ body{
     background-color: white;
 }
 
+.light-font{
+    font-weight: lighter;
+}
+
 .text-colour{
     color: teal;
 }
@@ -773,6 +777,16 @@ flex-wrap: wrap;
   display: inline-block;
   vertical-align: top;
 }
+
+
+/*SOURCES CSS*/
+
+.sources-image{
+    width: 150px;
+    padding: 10px;
+}
+
+/*END SOURCES CSS*/
 
 /*CONTACT  CSS*/
 #contact-footer {
