@@ -1003,7 +1003,43 @@ img {
 
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 400px){
+
+         
+    .small-font{
+        font-size: 1.4rem;
+    }
+    
+    .medium-font{
+        font-size: 1.6rem; 
+    }
+    
+    .large-font{
+     
+       font-size: 2rem;
+    }
+    
+    .xlarge-font{
+       font-size: 3rem;
+    }
+    
+    .large-p-font{
+        font-size: 1.4rem;
+    }
+    
+    .medium-p-font{
+        font-size: 1.2rem;
+    }
+    
+    .small-p-font{
+        font-size: 1.2rem;
+    
+    }
+
+}
+
+
+@media screen and (max-width: 270px){
 
          
     .small-font{
@@ -1037,6 +1073,7 @@ img {
     }
 
 }
+
 
 /* Nav-overlay fix for landskapsmodus */
 @media screen and (max-height: 610px){
