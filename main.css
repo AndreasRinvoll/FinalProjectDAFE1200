@@ -44,7 +44,8 @@ body{
 .navbar{
     overflow: hidden;
     background-color #FAE9CF;
-    background-color: #891111;
+    background-color #891111;
+    background-color: darkred;
     background-image url(joe-whitebrick.jpg);
     background-size: cover;
     position: fixed;
@@ -59,15 +60,17 @@ body{
 .navbar a{
     float: left;
     display: block;
-    color:  #10100F;
+    color #10100F;
+    color: #fffff9;
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
-    background-color: #ECD811;
-    background-color #b6ab34;
+    background-color: #a39929;
+    background-color: ;
+    opacity: ;
     border-radius: 0.2rem;
     margin: 0.5rem;
-    border: 2px solid  #10100F;
+    border: 2px solid #fffff9;
     /*width: 25%;*/ /*Lange knapper*/
     /* #FFEA12 */
 }
@@ -749,6 +752,7 @@ img {
     padding: 0rem;
     padding-top: 1rem;
     border-top: solid 0.2rem darkgray;
+    background-color: darkred;
 }
 
 /*Social media buttons/links*/
@@ -787,8 +791,7 @@ img {
 .sources{
     overflow: initial;
     border-bottom: none;
-    background-image: none;
-    background-color:#FFFFF9;
+    background-color: inherit;
     position: initial;
     top: initial;
     z-index: initial;
