@@ -320,11 +320,6 @@ body{
 }
 
 /*Her er en rekke kolonne-diver av ulik størrelse som kan brukes i kombinasjon med hverandre:*/
-.column-20{
-    float: left;
-    width: 25%;
-    padding: 1rem;
-}
 .column-25{
     float: left;
     width: 25%;
@@ -373,6 +368,7 @@ body{
     text-align: center;
 }
 
+/*Gir denne til columns i top row, slik at de får en hvit bakgrunn oppå bakgrunnsbildet*/
 .white{
     background-color: #FFFFF9;
 }
@@ -387,10 +383,6 @@ body{
 
 .italic {
     font-style: italic;
-}
-
-.text-colour{
-    color: rgb(39, 19, 221);
 }
 
 .small-font{
@@ -497,7 +489,7 @@ img {
 #logoTop {
     height: auto;
     align-self: center;
-    max-width: 25%;
+    max-width: 50%;
     min-width: 200px;
 }
 
@@ -510,8 +502,6 @@ img {
 
 
 /*CSS FOR INDEX.HTML*/
-
-/*Må se litt mer på denne - Andreas*/
 .background-top {
     background-color: #fffff9;
     height: 100%;
@@ -520,7 +510,11 @@ img {
     background-size: cover;
 }
 
-
+#ourApp-img{
+    border-radius: 3%;
+    border: solid 0.2rem rgba(0, 0, 0, 0.288);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+}
 
 #fp-row-6{
     padding: 50px 0;
@@ -696,7 +690,6 @@ img {
   line-height: 1.5;
 }
 
-
 /*New footer*/
 /*------------------------------------------*/
 #footer{
@@ -763,6 +756,7 @@ img {
 
  /*begynnelse media tags*/
 
+ /*Footer mediatags*/
  @media screen and (max-width: 1300px){
      #contact-information,
      #socialmedia{
@@ -771,7 +765,6 @@ img {
      .sources{
          width: 100%;
          padding-bottom: 2rem;
-
      }
      .sources > a{
          width: 50%;
@@ -807,7 +800,6 @@ img {
       border-top: 5px solid  #10100F;
       border-top-style: double;
     }
-
 }
 
 /*Skalering for vide, men smale skjermer. Teksten blir litt mindre*/
@@ -839,7 +831,7 @@ img {
 }
 
 /*Litt mindre padding på rows, i mobiltelefonmodus*/
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     .row{
         padding: 1rem;
     }
@@ -867,7 +859,6 @@ img {
 }
 
 @media screen and (min-width: 1000px){
-
     #fp-row-6 > div > div{
         min-height: 690px;
     } /* gjør at intervju-divene er like lange i fullskjerm*/
@@ -1159,5 +1150,3 @@ img {
         font-size: 14pt;
     }
 }
-
-
