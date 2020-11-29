@@ -31,7 +31,6 @@ html, body{
 .full-height{
     height: 100%;
     min-height: 640px;
-    background-image linear-gradient(white, rgba(211, 211, 211, 0.473));
     background-image: url(joe-whitebrick.jpg);
     background-size: cover;
 }
@@ -837,7 +836,10 @@ img {
         width: 100%;
         text-align: center;
     }
-
+    .full-height{
+        height: initial;
+        min-height: initial;
+    }
 
 
     img{
@@ -911,7 +913,7 @@ img {
 
 
 
-@media screen and (max-width: 1150px){
+/*@media screen and (max-width: 1150px){
     #fp-row-5>div>img{
         display: none;
     }
@@ -936,7 +938,7 @@ img {
         width: 100%;
     }
 
-}
+}*/
 
 @media screen and (max-width: 700px){
     #col-33-FP {
