@@ -501,7 +501,7 @@ img {
     border: 3px solid  rgba(130, 108, 253, 0.719);
     border-radius: 2%;
     padding: 1rem;
-    margin: 2.5%;    
+    margin: 2.5%;
 }
 #fp-row-6 > div > div > div > img{
     border-radius: 50%;
@@ -829,7 +829,7 @@ img {
     } /* gjør at intervju-divene er like lange i fullskjerm*/
 
     #fp-row-3 > div> div  , #fp-row-4 > div> div{
-        min-height: 700px;
+        min-height: 600px;
     }
 
      .tutorialColumn > div {
@@ -841,11 +841,11 @@ img {
 @media screen and (min-width: 1000px){
 
     #fp-row-6 > div > div{
-        min-height: 800px;
+        min-height: 690px;
     } /* gjør at intervju-divene er like lange i fullskjerm*/
 
     #fp-row-3 > div> div  , #fp-row-4 > div> div{
-        min-height: 700px;
+        min-height: 750px;
     }
 
      .tutorialColumn > div {
@@ -857,11 +857,11 @@ img {
 @media screen and (min-width: 900px){
 
     #fp-row-6 > div > div{
-        min-height: 900px;
+        min-height: 690px;
     } /* gjør at intervju-divene er like lange i fullskjerm*/
 
     #fp-row-3 > div> div  , #fp-row-4 > div> div{
-        min-height: 700px;
+        min-height: 800px;
     }
 
      .tutorialColumn > div {
@@ -869,7 +869,21 @@ img {
     }
 
 }
+@media screen and (min-width: 900px){
 
+    #fp-row-6 > div > div{
+        min-height: 690px;
+    } /* gjør at intervju-divene er like lange i fullskjerm*/
+
+    #fp-row-3 > div> div  , #fp-row-4 > div> div{
+        min-height: 800px;
+    }
+
+     .tutorialColumn > div {
+    min-height: 500px;
+    }
+
+}
 
 /*@media screen and (max-width: 1150px){
     fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p{
@@ -900,7 +914,6 @@ img {
         min-width: 200px;
         width: 200px;
         height: 200px;
-
     }
 }
 
