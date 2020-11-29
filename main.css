@@ -63,12 +63,10 @@ body{
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
-    background-color: #fff2f2;
+    background-color: #ECD811;
     border-radius: 0.2rem;
     margin: 0.5rem;
-    border: 2px solid  #10100F
-    border: 2px solid white;
-    
+    border: 2px solid  #10100F;
     /*width: 25%;*/ /*Lange knapper*/
     /* #FFEA12 */
 }
@@ -86,11 +84,9 @@ body{
 
 .navbar a.active{
     background-color: #FFFFF9;
-    border: 4px solid white;
+    border: 2px solid red;
     color:  #10100F;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
-    padding: 1.2rem;
-    font-weight: bolder;
 }
 
 /*Hamburgerknapp, som ikke syns for stor skjerm*/
@@ -505,7 +501,7 @@ img {
     border: 3px solid  rgba(130, 108, 253, 0.719);
     border-radius: 2%;
     padding: 1rem;
-    margin: 2.5%;
+    margin: 2.5%;    
 }
 #fp-row-6 > div > div > div > img{
     border-radius: 50%;
@@ -824,9 +820,9 @@ img {
     }
 }
 
-/*MEDIA UNIKT FOR INDEX.HTML*/
+/*MEDIA  FOR INDEX.HTML OG USING APP*/
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1100px){
 
     #fp-row-6 > div > div{
         min-height: 690px;
@@ -842,6 +838,37 @@ img {
 
 }
 
+@media screen and (min-width: 1000px){
+
+    #fp-row-6 > div > div{
+        min-height: 800px;
+    } /* gjør at intervju-divene er like lange i fullskjerm*/
+
+    #fp-row-3 > div> div  , #fp-row-4 > div> div{
+        min-height: 700px;
+    }
+
+     .tutorialColumn > div {
+    min-height: 500px;
+    }
+
+}
+
+@media screen and (min-width: 900px){
+
+    #fp-row-6 > div > div{
+        min-height: 900px;
+    } /* gjør at intervju-divene er like lange i fullskjerm*/
+
+    #fp-row-3 > div> div  , #fp-row-4 > div> div{
+        min-height: 700px;
+    }
+
+     .tutorialColumn > div {
+    min-height: 500px;
+    }
+
+}
 
 
 /*@media screen and (max-width: 1150px){
@@ -873,6 +900,7 @@ img {
         min-width: 200px;
         width: 200px;
         height: 200px;
+
     }
 }
 
