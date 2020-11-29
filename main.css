@@ -440,6 +440,19 @@ body{
     background-color: #ECD811;
     border: 2px solid black;
     border-radius: 0.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buttom-custom-font-size{
+    border: none;
+    color: #10100F;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #ECD811;
+    border: 2px solid black;
+    border-radius: 0.2rem;
+    margin: 10px 20px 10px 20px;
 }
 
 .large-button{
