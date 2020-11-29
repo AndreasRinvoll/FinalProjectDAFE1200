@@ -289,9 +289,6 @@ body{
 
 
 
-.row-1-img, .row-1-img-FP{
-   vertical-align: top;
-}
 
 
 
@@ -471,30 +468,21 @@ img {
     border-right: solid 0.3rem  #10100F;
 }
 
-/* .ourApp-img{
-    border-radius: 50%;
-    border: solid 0.3rem mediumseagreen;
-    width: 500px;
-} */
+
 
 
 /*CSS FOR INDEX.HTML*/
+#row-1-img-FP{
+    width: 100%;
 
-
-#fp-row-top{
-  background-color: #fffff9;
-  height: 100%;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
- }
+}
 
 .background-top {
-  background-color: #fffff9;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-color: #fffff9;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p, #fp-col-1 > button{
@@ -844,6 +832,9 @@ img {
         width: 100%;
         text-align: center;
     }
+
+
+
     img{
         margin: auto;
     }
@@ -853,24 +844,6 @@ img {
     #links-footer {
       border-top: 5px solid  #10100F;
       border-top-style: double;
-    }
-     .row-1-img{
-        display: none;
-    } /* gjemmer forsidebildet når divene legger seg under hverandre */
-    #row-1-image-FP {
-        display: block;
-    }
-    #col-33-FP {
-        width: 33%;
-    }
-    #fp-col-1 {
-        width: 66%;
-    }
-    #fp-col-1 h2 {
-        display:none;
-    }
-    #fp-col-1 p {
-        display:none;
     }
 
 }
@@ -928,12 +901,17 @@ img {
      .tutorialColumn > div {
     min-height: 500px;
     }
+
 }
 
 
 
 @media screen and (max-width: 1150px){
     #fp-row-5>div>img{
+        display: none;
+    }
+
+     .row-1-img-FP, .row-1-img{
         display: none;
     }
 
@@ -948,19 +926,21 @@ img {
 
     }
 
+
+     #fp-col-1 {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 700px){
-#col-33-FP {
-    width: 100%;
-    display: block;
-}
-#fp-col-1 {
-    display: none;
-}
-#row-1-img-FP {
-    
-}
+    #col-33-FP {
+        width: 100%;
+        display: block;
+    }
+
+
+
 }
 
 @media screen and (max-width: 350px){
@@ -1001,11 +981,6 @@ img {
 
 
 /*MEDIA UNIKT FOR USINGAPP.HTML*/
-@media screen and (max-width: 1000px){
-   #usingApp-row-top > div >  img{
-    display: none;
-}
-    }
 
 /*Slutt MEDIA UNIKT FOR USINGAPP.HTML*/
 

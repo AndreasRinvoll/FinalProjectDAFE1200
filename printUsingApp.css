@@ -288,7 +288,7 @@ page-break-after: avoid;
 /*END USING APP CSS */
 
 /*Footer*/
-.footer{
+#footer{
     display: none;
 }
 
