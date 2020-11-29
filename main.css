@@ -432,7 +432,7 @@ body{
     padding: 1rem;
     font-size: 1rem;
     cursor: pointer;
-    background-color: #ECD811;
+    background-color: initial;
     border: 2px solid black;
     border-radius: 0.2rem;
     margin-top: 10px;
@@ -452,8 +452,32 @@ body{
 
 .large-button{
     margin-top: 50px;
+    width: 70%;
+    height: 4rem;    
     padding: 1rem;
-    font-size: inherit;
+    font-size: 1.5rem;
+    background-color: rgb(180, 14, 14);
+    color: #fffff9;
+    border-radius: 0.2rem;
+    margin: 2rem;
+    margin-top: 2.5rem;
+    border: 2px solid red;
+}
+
+.large-button:hover {
+    background-color: #FFFFF9;
+    border: 4px solid darkred;
+    color:  #10100F;
+    /*border-bottom: solid 2px white;*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+    transition: 0.4s;
+}
+
+.large-button:active {
+    background-color: #FFFFF9;
+    border: 4px solid darkred;
+    color:  #10100F;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
 }
 
 img {
