@@ -449,7 +449,7 @@ img {
 #logoTop {
     height: auto;
     align-self: center;
-    max-width: 25%;
+    max-width: 50%;
     min-width: 200px;
 }
 
@@ -459,14 +459,18 @@ img {
 }
 
 /*CSS FOR INDEX.HTML*/
-
-/*Må se litt mer på denne - Andreas*/
 .background-top {
     background-color: #fffff9;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#ourApp-img{
+    border-radius: 10%;
+    border: solid 0.2rem rgba(0, 0, 0, 0.288);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
 }
 
 #fp-row-6{
@@ -990,5 +994,3 @@ img {
         font-size: 14pt;
     }
 }
-
-
