@@ -390,8 +390,6 @@ body{
 }
 
 .text-colour{
-    color #bdaf1e;
-    color rgb(212, 47, 25);
     color: rgb(39, 19, 221);
 }
 
@@ -445,6 +443,19 @@ body{
     background-color: #ECD811;
     border: 2px solid black;
     border-radius: 0.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buttom-custom-font-size{
+    border: none;
+    color: #10100F;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #ECD811;
+    border: 2px solid black;
+    border-radius: 0.2rem;
+    margin: 10px 20px 10px 20px;
 }
 
 .large-button{
@@ -475,11 +486,8 @@ img {
 
 
 /*CSS FOR INDEX.HTML*/
-#row-1-img-FP{
-    width: 100%;
 
-}
-
+/*Må se litt mer på denne - Andreas*/
 .background-top {
     background-color: #fffff9;
     height: 100%;
@@ -488,45 +496,44 @@ img {
     background-size: cover;
 }
 
-#fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p, #fp-col-1 > button{
-    text-align: left;
-    letter-spacing: 5px;
-    width: 75%;
+
+
+#fp-row-6{
+    padding: 50px 0;
+}
+#fp-row-6 > div > div{
+    border: 3px solid  rgba(130, 108, 253, 0.719);
+    border-radius: 2%;
+    padding: 1rem;
+    margin: 2.5%;
+}
+#fp-row-6 > div > div > div > img{
+    border-radius: 50%;
+    min-width: 250px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px auto 20px auto;
+    /* margin: topp, høyre, bunn, venstre*/
 }
 
-#fp-col-1 > h1{
-    color:  #10100F;
-    background-color: rgba(255,255,255, 0.0);
-
-    border-radius: 1%;
-}
-
-#fp-col-1 > p{
-    margin-top: 2vh;
-
-    background-color: rgba(255,255,255, 0.0);
-    padding: 5px;
-   text-align: left;
-
-}
-
-#fp-row-2 > div > h1{
+#fp-row-6 > div > div > div > h2{
+    margin-bottom: 15px;
+    background-color: #FFFFF9;
     text-align: center;
-    font-weight: normal;
-    letter-spacing: 5px;
-    color: rgba(0,0,0,0.85);
-    height: 0.2em;
-
+    /* margin: topp, høyre, bunn, venstre*/
 }
 
-#callToAction{
-    margin-top: 50px;
-    color:  rgb(39, 19, 221);
+#fp-row-6 > div > div > div > p{
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: left;
 }
 
-#fp-row-3{
-    padding-bottom: 0;
-}
+/*Slutt CSS FOR INDEX.HTML*/
+
+/* USING APP CSS */
+
 
 #fp-row-4{
     padding-top: 10px;
@@ -560,72 +567,6 @@ img {
 
 }
 
-#fp-row-pitch > div > p{
-    line-height: 1.5;
-}
-
-#fp-row-pitch-2{
-    border-top: solid 100px #FFFFF9;
-}
-
-#fp-row-5>div>img{
-    height: 500px;
-    border-radius:20px;
-    min-width: 100%;
-    min-height: 100%;
-}
-
-#fp-row-6{
-    padding: 50px 0;
-}
-
-#fp-row-6 > div > div{
-    border: 3px solid  rgb(39, 19, 221);
-    border-radius: 2%;
-    padding: 1rem;
-    margin: 2.5%;
-}
-
-
-#fp-row-6 > div > div > div > img{
-    border-radius: 50%;
-    min-width: 250px;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    margin: 10px auto 20px auto;
-    /* margin: topp, høyre, bunn, venstre*/
-}
-
-#fp-row-6 > div > div > div > h2{
-    margin-bottom: 15px;
-    background-color: #FFFFF9;
-    text-align: center;
-    /* margin: topp, høyre, bunn, venstre*/
-}
-
-#fp-row-6 > div > div > div > p{
-    letter-spacing: 1px;
-    line-height: 1.5;
-    text-align: left;
-}
-
-#fp-headline-3{
-    height: 20vh;
-}
-
-#fp-headline-3 >div >h1{
-    text-align: center;
-    font-weight: normal;
-    letter-spacing: 5px;
-    color: rgba(0,0,0,0.85);
-    height: 1em;
-}
-
-
-/*Slutt CSS FOR INDEX.HTML*/
-
-/* USING APP CSS */
 
 #usingApp-row-top{
     text-align: left;
@@ -904,20 +845,6 @@ img {
 
 
 /*@media screen and (max-width: 1150px){
-    #fp-row-5>div>img{
-        display: none;
-    }
-
-     .row-1-img-FP, .row-1-img{
-        display: none;
-    }
-
-    #fp-row-5{
-        width: 100%;
-        text-align: center;
-    }
-
-
     fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p{
        width: 100%;
 
