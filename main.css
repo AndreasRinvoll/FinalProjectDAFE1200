@@ -429,8 +429,7 @@ body{
 }
 
 .colortext{
-    color: rgb(39, 19, 221);
-    color rgb(228, 10, 10);
+    color:rgb(180, 14, 14);
 }
 
 #boldtext {
@@ -500,15 +499,6 @@ img {
     background-color: rgba(255,255,255, 0.0);
 
     border-radius: 1%;
-}
-
-
-#fp-col-1 > h2{
-    color:  rgb(39, 19, 221);
-    text-align: left;
-    background-color: rgba(255,255,255, 0.0);
-
-
 }
 
 #fp-col-1 > p{
