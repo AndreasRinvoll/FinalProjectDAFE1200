@@ -6,7 +6,7 @@
     <title>Final Project</title>
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/221e020579.js" crossorigin="anonymous"> </script>
-    <link rel="icon" href="">
+    <link rel="icon" href=""> <!--- what is this for?-->
     <script src="hamburger-icon.js"></script>
     <script src="littjs.js"></script>
 
@@ -16,7 +16,7 @@
     <!--En "fixed" navbar-->
 
     <!-- Usynlig og vanlig navbar -->
-    <div id="HamburgerFull">
+    <div id="HamburgerFull" aria-label="navigation">
         <div class="navbar"> <!-- Vanlig navbar -->
             <a href="index.html">Home</a>
             <a href="usingtheapp.html">Getting Started</a>
@@ -35,7 +35,7 @@
                 <div class="hamburgerX bar4"></div>
                 <div class="hamburgerX bar5"></div>
             </a>
-            <hr class="navHr" role="navigation" aria-labelledby="mobile navigation">
+            <hr class="navHr" role="navigation">
             <a href="index.html">Home</a>
             <a href="usingtheapp.html">Getting Started</a>
             <a href="mission.html" class="active">Mission</a>
@@ -51,7 +51,7 @@
 
     <!--row 1-->
     <div class="row top full-height" id="scrollTop">
-      <div class="background-top">
+      <div class="background-top" aria-label="main">
        
         <div class="column-66">
            <img src="LOGO.jpg" alt="the Kløpper logo" id="logoTop">
@@ -63,7 +63,7 @@
 
         <div class="column-33">
 
-        <img class ="row-1-img" src="having-lunch.jpg" width="300" height="auto" alt="">
+        <img class ="row-1-img" src="having-lunch.jpg" width="300" height="auto" alt="two ladies eating lunch together on a bench">
         <div class="wholeScroll" id="scrollTo"><a href="#scrollTo"><span class="scrollText">SCROLL DOWN</span><br><br><div class="scrollDown" href="#fp-row-2"></div></a></div>
 
         </div> <!--column-33-->
@@ -74,7 +74,7 @@
     <!--row 1-->
     <div class="row row-color">
         <div class="column-33">
-            <img src="https://images.pexels.com/photos/3845456/pexels-photo-3845456.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="335" height="auto" alt="">
+            <img src="https://images.pexels.com/photos/3845456/pexels-photo-3845456.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="335" height="auto" alt="a baby's hand gripping an adults hand">
         </div> <!--column-33-->
 
         <div class="column-66">
@@ -139,7 +139,7 @@
             </div> <!--row-->
 
     <!--Footer-->
-    <div class="row" id="footer">
+    <footer class="row" id="footer">
       <div class="column-33" id="contact-information">
           <ul>
               <li><i class="fas fa-address-card"></i> <b> Address: </b> Pilestredet 35, 0167 Oslo</li>
@@ -163,7 +163,7 @@
       <div class="column-33 navbar sources">
           <a href="sources.html">Sources</a>
       </div>
-    </div>
+    </footer>
 
 </body>
 </html>
