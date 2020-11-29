@@ -501,11 +501,11 @@ img {
     min-width: 200px;
 }
 
-/*Gir en linje på høyre hånd slik at kolonner som står tett blir lettere å skille fra hverandre*/
+/*Gir en linje på høyre hånd slik at kolonner som står tett blir lettere å skille fra hverandre
 .column-border{
-    border-right: solid 0.3rem  #10100F;
+    border-right solid 0.3rem  #10100F;
 }
-
+*/
 
 
 
