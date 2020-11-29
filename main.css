@@ -43,10 +43,7 @@ body{
 /*Sticky navbar*/
 .navbar{
     overflow: hidden;
-    background-color #FAE9CF;
-    background-color #891111;
     background-color: rgb(219, 92, 92);
-    background-image url(joe-whitebrick.jpg);
     background-size: cover;
     position: fixed;
     top: 0;
@@ -69,7 +66,7 @@ body{
     margin: 0.5rem;
     margin-left: 30px;
     margin-right: 30px;
-    border: 2px solid white;
+    border: 2px solid #fffff9;
     /*width: 25%;*/ /*Lange knapper*/
     /* #FFEA12 */
 }
@@ -134,15 +131,15 @@ body{
 /* a-tagsene i Hamburger-menyen*/
 #Hamburger a{
     display: block;
-    color: #FFFFF9;
+    color: #fffff9;
     text-align: center;
     padding: 1rem;
     font-size: 1.5rem;
     border-bottom: solid 2px transparent;
-    border-radius: 1rem;
+    border: 2px solid white;
     margin: 0.5rem;
-    background-color: #ECD811;
-    border: 2px solid #10100F;
+    background-color: rgb(180, 14, 14);
+    border: 2px solid #fffff9;
 }
 
 /* hr-tagsene i Hamburger-menyen*/
@@ -154,21 +151,22 @@ body{
 /*Fjerner decoration fra a-tags */
 #Hamburger a:visited, #Hamburger a:link{
     text-decoration: none;
-    color:  #10100F;
+    color:  #FFFFF9;
 }
 
 #Hamburger a.active {
     background-color: #FFFFF9;
     color:  #10100F;
+    border: 4px solid darkred;
 }
 
 #Hamburger a:hover {
-    background-color: #FFEA12;
+    background-color: #fffff9;
     color:#10100F;
-    border: solid 2px red;
     transition: 0.4s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
     transition: 0.4s;
+    border: 4px solid darkred;
 }
 /*Bakgrunn når man er inne i hamburger-menyen */
 #tint{
@@ -184,7 +182,7 @@ body{
     opacity: 0.95;
     display: none;
     z-index: 9;
-    background-image: url(joe-whitebrick.jpg);
+    background-color:  rgb(219, 92, 92);;
     background-size: cover;
 }
 /* viser hamburgermenyen og tinten */
