@@ -386,6 +386,10 @@ body{
     font-weight: bolder;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .text-colour{
     color #bdaf1e;
     color rgb(212, 47, 25);
