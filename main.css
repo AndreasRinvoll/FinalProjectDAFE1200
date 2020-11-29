@@ -410,6 +410,7 @@ body{
 .small-font{
     font-size: 2rem;
     line-height: 1.5;
+    align: center;
 }
 
 .medium-font{
@@ -419,6 +420,10 @@ body{
 .large-font{
  
    font-size: 5rem;
+}
+
+.large-fontC {
+    text-align: center;
 }
 
 .xlarge-font{
@@ -689,7 +694,8 @@ img {
 }
 
 #fp-pitch-title{
-    padding-bottom: 70px;
+    padding-top: 2.7rem;
+    padding-bottom: 1rem;
 }
 
 #img-row > .column-100{
