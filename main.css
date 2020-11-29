@@ -493,17 +493,7 @@ img {
     background-size: cover;
 }
 
-#fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p, #fp-col-1 > button{
-}
 
-#fp-col-1 > h1{
-}
-#fp-col-1 > h2{
-}
-#fp-col-1 > p{
-}
-#fp-row-2 > div > h1{
-}
 
 #fp-row-6{
     padding: 50px 0;
@@ -540,6 +530,40 @@ img {
 /*Slutt CSS FOR INDEX.HTML*/
 
 /* USING APP CSS */
+
+
+#fp-row-4{
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+#fp-row-3  > div > div > div > p, #fp-row-4 > div > div > div > p{
+    line-height: 2;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    padding:10px 20px;
+
+}
+
+#fp-row-3  > div > div> div > h2, #fp-row-4 > div> div > div > h2{
+    text-align: center;
+}
+
+#fp-row-3 > div> div  , #fp-row-4 > div> div{
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 5%;
+    padding: 1rem;
+}
+
+
+#fp-row-3 > div> div > div > img, #fp-row-4 > div> div > div > img{
+    height: 300px;
+    width: auto;
+    margin: 25px auto 25px auto;
+
+
+}
+
 
 #usingApp-row-top{
     text-align: left;
