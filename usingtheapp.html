@@ -17,7 +17,7 @@
 
     <!-- Usynlig og vanlig navbar -->
      <div id="HamburgerFull">
-        <div class="navbar"> <!-- Vanlig navbar -->
+        <div class="navbar" role="navigation"> <!-- Vanlig navbar -->
             <a href="index.html">Home</a>
             <a href="usingtheapp.html" class="active">User Guide</a>
             <a href="mission.html">Our Purpose</a>
@@ -48,7 +48,7 @@
 
     <!--row 1-->
     <div class="row top full-height pagebreak" id="usingApp-row-top">
-      <div class="background-top">
+      <div class="background-top" role="banner" >
         <div class="column-66" id="usingApp-col-1">
             <img src="LOGO.jpg" alt="the Kløpper logo" id="logoTop">
             <h1 class="large-font">User Guide</h1>
@@ -62,7 +62,7 @@
       </div>
     </div> <!--row-->
 
- <div class="row" id ="usingApp-quickAccess">
+ <div class="row" id ="usingApp-quickAccess" role="main">
             <div class="column-100">
                 <p class="small-font">
 
@@ -184,7 +184,8 @@
     <div class="row row-color"id="download" >
            <div class="column-100">
 
-            <button  class="button" onClick="window.print()"><h1 class="medium-font">Press to print the user guide</h1></button>
+            <button class="button" role="button"
+            onClick="window.print()"><h2 class="medium-font">Press to print the user guide</h2></button>
             </div> <!--column-100-->
             <div class="column-100">
               <div class="wholeScrollUp"><a href="#usingApp-row-top"><span class="scrollTextUp">Press the arrow to scroll up</span><br><br><div class="scrollUp" href="#usingApp-row-top"></div></a></div>
@@ -215,7 +216,7 @@
         </div>
 
         <div class="column-33 navbar sources">
-            <a href="sources.html">Sources</a>
+            <a href="sources.html" role="button">Sources</a>
         </div>
     </footer>
 

@@ -8,7 +8,6 @@ function overflowx(){
     }
     else{
         document.body.style.overflowY = "visible";
-
     }
 
 }
@@ -18,3 +17,5 @@ function toggleButton(button) {
     button.setAttribute("aria-pressed", !pressed);
     //button.setAttribute('aria-pressed', isAriaPressed ? 'false' : 'true');
   }
+
+  //document.body.style.overflowY = aria-hidden === "true";

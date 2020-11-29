@@ -16,8 +16,8 @@
     <!--En "fixed" navbar-->
 
     <!-- Usynlig og vanlig navbar -->
-    <div id="HamburgerFull" aria-label="navigation">
-        <div class="navbar"> <!-- Vanlig navbar -->
+    <div id="HamburgerFull">
+        <div class="navbar" role="navigation"> <!-- Vanlig navbar -->
             <a href="index.html">Home</a>
             <a href="usingtheapp.html">User Guide</a>
             <a href="mission.html" class="active">Our Purpose</a>
@@ -50,8 +50,8 @@
     <!--https://www.w3schools.com/howto/howto_css_zig_zag_layout.asp -->
 
     <!--row 1-->
-    <div class="row top full-height" id="scrollTop">
-      <div class="background-top" aria-label="main">
+    <div class="row top full-height" role="banner" id="scrollTop">
+      <div class="background-top" role="banner" >
        
         <div class="column-66">
            <img src="LOGO.jpg" alt="the Kløpper logo" id="logoTop">
@@ -72,15 +72,13 @@
 
 
     <!--row 1-->
-    <div class="row row-color">
+    <div class="row row-color" role="main">
         <div class="column-33">
             <img src="https://images.pexels.com/photos/3845456/pexels-photo-3845456.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="335" height="auto" alt="a baby's hand gripping an adults hand">
         </div> <!--column-33-->
 
         <div class="column-66">
             <h1 class="large-font" id="">Our inspiration</h1>
-            <!-- husk at det bare skal være en h1 tag på hver side
-            <h2 class="large-p-font">Our inspiration</h2> <br> -->
             <p class="missionP"> The United Nations sustainability goal 3 has been our inspiration and focus for this project. It has a goal to “ensure healthy lives and promote well-being for all at all ages” <a href="sources.html#literary-sources" target="_blank"><sup>[1]</sup></a>.<!--
               Over the last decade, improved life-expectancy and general health has resulted in a growing percentage of seniors.
               This means that making society more accessible for this group is an important part of achieving this goal.-->
@@ -161,7 +159,7 @@
       </div>
 
       <div class="column-33 navbar sources">
-          <a href="sources.html">Sources</a>
+          <a href="sources.html" role="button">Sources</a>
       </div>
     </footer>
 

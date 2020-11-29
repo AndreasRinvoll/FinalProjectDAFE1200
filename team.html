@@ -17,7 +17,7 @@
 
     <!-- Usynlig og vanlig navbar -->
     <div id="HamburgerFull">
-        <div class="navbar"> <!-- Vanlig navbar -->
+        <div class="navbar" role="navigation"> <!-- Vanlig navbar -->
             <a href="index.html">Home</a>
             <a href="usingtheapp.html">User Guide</a>
             <a href="mission.html">Our Purpose</a>
@@ -34,11 +34,11 @@
                 <div class="hamburgerX bar4"></div>
                 <div class="hamburgerX bar5"></div>
             </a>
-            <hr class="navHr" role="navigation" aria-labelledby="mobile navigation">
+            <hr class="navHr" role="navigation">
             <a href="index.html">Home</a>
             <a href="usingtheapp.html">User Guide</a>
             <a href="mission.html">Our Purpose</a>
-            <a href="team.html" class="active">Employees</a>
+            <a href="team.html" id="lastFocus" class="active">Employees</a>
             <hr class="navHr">
         </div>
         <div id="tint">
@@ -49,7 +49,7 @@
 
     <!--row 1-->
     <div class="row top full-height" id="scrollTop">
-      <div class="background-top">
+      <div class="background-top" role="banner" >
         
         <div class="column-66">
             <img src="LOGO.jpg" alt="the Kløpper logo" id="logoTop">
@@ -68,7 +68,7 @@
 
 
     <!--row 2-->
-    <div class="row row-color team-card-row">
+    <div class="row row-color team-card-row" role="main">
         <div class="column-25 card-column">
             <div class="team-card">
                 <img src="https://images.pexels.com/photos/145994/pexels-photo-145994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Portrait of a red Panda"
@@ -199,7 +199,7 @@
         </div>
 
         <div class="column-33 navbar sources">
-            <a href="sources.html">Sources</a>
+            <a href="sources.html" role="button">Sources</a>
         </div>
     </footer>
 
