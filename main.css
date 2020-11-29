@@ -461,6 +461,7 @@ img {
     height: auto;
     align-self: center;
     max-width: 25%;
+    min-width: 200px;
 }
 
 /*Gir en linje på høyre hånd slik at kolonner som står tett blir lettere å skille fra hverandre*/
