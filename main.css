@@ -390,8 +390,6 @@ body{
 }
 
 .text-colour{
-    color #bdaf1e;
-    color rgb(212, 47, 25);
     color: rgb(39, 19, 221);
 }
 
@@ -426,11 +424,6 @@ body{
 .small-p-font{
     font-size: 1.2rem;
     line-height: 1.5;
-}
-
-.colortext{
-    color: rgb(39, 19, 221);
-    color rgb(228, 10, 10);
 }
 
 #boldtext {
@@ -476,11 +469,8 @@ img {
 
 
 /*CSS FOR INDEX.HTML*/
-#row-1-img-FP{
-    width: 100%;
 
-}
-
+/*Må se litt mer på denne - Andreas*/
 .background-top {
     background-color: #fffff9;
     height: 100%;
@@ -490,113 +480,26 @@ img {
 }
 
 #fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p, #fp-col-1 > button{
-    text-align: left;
-    letter-spacing: 5px;
-    width: 75%;
 }
 
 #fp-col-1 > h1{
-    color:  #10100F;
-    background-color: rgba(255,255,255, 0.0);
-
-    border-radius: 1%;
 }
-
-
 #fp-col-1 > h2{
-    color:  rgb(39, 19, 221);
-    text-align: left;
-    background-color: rgba(255,255,255, 0.0);
-
-
 }
-
 #fp-col-1 > p{
-    margin-top: 2vh;
-
-    background-color: rgba(255,255,255, 0.0);
-    padding: 5px;
-   text-align: left;
-
 }
-
 #fp-row-2 > div > h1{
-    text-align: center;
-    font-weight: normal;
-    letter-spacing: 5px;
-    color: rgba(0,0,0,0.85);
-    height: 0.2em;
-
-}
-
-#callToAction{
-    margin-top: 50px;
-    color:  rgb(39, 19, 221);
-}
-
-#fp-row-3{
-    padding-bottom: 0;
-}
-
-#fp-row-4{
-    padding-top: 10px;
-    padding-bottom: 0;
-}
-
-#fp-row-3  > div > div > div > p, #fp-row-4 > div > div > div > p{
-    line-height: 2;
-    letter-spacing: 2px;
-    margin-top: 10px;
-    padding:10px 20px;
-
-}
-
-#fp-row-3  > div > div> div > h2, #fp-row-4 > div> div > div > h2{
-    text-align: center;
-}
-
-#fp-row-3 > div> div  , #fp-row-4 > div> div{
-    background-color: rgba(255,255,255,0.8);
-    border-radius: 5%;
-    padding: 1rem;
-}
-
-
-#fp-row-3 > div> div > div > img, #fp-row-4 > div> div > div > img{
-    height: 300px;
-    width: auto;
-    margin: 25px auto 25px auto;
-
-
-}
-
-#fp-row-pitch > div > p{
-    line-height: 1.5;
-}
-
-#fp-row-pitch-2{
-    border-top: solid 100px #FFFFF9;
-}
-
-#fp-row-5>div>img{
-    height: 500px;
-    border-radius:20px;
-    min-width: 100%;
-    min-height: 100%;
 }
 
 #fp-row-6{
     padding: 50px 0;
 }
-
 #fp-row-6 > div > div{
-    border: 3px solid  rgb(39, 19, 221);
+    border: 3px solid  rgba(130, 108, 253, 0.719);
     border-radius: 2%;
     padding: 1rem;
     margin: 2.5%;
 }
-
-
 #fp-row-6 > div > div > div > img{
     border-radius: 50%;
     min-width: 250px;
@@ -619,19 +522,6 @@ img {
     line-height: 1.5;
     text-align: left;
 }
-
-#fp-headline-3{
-    height: 20vh;
-}
-
-#fp-headline-3 >div >h1{
-    text-align: center;
-    font-weight: normal;
-    letter-spacing: 5px;
-    color: rgba(0,0,0,0.85);
-    height: 1em;
-}
-
 
 /*Slutt CSS FOR INDEX.HTML*/
 
@@ -914,20 +804,6 @@ img {
 
 
 /*@media screen and (max-width: 1150px){
-    #fp-row-5>div>img{
-        display: none;
-    }
-
-     .row-1-img-FP, .row-1-img{
-        display: none;
-    }
-
-    #fp-row-5{
-        width: 100%;
-        text-align: center;
-    }
-
-
     fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p{
        width: 100%;
 
