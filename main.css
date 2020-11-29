@@ -484,7 +484,7 @@ img {
 }
 
 #ourApp-img{
-    border-radius: 10%;
+    border-radius: 3%;
     border: solid 0.2rem rgba(0, 0, 0, 0.288);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
 }
