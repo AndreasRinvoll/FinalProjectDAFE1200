@@ -13,6 +13,7 @@
 
 </head>
 <body>
+    <a class="skip-main" href="#mainContent" tabindex="1">Skip to main content</a>
     <!--En "fixed" navbar-->
 
     <!-- Usynlig og vanlig navbar -->
@@ -21,7 +22,6 @@
             <a href="index.html">Home</a>
             <a href="usingtheapp.html" class="active">User Guide</a>
             <a href="mission.html">Our Purpose</a>
-
             <a href="team.html">Employees</a>
             <a class="icon" onclick="overflowx()" onKeyDown="overflowx(this)" role="button" aria-label="menu"  href="#HamburgerFull">
                 <div class="hamburger bar1"></div>
@@ -48,7 +48,7 @@
 
     <!--row 1-->
     <div class="row top full-height pagebreak" id="usingApp-row-top">
-      <div class="background-top" role="banner" >
+      <div class="background-top" role="banner" id="mainContent" tabindex="-1">
         <div class="column-66" id="usingApp-col-1">
             <img src="LOGO.jpg" alt="the Kløpper logo" id="logoTop">
             <h1 class="large-font">User Guide</h1>
@@ -68,11 +68,12 @@
 
                     Quick access: <br><br> 
 
-                    <button  class="buttom-custom-font-size small-p-font margin"><a href="#fp-row-2">How the app works </a></button>
+                    <a href="#fp-row-2" class="button-custom-font-size small-p-font margin" role="button">How the app works </a>
 
-                   <button  class="buttom-custom-font-size small-p-font margin"> <a href="#usingApp-row-4">How to download the app </a></button> 
+                   <a href="#usingApp-row-4" class="button-custom-font-size small-p-font margin" role="button">How to download the app </a> 
 
-                    <button  class="buttom-custom-font-size small-p-font margin"><a href="#download">Print the user guide </a></button> </p>
+                    <a href="#download" class="button-custom-font-size small-p-font margin" role="button">Print the user guide </a>
+                </p>
 
              </div> <!--column-100-->
     </div> <!--row-->
