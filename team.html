@@ -22,15 +22,15 @@
             <a href="usingtheapp.html">User Guide</a>
             <a href="mission.html">Our Purpose</a>
 
-            <a href="team.html" class="active">Employees</a>
-            <a class="icon" onclick="overflowx()" href="#HamburgerFull">
+            <a href="team.html" class="active">The Team</a>
+            <a class="icon" tabindex="0" onclick="overflowx(this)" onKeyDown="overflowx(this)" role="button" aria-label="menu" aria-pressed="false" href="#HamburgerFull">
                 <div class="hamburger bar1"></div>
                 <div class="hamburger bar2"></div>
                 <div class="hamburger bar3"></div>
             </a>
         </div>
         <div id="Hamburger"> <!-- Usynlig vertikal navbar som kommer opp når hamburgerikonet er klikket -->
-            <a id="hamburgerX" href="#" onclick="overflowx()">
+            <a id="hamburgerX" href="#" onclick="overflowx()" onKeyDown="overflowx(this)" role="button" aria-label="menu" aria-pressed="true">
                 <div class="hamburgerX bar4"></div>
                 <div class="hamburgerX bar5"></div>
             </a>
@@ -59,8 +59,8 @@
 
         <div class="column-33">
 
-            <img id="toprow-img" class ="row-1-img" src="https://images.pexels.com/photos/1559825/pexels-photo-1559825.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="500" alt="">
-            <div class="wholeScroll" id="scrollTo"><a href="#scrollTo"><span class="scrollText">Press the arrow to scroll down</span><br><br><div class="scrollDown" href="#fp-row-2"></div></a></div>
+            <img id="toprow-img" class ="row-1-img" src="https://images.pexels.com/photos/1559825/pexels-photo-1559825.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" width="500" alt="a small Norwegian fishing town in a sunset">
+            <div class="wholeScroll" id="scrollTo"><a href="#scrollTo"><span class="scrollText">SCROLL DOWN</span><br><br><div class="scrollDown" href="#fp-row-2"></div></a></div>
 
         </div>
       </div>
@@ -71,7 +71,7 @@
     <div class="row row-color team-card-row">
         <div class="column-25 card-column">
             <div class="team-card">
-                <img src="https://images.pexels.com/photos/145994/pexels-photo-145994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Red Panda"
+                <img src="https://images.pexels.com/photos/145994/pexels-photo-145994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Portrait of a red Panda"
                 tabindex="0">
                 <div class="team-text">
                     <h3>Ruth Heidi Westby</h3>
@@ -87,7 +87,7 @@
 
         <div class="column-25 card-column">
             <div class="team-card">
-                <img src="https://images.pexels.com/photos/147941/pexels-photo-147941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Red Panda"
+                <img src="https://images.pexels.com/photos/147941/pexels-photo-147941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Portrait of a red panda"
                 tabindex="0">
                 <div class="team-text">
                     <h3>Lise Mari Lorentzen</h3>
@@ -103,7 +103,7 @@
 
         <div class="column-25 card-column">
             <div class="team-card">
-                <img src="https://images.pexels.com/photos/148182/pexels-photo-148182.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Red Panda"
+                <img src="https://images.pexels.com/photos/148182/pexels-photo-148182.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Portrait of a red panda"
                 tabindex="0">
                 <div class="team-text">
                     <h3>Erling Mathias Staff</h3>
@@ -119,7 +119,7 @@
 
         <div class="column-25 card-column">
             <div class="team-card">
-                <img src="https://images.pexels.com/photos/146290/pexels-photo-146290.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Red Panda"
+                <img src="https://images.pexels.com/photos/146290/pexels-photo-146290.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Portrait of a red Panda"
                 tabindex="0">
                 <div class="team-text">
                     <h3>Andreas W. Rinvoll</h3>
@@ -146,7 +146,7 @@
         </div> <!--column-33-->
 
         <div class="column-33">
-            <img src="taylor-deas-melesh-051DTvH4c_s-unsplash.jpg" width="" height="auto" alt="">
+            <img src="taylor-deas-melesh-051DTvH4c_s-unsplash.jpg" height="auto" alt="A dark brick building with a sunset reflecting in the windows">
         </div> <!--column-33-->
 
         <div class="column-33 column-border">
@@ -177,7 +177,7 @@
  
  
     <!--Footer-->
-    <div class="row" id="footer">
+    <footer class="row" id="footer">
         <div class="column-33" id="contact-information">
             <ul>
                 <li><i class="fas fa-address-card"></i> <b> Address: </b> Pilestredet 35, 0167 Oslo</li>
@@ -201,7 +201,7 @@
         <div class="column-33 navbar sources">
             <a href="sources.html">Sources</a>
         </div>
-    </div>
+    </footer>
 
 </body>
 </html>
