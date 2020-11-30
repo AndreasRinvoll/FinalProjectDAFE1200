@@ -285,12 +285,12 @@ body{
 }
 
 .wholeScrollUp:hover .scrollUp{
-    border-bottom: 28px solid orangered;
+    border-bottom: 28px solid rgb(180, 14, 14);
     
 }
 
 .wholeScroll:hover .scrollDown{
-    border-top: 28px solid orangered;
+    border-top: 28px solid rgb(180, 14, 14);
     
 }
 
@@ -502,6 +502,7 @@ text-align: center;
     border: 2px solid #10100F;
     border-radius: 0.2rem;
     margin: 10px 20px 10px 20px;
+    display: inline-block;
 }
 
 .button-custom-font-size a {
@@ -529,8 +530,8 @@ text-align: center;
 
 
 img {
-    display: block;
     height: auto;
+    display: block;
     max-width: 100%;
 }
 
@@ -561,6 +562,7 @@ img {
     border: solid 0.2rem rgba(0, 0, 0, 0.288);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
 }
+
 
 #fp-row-6 > div > div{
     border: 3px solid  rgba(0, 0, 0, 0.888);
