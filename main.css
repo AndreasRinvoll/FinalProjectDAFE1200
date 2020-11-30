@@ -94,6 +94,7 @@ body{
 .hamburger{
     width: 35px;
     height: 4px;
+    right: 5px;
     background-color:  #10100F;
     margin-top: 5.3px;
     /* transition: 0.4s; legges til av javascript */
@@ -199,20 +200,23 @@ body{
 }
 
 #hamburgerX{
+    width: 35px;
+    height: 4px;
+    margin-top: 5.3px;
     position: fixed;
     top: 0px;
-    right: 0px;
+    right: 5px;
     height: 61px !important;
     width: 67px !important;
 
 }
 .bar4{
     -webkit-transition: rotate(-45deg) translate(-8px,6px); /*For Safari browser, tror jeg*/
-    transform: rotate(-45deg) translate(-3px,5px);
+    transform: rotate(-45deg) translate(-4px,4px);
 }
 .bar5{
     -webkit-transition: rotate(45deg) translate(-8px,-6px); /*For Safari browser, tror jeg*/
-    transform: rotate(45deg) translate(-3px,-5px);
+    transform: rotate(45deg) translate(-3px,-3px);
 }
 
 /*Knapp for å hoppe ned på siden*/
