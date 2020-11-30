@@ -937,32 +937,34 @@ img {
 
 @media screen and (min-width: 1000px){
 
-    #fp-row-6 > div > div{
-        min-height: 800px;
-    } /* gjør at intervju-divene er like lange i fullskjerm*/
-
+    
     #fp-row-3 > div> div  , #fp-row-4 > div> div{
-        min-height: 800px;
+        min-height: 800px;  /* gjør at usingapp-divene er like lange i fullskjerm*/
     }
 
      .tutorialColumn > div {
-    min-height: 450px;
+    min-height: 450px; /* gjør at tutorial-divene er like lange i fullskjerm*/
     }
 
 }
 
-/*@media screen and (max-width: 1150px){
-    fp-col-1 > h1, #fp-col-1 > h2, #fp-col-1 > p{
-       width: 100%;
+@media screen and (min-width: 1150px){
+    
+    
+    #fp-row-6 > div > div{
+        min-height: 800px;
+    } /* gjør at intervju-divene er like lange i fullskjerm. Litt tidligere overgang.*/
 
-    }
+}
 
 
-     #fp-col-1 {
-        width: 100%;
-    }
+@media screen and (max-width: 1150px){
+    #fp-row-6 > .column-33{
+        width: 100%; 
+    } /*intevju divene går over til 100% litt tidligere */
+    
 
-}*/
+}
 
 @media screen and (max-width: 700px){
     #col-33-FP {
