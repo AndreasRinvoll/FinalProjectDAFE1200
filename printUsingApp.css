@@ -187,7 +187,6 @@ img {
 /* USING APP CSS */
 
 .pagebreak{
-    page-break-after: always; 
 }
 
 #fp-row-2 > div > h1{
@@ -296,49 +295,6 @@ page-break-after: avoid;
     display: none;
 }
 
-
-/*De store og små div'ene i zig-zag faller under hverandre*/
-@media screen and (max-width: 1000px){
-    .column-25,
-    .column-33,
-    .column-50,
-    .column-66,
-    .column-75,
-    .column-100{
-        width: 100%;
-        text-align: center;
-    }
-    img{
-        margin: auto;
-    }
-    .full-height{
-        height: initial;
-    }
-    .column-border{
-        border-right: none;
-    }
-}
-
-
-
-/*Litt mindre padding på rows, i mobiltelefonmodus*/
-@media screen and (max-width: 400px){
-    .row{
-        padding: 1rem;
-    }
-    .top{
-        padding-top: 6rem;
-    }
-}
-
-
-
-/*MEDIA UNIKT FOR USINGAPP.HTML*/
-@media screen and (max-width: 1000px){
-   #usingApp-row-top > div >  img{
-    display: none;
-}
-    }
 
 
 /*Slutt MEDIA UNIKT FOR USINGAPP.HTML*/

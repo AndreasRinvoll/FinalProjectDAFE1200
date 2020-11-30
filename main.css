@@ -920,36 +920,7 @@ img {
 
 /*MEDIA  FOR INDEX.HTML OG USING APP*/
 
-@media screen and (min-width: 1100px){
 
-    #fp-row-6 > div > div{
-        min-height: 690px;
-    } /* gjør at intervju-divene er like lange i fullskjerm*/
-
-    #fp-row-3 > div> div  , #fp-row-4 > div> div{
-        min-height: 600px;
-    }
-
-     .tutorialColumn > div {
-    min-height: 500px;
-    }
-
-}
-
-@media screen and (min-width: 1000px){
-    #fp-row-6 > div > div{
-        min-height: 690px;
-    } /* gjør at intervju-divene er like lange i fullskjerm*/
-
-    #fp-row-3 > div> div  , #fp-row-4 > div> div{
-        min-height: 750px;
-    }
-
-     .tutorialColumn > div {
-    min-height: 500px;
-    }
-
-}
 
 @media screen and (min-width: 900px){
 
@@ -962,22 +933,7 @@ img {
     }
 
      .tutorialColumn > div {
-    min-height: 500px;
-    }
-
-}
-@media screen and (min-width: 900px){
-
-    #fp-row-6 > div > div{
-        min-height: 690px;
-    } /* gjør at intervju-divene er like lange i fullskjerm*/
-
-    #fp-row-3 > div> div  , #fp-row-4 > div> div{
-        min-height: 800px;
-    }
-
-     .tutorialColumn > div {
-    min-height: 500px;
+    min-height: 450px;
     }
 
 }
