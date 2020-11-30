@@ -452,6 +452,11 @@ body{
     line-height: 1.5;
 }
 
+#italicFont {
+font-style: italic;
+text-align: center;
+}
+
 .colortext{
     color:rgb(180, 14, 14);
 }
