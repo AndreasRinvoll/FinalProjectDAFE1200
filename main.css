@@ -732,6 +732,7 @@ img {
 .missionP {
   font-size:1.5rem;
   line-height: 1.5;
+  margin-top: 1rem;
 }
 
 #small-p-font-M {
@@ -839,6 +840,11 @@ img {
     margin-bottom: 1rem;
 }
 /*-------------------------------------------------------*/
+
+navHr[visible]:not(:focus-within) {
+    background-color: rgb(255, 154, 0);
+    transition: background-color 0.01s;
+  }
 
 
  /*begynnelse media tags*/
@@ -954,7 +960,7 @@ img {
     
     
     #fp-row-6 > div > div{
-        min-height: 720px;
+        min-height: 750px;
     } /* gjør at intervju-divene er like lange i fullskjerm. Litt tidligere overgang.*/
 
 }
