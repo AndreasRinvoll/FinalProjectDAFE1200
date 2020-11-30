@@ -75,7 +75,7 @@ body{
     border: 2px solid darkred;
     color:  #10100F;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 .active{
