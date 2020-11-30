@@ -12,3 +12,17 @@ function overflowx(x){
     }
 
 }
+
+function toggleButton(element) {
+    var pressed = (element.getAttribute("aria-pressed") === "true");
+    element.setAttribute("aria-pressed", !pressed);
+  }
+/*
+  var pressed = (element.getAttribute("aria-pressed") === "true");
+  element.setAttribute("aria-pressed", !pressed);
+*/
+
+  function toggleButton(object){
+    var value = object.getAttribute("aria-pressed");
+    object.setAttribute("aria-pressed",value);
+  }

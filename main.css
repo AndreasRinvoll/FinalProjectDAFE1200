@@ -493,6 +493,7 @@ body{
     padding: 15px;
     cursor: pointer;
     background-color: rgb(180, 14, 14);
+    color: #fffff9;
     border: 2px solid #10100F;
     border-radius: 0.2rem;
     margin: 10px 20px 10px 20px;
@@ -687,6 +688,11 @@ img {
 
 }
 
+#app-store {
+    border: 3px solid #10100f;
+    text-align: center;
+}
+
 #fp-row-2 > div > button > h1{
     text-align: center;
     font-weight: normal;
@@ -721,6 +727,12 @@ img {
   line-height: 1.5;
 }
 
+#small-p-font-M {
+    font-size: 1.2rem;
+    line-height: 0.5rem; 
+    margin: 0.5rem;
+}
+
 /* skip to main content */
 
 .skip-main {
@@ -736,7 +748,6 @@ img {
 .skip-main:focus, .skip-main:active .skip:hover{
     background-color: #fffff9;
     color:rgb(180, 14, 14);
-    color black;
     font-weight: bold;
     top: 0.7rem;
     width: 20rem;
@@ -935,7 +946,7 @@ img {
     
     
     #fp-row-6 > div > div{
-        min-height: 800px;
+        min-height: 720px;
     } /* gjør at intervju-divene er like lange i fullskjerm. Litt tidligere overgang.*/
 
 }
