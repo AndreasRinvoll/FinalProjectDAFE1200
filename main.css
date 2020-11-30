@@ -995,6 +995,11 @@ img {
     width: 150px;
 }
 
+
+#information-sources > div > p > a, #image-sources > div > p> a{
+     word-break: break-all;
+}
+
 /*SOURCES CSS SLUTT*/
 
 
