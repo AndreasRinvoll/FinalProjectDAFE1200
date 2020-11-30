@@ -12,17 +12,33 @@ function overflowx(x){
     }
 
 }
-
+/*
 function toggleButton(element) {
     var pressed = (element.getAttribute("aria-pressed") === "true");
     element.setAttribute("aria-pressed", !pressed);
   }
-/*
+
   var pressed = (element.getAttribute("aria-pressed") === "true");
   element.setAttribute("aria-pressed", !pressed);
-*/
+
 
   function toggleButton(object){
     var value = object.getAttribute("aria-pressed");
     object.setAttribute("aria-pressed",value);
   }
+
+
+*/
+
+var toggle = document.querySelector('#icon');
+var menu = document.querySelector('#navHr');
+if (toggle) {
+toggle.addEventListener('click', function(){
+  if (navHr.classList.contains('is-active')) {
+    this.setAttribute('aria-expanded', 'false');
+    navhr.classList.remove('is-active');
+  } else {
+    navHr.classList.add('is-active'); 
+    this.setAttribute('aria-expanded', 'true');
+  }
+})};
