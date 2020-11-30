@@ -907,7 +907,7 @@ img {
 /*Litt mindre padding på rows, i mobiltelefonmodus*/
 @media screen and (max-width: 500px){
     .row{
-        padding: 0rem 1rem 0rem 1rem;
+        padding: 0rem 1rem 1rem 1rem;
     }
     .top{
         padding-top: 6rem;
