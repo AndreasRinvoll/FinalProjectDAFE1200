@@ -6,6 +6,10 @@
     - flytte X til ved siden av #Hamburger
 
 */
+.pagebreak{
+    page-break-after: always;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;

@@ -922,10 +922,10 @@ img {
 
 
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1000px){
 
     #fp-row-6 > div > div{
-        min-height: 690px;
+        min-height: 800px;
     } /* gjør at intervju-divene er like lange i fullskjerm*/
 
     #fp-row-3 > div> div  , #fp-row-4 > div> div{
