@@ -404,6 +404,11 @@ body{
     font-weight: bolder;
 }
 
+.thin-font{
+    letter-spacing: 5px;
+    font-weight: normal;
+}
+
 .italic {
     font-style: italic;
 }
@@ -624,7 +629,6 @@ img {
     margin-top: 5%;
     margin-bottom: 30px;
     color:  rgb(39, 19, 221);
-    letter-spacing: 5px;
 }
 
 #usingApp-row-top > div >  p{
@@ -657,8 +661,6 @@ img {
 
 #usingApp-row-4 > div > h1{
     text-align: center;
-    font-weight: normal;
-    letter-spacing: 5px;
     color: rgba(0,0,0,0.85);
     height: 1em;
 }
