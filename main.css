@@ -882,16 +882,28 @@ img {
 
 /*Skalering for vide, men smale skjermer. Teksten blir litt mindre*/
 @media screen and (max-height: 720px){
+    
+
+
     .xlarge-font{
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
     .large-font{
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
     .medium-font{
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
+
+    .wholeScrollDown{
+        display: none;
+    }
+
     
+    #logoTop{
+        max-width: 150px;
+    }
+
 }
 
 /*Elementer på menyen frosvinner, og hamburgerknapp dukker opp*/
