@@ -316,8 +316,11 @@ body{
 
 /*Hver row kan inneholde flere forskjellige kolonne-div'er, der den totale vidden skal bli 100%*/
 .row{
-    padding: 3rem;
+    padding: 2rem 3rem 1rem 3rem; /*jeg endret dette fra
+    3 rem på alt på morgenen 30/11- Ruth */
 }
+
+
 
 .row:after{
     content: "";
@@ -546,9 +549,6 @@ img {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
 }
 
-#fp-row-6{
-    padding: 50px 0;
-}
 #fp-row-6 > div > div{
     border: 3px solid  rgba(0, 0, 0, 0.888);
     border-radius: 2%;
@@ -697,7 +697,6 @@ img {
 }
 
 #fp-pitch-title{
-    padding-top: 2.7rem;
     padding-bottom: 1rem;
 }
 
@@ -923,7 +922,7 @@ img {
 /*Litt mindre padding på rows, i mobiltelefonmodus*/
 @media screen and (max-width: 500px){
     .row{
-        padding: 1rem;
+        padding: 0rem 1rem 0rem 1rem;
     }
     .top{
         padding-top: 6rem;
