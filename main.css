@@ -772,6 +772,8 @@ img {
     padding-top: 1rem;
     border-top: solid 0.2rem darkgray;
     background-color: lightgray;
+    overflow: hidden;
+    bottom: 0;
 }
 
 /*Social media buttons/links*/
