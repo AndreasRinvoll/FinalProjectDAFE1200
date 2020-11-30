@@ -550,7 +550,7 @@ img {
     padding: 50px 0;
 }
 #fp-row-6 > div > div{
-    border: 3px solid  rgba(130, 108, 253, 0.719);
+    border: 3px solid  rgba(0, 0, 0, 0.888);
     border-radius: 2%;
     padding: 1rem;
     margin: 2.5%;
@@ -645,8 +645,8 @@ img {
 
 #usingApp-quickAccess > div{
     padding: 50px 20px 50px 20px;
-    border-top: solid rgb(39, 19, 221) 2px;
-    border-bottom: solid  rgb(39, 19, 221) 2px;
+    border-top: solid rgb(219, 92, 92) 2px;
+    border-bottom: solid  rgb(219, 92, 92) 2px;
     text-align: center;
 }
 
@@ -668,7 +668,7 @@ img {
 }
 
 .tutorialColumn > div {
-    border: 3px solid  rgb(39, 19, 221);
+    border: 3px solid  rgba(0, 0, 0, 0.788);
     padding: 20px;
 
 }
