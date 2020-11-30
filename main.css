@@ -801,10 +801,10 @@ img {
 }
 
 /*Sources knappen arver styling fra lenkene/knappene i navbaren, men får noen unike egenskaper for å ligge pent*/
+
 /*Gir deretter litt ekstra stiling til selve lenken*/
 
 .sources-button{
-    position: initial;
     width: 80%;
     margin: auto;
     margin-top: 1.2rem;
@@ -828,7 +828,7 @@ img {
          width: 100%;
          padding-bottom: 2rem;
      }
-     .sources > a{
+     .sources-button{
          width: 50%;
      }
  } 
