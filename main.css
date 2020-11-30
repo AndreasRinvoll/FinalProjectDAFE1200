@@ -808,6 +808,7 @@ img {
     width: 80%;
     margin: auto;
     margin-top: 1.2rem;
+    float: initial;
 }
 
 #contact-information > ul > li{
