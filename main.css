@@ -984,6 +984,12 @@ img {
         width: 200px;
         height: 200px;
     }
+    .team-card > img{
+        min-width: 100px;
+        width: 100px;
+        height: 100px;
+    }
+
 }
 
 @media screen and (max-width: 300px){
@@ -993,6 +999,7 @@ img {
         width: 150px;
         height: 150px;
     }
+
 }
 
 @media screen and (max-width: 250px){
