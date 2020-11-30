@@ -541,9 +541,6 @@ img {
 .background-top {
     background-color: #fffff9;
     height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     border-radius: 0.2rem;
 }
 
