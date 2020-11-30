@@ -897,15 +897,6 @@ img {
         font-size: 2.8rem;
     }
 
-    .wholeScrollDown{
-        display: none;
-    }
-
-    
-    #logoTop{
-        max-width: 150px;
-    }
-
 }
 
 /*Elementer på menyen frosvinner, og hamburgerknapp dukker opp*/
@@ -984,6 +975,12 @@ img {
         width: 200px;
         height: 200px;
     }
+    .team-card > img{
+        min-width: 100px;
+        width: 100px;
+        height: 100px;
+    }
+
 }
 
 @media screen and (max-width: 300px){
@@ -993,6 +990,7 @@ img {
         width: 150px;
         height: 150px;
     }
+
 }
 
 @media screen and (max-width: 250px){
