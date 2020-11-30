@@ -9,11 +9,10 @@
 .team-card{
     float: center;
 	display: grid;
-    background-color: rgb(148, 189, 190);
+    background-color:  rgb(219, 92, 92);
 	border-radius: 10px;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
-	border: 1px solid cadetblue;
-    /*min-height: 425px;*/
+    border: 1px solid rgb(180, 14, 14);
 }
 
 /*Styling for å få runde bilder*/
@@ -23,7 +22,7 @@
 	height: 250px;
     margin: 10px;
     border-radius: 50%;
-    border: solid 2px teal;
+    border: solid 2px darkred;
 	object-fit: cover;
 }
 
@@ -31,8 +30,7 @@
 .team-text{
     text-align: center;
     align-content: center;
-	background-color: rgba(255, 255, 255, 0.923);
-	/*min-height: 172px;*/
+	background-color: rgba(255, 255, 255, 0.877);
     padding-top: 1rem;
 	border-radius: 0px 0px 10px 10px;
 	width: 100%;
