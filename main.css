@@ -93,6 +93,7 @@ body{
 /*Hamburgerknapp, som ikke syns for stor skjerm*/
 .navbar .icon{
     display: none;
+    content: "";
 }
 
 /* 3 Hamburger striper*/
@@ -114,6 +115,7 @@ body{
     display: none;
     z-index: 10;
     /* transition: 0.4s; legges til av javascript */
+    content: ""
 }
 
 .bar4{
