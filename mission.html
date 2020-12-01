@@ -13,7 +13,7 @@
 
     </head>
 <body>
-    <a class="skip-main" href="#mainContent" tabindex="1">Skip to main content</a>
+    <a class="skip-main" href="#mainContent">Skip to main content</a>
    
     <!--En "fixed" navbar-->
 
@@ -25,7 +25,8 @@
             <a href="mission.html" class="navbar-buttons active">Our Purpose</a>
 
             <a href="team.html" class="navbar-buttons">Employees</a>
-            <a class="icon navbar-buttons" onclick="overflowx()" onKeyDown="overflowx(this)" role="button" aria-label="menu" href="#HamburgerFull" >
+            <a class="icon navbar-buttons" onclick="overflowx()" onKeyDown="overflowx(this)" 
+            role="button" aria-label="menu" href="#HamburgerFull" aria-labelledby="mobile navigation">
                 <div class="hamburger bar1"></div>
                 <div class="hamburger bar2"></div>
                 <div class="hamburger bar3"></div>
@@ -33,7 +34,7 @@
 
         </div>
         <div id="Hamburger"> <!-- Usynlig vertikal navbar som kommer opp når hamburgerikonet er klikket -->
-            <a id="hamburgerX" href="#" onclick="overflowx()" onKeyDown="overflowx()" role="button" aria-expanded="true">
+            <a id="hamburgerX" href="#" onclick="overflowx()" onKeyDown="overflowx()" role="button" aria-expanded="true" aria-labelledby="close mobile navigation">
                 <div class="hamburgerX bar4"></div>
                 <div class="hamburgerX bar5"></div>
             </a>
@@ -79,7 +80,7 @@
             <h2 class="large-font">Our inspiration</h2>
             <p class="missionP"> The United Nations sustainability goal 3 has been our inspiration and focus for this project. 
                 It has a goal to “ensure healthy lives and promote well-being for all at all ages” 
-                <a href="sources.html#source-1" id="kilde1" aria-describedby="footnote"><sup>[1]</sup></a>.<!--
+                <a href="sources.html#source-1" id="kilde1"><sup aria-describedby="footnote">[1]</sup></a>.<!--
               Over the last decade, improved life-expectancy and general health has resulted in a growing percentage of seniors.
               This means that making society more accessible for this group is an important part of achieving this goal.-->
             This project has also been inspired by our lectures this semester, which was focused on the importance of diversity in society. 
@@ -150,7 +151,7 @@
       <div class="column-33" id="contact-information">
           <ul>
               <li><i class="fas fa-address-card"></i> <b> Address: </b> Pilestredet 35, 0167 Oslo</li>
-              <li><i class="fas fa-phone-square"></i><b> Telephone: </b> <a href="tel:+47 67 23 50 00"> +47 67 23 50 00</a></li>
+              <li><i class="fas fa-phone-square"></i><b> Telephone: </b> <a href="tel:+47 67 23 50 00"> 00 47 67 23 50 00</a></li>
               <li><i class="fas fa-envelope-square"></i><b> E-mail: </b> <a href="mailto:s198965@oslomet.no"> s198965@oslomet.no</a></li>
           </ul>
       </div>
