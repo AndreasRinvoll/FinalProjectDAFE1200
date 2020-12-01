@@ -933,6 +933,24 @@ navHr[visible]:not(:focus-within) {
         display: none;
     }
 }
+@media screen and (max-width: 400px){
+    .testmarginmin{
+        font-size: 3rem !important;
+    }
+    .testmargin{
+        font-size: 2rem !important;
+    }
+}
+@media screen and (max-width: 400px){
+    .testmarginmin{
+        font-size: 2.2rem !important;
+    }
+    .testmargin{
+        font-size: 1.8rem !important;
+    }
+
+}
+
 
 @media screen and (max-height: 800px){
     .wholeScroll{
