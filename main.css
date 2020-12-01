@@ -1,10 +1,5 @@
 /*Setter border-box for hele siden. Da er padding og border inkludert i width og height dette gir penere div'er!*/
 /*Fjerner noen standard settings:*/
-/* TODO:
-    - :not(:target) overflow:hidden
-    - flytte X til ved siden av #Hamburger
-
-*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -69,6 +64,16 @@ body{
     border: 2px solid #fffff9;
 }
 
+.testmargin{
+    margin-top: 15px;
+    font-size: 2.5rem !important;
+}
+.testmarginmin{
+    margin-top: 10px;
+    font-size: 4rem !important;
+
+}
+
 /*Lenkene i navbaren endrer utseende når man holder musepekeren over dem*/
 .navbar-buttons:hover{
     background-color: #FFFFF9;
@@ -87,6 +92,11 @@ body{
 
 /*Hamburgerknapp, som ikke syns for stor skjerm*/
 .navbar .icon{
+    display: none;
+    content: "";
+}
+
+.invis{
     display: none;
 }
 
@@ -109,6 +119,14 @@ body{
     display: none;
     z-index: 10;
     /* transition: 0.4s; legges til av javascript */
+    content: ""
+}
+
+.bar4{
+    transform: rotate(-45deg) translate(-4px, 4px);
+}
+.bar5{
+    transform: rotate(45deg) translate(-3px, -3px);
 }
 
 /* Hamburger-menyen */
@@ -217,14 +235,6 @@ body{
     margin-right: 25px;
     margin-top: 8px;
 
-}
-.bar4{
-    -webkit-transition: rotate(-45deg) translate(-8px,6px); /*For Safari browser, tror jeg*/
-    transform: rotate(-45deg) translate(-4px,4px);
-}
-.bar5{
-    -webkit-transition: rotate(45deg) translate(-8px,-6px); /*For Safari browser, tror jeg*/
-    transform: rotate(45deg) translate(-3px,-3px);
 }
 
 /*Knapp for å hoppe ned på siden*/
@@ -920,12 +930,31 @@ navHr[visible]:not(:focus-within) {
         display: none;
     }
 }
+@media screen and (max-width: 400px){
+    .testmarginmin{
+        font-size: 3rem !important;
+    }
+    .testmargin{
+        font-size: 2rem !important;
+    }
+}
+@media screen and (max-width: 400px){
+    .testmarginmin{
+        font-size: 2.2rem !important;
+    }
+    .testmargin{
+        font-size: 1.8rem !important;
+    }
 
-@media screen and (max-height: 740px){
+}
+
+
+@media screen and (max-height: 800px){
     .wholeScroll{
         display: none;
     }
 }
+
 
 
 /*Litt mindre padding på rows, i mobiltelefonmodus*/
@@ -1221,6 +1250,5 @@ navHr[visible]:not(:focus-within) {
     #Hamburger a{
         font-size: 14pt;
     }
+
 }
-
-
