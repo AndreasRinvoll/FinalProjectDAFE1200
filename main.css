@@ -96,7 +96,7 @@ body{
     content: "";
 }
 
-#invis{
+.invis{
     display: none;
 }
 
