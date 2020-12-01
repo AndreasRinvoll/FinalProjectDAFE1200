@@ -47,13 +47,7 @@
 .team-text > p {
     line-height: 1.5rem;
     font-size: 18px;
-    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
     font-weight: bold;
-}
-
-/*Gir bildet i den øverste raden litt mer luft på toppen*/
-#toprow-img{
-    /*padding-top: 2rem;*/
 }
 
 /*Skalerer slik at en rad på fire blir til to rader med to team-card hver*/

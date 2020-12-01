@@ -390,9 +390,6 @@ body{
     padding: 1rem;
 }
 
-
-/*En classe for feks. h1 tags. Setter font størrelse, som også skalerer med skjermstørrelsen*/
-
 .center{
     text-align: center;
 }
@@ -486,7 +483,6 @@ text-align: center;
     background-color: #FFFFF9;
     border: 2px solid darkred;
     color: #10100F;
-    /*border-bottom: solid 2px white;*/
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
     transition: 0.4s;
 }
@@ -527,12 +523,9 @@ text-align: center;
     background-color: rgb(180, 14, 14);
     color: #fffff9;
     border-radius: 0.2rem;
-    margin: 2rem;
     margin-top: 2.5rem;
     border: 2px solid red;
 }
-
-
 
 img {
     height: auto;
@@ -547,14 +540,6 @@ img {
     min-width: 200px;
 }
 
-/*Gir en linje på høyre hånd slik at kolonner som står tett blir lettere å skille fra hverandre
-.column-border{
-    border-right solid 0.3rem  #10100F;
-}
-*/
-
-
-
 /*CSS FOR INDEX.HTML*/
 .background-top {
     background-color: #fffff9;
@@ -567,7 +552,6 @@ img {
     border: solid 0.2rem rgba(0, 0, 0, 0.288);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
 }
-
 
 #fp-row-6 > div > div{
     border: 3px solid  rgba(0, 0, 0, 0.888);
@@ -993,16 +977,12 @@ navHr[visible]:not(:focus-within) {
      .tutorialColumn > div {
     min-height: 450px; /* gjør at tutorial-divene er like lange i fullskjerm*/
     }
-
 }
 
 @media screen and (min-width: 1150px){
-    
-    
     #fp-row-6 > div > div{
         min-height: 750px;
     } /* gjør at intervju-divene er like lange i fullskjerm. Litt tidligere overgang.*/
-
 }
 
 
@@ -1010,8 +990,6 @@ navHr[visible]:not(:focus-within) {
     #fp-row-6 > .column-33{
         width: 100%; 
     } /*intevju divene går over til 100% litt tidligere */
-    
-
 }
 
 @media screen and (max-width: 700px){
@@ -1019,13 +997,9 @@ navHr[visible]:not(:focus-within) {
         width: 100%;
         display: block;
     }
-
-
-
 }
 
 @media screen and (max-width: 350px){
-    
     #fp-row-6 > div > div > div > img{
         min-width: 200px;
         width: 200px;
@@ -1036,21 +1010,17 @@ navHr[visible]:not(:focus-within) {
         width: 100px;
         height: 100px;
     }
-
 }
 
 @media screen and (max-width: 300px){
-    
     #fp-row-6 > div > div > div > img{
         min-width: 150px;
         width: 150px;
         height: 150px;
     }
-
 }
 
 @media screen and (max-width: 250px){
-    
     #fp-row-6 > div > div > div > img{
         min-width: 100px;
         width: 100px;
@@ -1065,7 +1035,6 @@ navHr[visible]:not(:focus-within) {
     width: 150px;
 }
 
-
 #information-sources > div > p > a, #image-sources > div > p> a{
      word-break: break-all;
 }
@@ -1073,16 +1042,9 @@ navHr[visible]:not(:focus-within) {
 /*SOURCES CSS SLUTT*/
 
 
-/*MEDIA UNIKT FOR USINGAPP.HTML*/
-
-/*Slutt MEDIA UNIKT FOR USINGAPP.HTML*/
-
-
 /* FONTSKALERING */
 
 @media screen and (min-width: 1300px){
-
-       
     .small-font{
         font-size: 2rem;
     }
@@ -1114,8 +1076,6 @@ navHr[visible]:not(:focus-within) {
 }
 
 @media screen and (max-width: 800px){
-
-       
     .small-font{
         font-size: 2rem;
     }
@@ -1148,8 +1108,6 @@ navHr[visible]:not(:focus-within) {
 }
 
 @media screen and (max-width: 650px){
-
-          
     .small-font{
         font-size: 1.5rem;
     }
@@ -1177,14 +1135,10 @@ navHr[visible]:not(:focus-within) {
     
     .small-p-font{
         font-size: 1.2rem;
-    
     }
-
 }
 
 @media screen and (max-width: 400px){
-
-         
     .small-font{
         font-size: 1.4rem;
     }
@@ -1218,9 +1172,7 @@ navHr[visible]:not(:focus-within) {
 }
 
 
-@media screen and (max-width: 275px){
-
-         
+@media screen and (max-width: 275px){ 
     .small-font{
         font-size: 1.4rem;
     }
@@ -1250,7 +1202,6 @@ navHr[visible]:not(:focus-within) {
         font-size: 1.2rem;
     
     }
-
 }
 
 
@@ -1258,7 +1209,6 @@ navHr[visible]:not(:focus-within) {
 @media screen and (max-height: 610px){
     #Hamburger a:not(#hamburgerX){
         padding: 0.5rem;
-    
     }
     #Hamburger{
         height: 90%;
@@ -1268,18 +1218,15 @@ navHr[visible]:not(:focus-within) {
 @media screen and (max-height: 375px){
     #Hamburger a{
         font-size: 14pt;
-    
     }
     #Hamburger{
         height: 100%;
     }
-
 }
 @media screen and (max-height: 300px){
     #Hamburger a{
         font-size: 12pt;
         line-height: 0.5rem;
-    
     }
     #Hamburger{
         height: 100%;
