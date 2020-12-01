@@ -937,7 +937,7 @@ navHr[visible]:not(:focus-within) {
     }
 }
 
-@media screen and (max-height: 700px){
+@media screen and (max-height: 740px){
     .wholeScroll{
         display: none;
     }
