@@ -1048,7 +1048,7 @@ navHr[visible]:not(:focus-within) {
     width: 150px;
 }
 
-#information-sources > div > p > a, #image-sources > div > p> a{
+#information-sources > div > p > a, #other-sources > div > p> a{
      word-break: break-all;
 }
 
