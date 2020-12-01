@@ -908,8 +908,6 @@ navHr[visible]:not(:focus-within) {
 
 /*Skalering for vide, men smale skjermer. Teksten blir litt mindre*/
 @media screen and (max-height: 720px){
-    
-
 
     .xlarge-font{
         font-size: 4.5rem;
@@ -921,6 +919,42 @@ navHr[visible]:not(:focus-within) {
         font-size: 2.8rem;
     }
 
+}
+
+/* forsøk på skalering for store skjermer */
+
+@media screen and (min-width: 1400px) {
+ .xlarge-font{
+        font-size: 10rem;
+    }
+    .large-font{
+        font-size: 5rem;
+    }
+    .medium-font{
+        font-size: 5rem;
+    }
+}
+@media screen and (min-width: 1600px) {
+ .xlarge-font{
+        font-size: 12rem;
+    }
+    .large-font{
+        font-size: 5rem;
+    }
+    .medium-font{
+        font-size: 5rem;
+    }
+}
+@media screen and (min-width: 1900px) {
+ .xlarge-font{
+        font-size: 14rem;
+    }
+    .large-font{
+        font-size: 6rem;
+    }
+    .medium-font{
+        font-size: 6rem;
+    }
 }
 
 /*Elementer på menyen frosvinner, og hamburgerknapp dukker opp*/
@@ -1063,7 +1097,7 @@ navHr[visible]:not(:focus-within) {
 
 
 /* FONTSKALERING */
-
+/* tar bprt dette for å skalere til store skjermer
 @media screen and (min-width: 1300px){
 
        
@@ -1096,7 +1130,7 @@ navHr[visible]:not(:focus-within) {
     
     }
 }
-
+*/
 @media screen and (max-width: 800px){
 
        
