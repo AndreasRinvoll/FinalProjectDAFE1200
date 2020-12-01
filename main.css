@@ -954,6 +954,15 @@ navHr[visible]:not(:focus-within) {
     }
 }
 
+
+/* mindre padding på navbuttons, i smal skjerm*/
+@media screen and (max-width: 270px){
+    .navbar-buttons{
+        margin-left:10px;
+        margin-right: 10px;
+    }
+}
+
 /*MEDIA  FOR INDEX.HTML OG USING APP*/
 
 
