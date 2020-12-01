@@ -96,6 +96,10 @@ body{
     content: "";
 }
 
+#invis{
+    display: none;
+}
+
 /* 3 Hamburger striper*/
 .hamburger{
     width: 35px;
