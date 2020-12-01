@@ -1,10 +1,5 @@
 /*Setter border-box for hele siden. Da er padding og border inkludert i width og height dette gir penere div'er!*/
 /*Fjerner noen standard settings:*/
-/* TODO:
-    - :not(:target) overflow:hidden
-    - flytte X til ved siden av #Hamburger
-
-*/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -67,6 +62,13 @@ body{
     margin-left: 25px;
     margin-right: 25px;
     border: 2px solid #fffff9;
+}
+
+.testmargin{
+    margin-top: 50px;
+}
+.testmarginmin{
+    margin-top: 20px;
 }
 
 /*Lenkene i navbaren endrer utseende når man holder musepekeren over dem*/
@@ -217,14 +219,6 @@ body{
     margin-right: 25px;
     margin-top: 8px;
 
-}
-.bar4{
-    -webkit-transition: rotate(-45deg) translate(-8px,6px); /*For Safari browser, tror jeg*/
-    transform: rotate(-45deg) translate(-4px,4px);
-}
-.bar5{
-    -webkit-transition: rotate(45deg) translate(-8px,-6px); /*For Safari browser, tror jeg*/
-    transform: rotate(45deg) translate(-3px,-3px);
 }
 
 /*Knapp for å hoppe ned på siden*/
@@ -937,8 +931,14 @@ navHr[visible]:not(:focus-within) {
     }
 }
 
-@media screen and (max-height: 740px){
+@media screen and (max-height: 800px){
     .wholeScroll{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1300px) and (max-height: 900px){
+    .wholeScrollDownS{
         display: none;
     }
 }
