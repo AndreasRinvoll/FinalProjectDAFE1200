@@ -116,6 +116,13 @@ body{
     /* transition: 0.4s; legges til av javascript */
 }
 
+.bar4{
+    transform: rotate(-45deg) translate(-4px, 4px);
+}
+.bar5{
+    transform: rotate(45deg) translate(-3px, -3px);
+}
+
 /* Hamburger-menyen */
 #Hamburger{
     display: none;
@@ -1237,7 +1244,5 @@ navHr[visible]:not(:focus-within) {
     #Hamburger a{
         font-size: 14pt;
     }
-    
+
 }
-
-
